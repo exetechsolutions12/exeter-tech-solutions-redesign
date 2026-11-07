@@ -4537,3 +4537,23 @@ main > .hero::before {
 @media (prefers-reduced-motion: reduce) {
   .hero-background-video { display: none; }
 }
+
+
+/* Let the hero footage show through the page-wide blue theme. */
+.homepage-hero-grid,
+.homepage-hero-grid > .hero-intro,
+.homepage-hero-grid > .hero-portrait-card,
+.homepage-hero-grid > .home-recent-news,
+.homepage-hero-grid > .hero-proof-strip {
+  background-color: transparent !important;
+}
+main > .hero::before {
+  background:
+    linear-gradient(90deg, rgba(5,41,74,.82) 0%, rgba(5,41,74,.66) 48%, rgba(5,41,74,.58) 100%),
+    linear-gradient(0deg, rgba(5,41,74,.82) 0%, transparent 42%, rgba(5,41,74,.24) 100%) !important;
+}
+@media (max-width: 620px) {
+  main > .hero::before {
+    background: linear-gradient(90deg, rgba(5,41,74,.76), rgba(5,41,74,.62)) !important;
+  }
+}
