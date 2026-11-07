@@ -4570,3 +4570,152 @@ main > .hero::before {
 .homepage-hero-grid .eyebrow {
   background: rgba(255,255,255,.1) !important;
 }
+
+/* Keep the moving background confined to the introduction and portrait. */
+main > .hero {
+  display: block !important;
+  min-height: 0 !important;
+  background: #05294A !important;
+  overflow: hidden !important;
+}
+main > .hero::before { display: none !important; }
+.homepage-hero-grid {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #05294A !important;
+}
+.hero-media-stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+  background: #05294A !important;
+}
+.hero-media-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(5,41,74,.84) 0%, rgba(5,41,74,.66) 50%, rgba(5,41,74,.54) 100%),
+    linear-gradient(0deg, rgba(5,41,74,.55) 0%, transparent 45%, rgba(5,41,74,.18) 100%) !important;
+}
+.hero-media-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(220px, .75fr);
+  align-items: center;
+  gap: clamp(30px, 7vw, 96px);
+  width: min(1200px, 94%);
+  margin: 0 auto;
+  padding: clamp(52px, 7vw, 88px) 0 48px;
+  background: transparent !important;
+}
+.hero-media-content .hero-intro,
+.hero-media-content .hero-intro > *,
+.hero-media-content .hero-intro *:not(.btn):not(button),
+.hero-media-content .hero-portrait-card,
+.hero-media-content .hero-portrait-card *:not(img) {
+  background-color: transparent !important;
+}
+.hero-media-content .hero-intro { min-width: 0; }
+.hero-media-content .hero-intro h1 {
+  max-width: 780px;
+  font-size: clamp(2.4rem, 5.2vw, 4.8rem);
+  line-height: .99;
+  letter-spacing: -.055em;
+}
+.hero-media-content .hero-intro > p { max-width: 640px; line-height: 1.75; }
+.hero-media-content .hero-intro .eyebrow { background: rgba(255,255,255,.1) !important; }
+.hero-media-content .hero-portrait-card {
+  justify-self: center;
+  align-self: center;
+  width: min(100%, 330px);
+  max-width: 330px;
+  margin: 0;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.hero-media-content .hero-portrait-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1023 / 1537;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center;
+  filter: drop-shadow(0 14px 28px rgba(0,0,0,.24));
+}
+.hero-media-content .hero-portrait-card figcaption {
+  margin-top: 12px;
+  padding: 0 !important;
+  text-align: center;
+  color: #e8f4ff !important;
+  background: transparent !important;
+}
+.hero-background-video {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: #05294A !important;
+}
+.homepage-hero-grid .home-recent-news {
+  width: min(1200px, 94%);
+  margin: 0 auto !important;
+  padding: 26px 0 8px !important;
+  border: 0 !important;
+  border-top: 1px solid rgba(255,255,255,.34) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: #05294A !important;
+}
+.homepage-hero-grid .home-recent-news *:not(img) {
+  background-color: transparent !important;
+}
+.homepage-hero-grid .hero-proof-strip {
+  width: min(1200px, 94%);
+  margin: 0 auto;
+  padding: 22px 0 28px;
+  border-top: 1px solid rgba(255,255,255,.28);
+  background: #05294A !important;
+}
+@media (max-width: 860px) {
+  .hero-media-content {
+    grid-template-columns: minmax(0, 1fr) minmax(180px, .65fr);
+    gap: 34px 26px;
+  }
+  .hero-media-content .hero-intro h1 { font-size: clamp(2.3rem, 6vw, 3.6rem); }
+  .hero-media-content .hero-portrait-card { width: min(100%, 290px); }
+}
+@media (max-width: 620px) {
+  .hero-media-stage::before {
+    background: linear-gradient(90deg, rgba(5,41,74,.78), rgba(5,41,74,.64)) !important;
+  }
+  .hero-media-content {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+    width: min(100% - 36px, 540px);
+    padding: 42px 0 34px;
+  }
+  .hero-media-content .hero-intro h1 { font-size: clamp(2.45rem, 12vw, 3.4rem); }
+  .hero-media-content .hero-portrait-card { width: min(82%, 300px); }
+  .home-recent-news-list { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .home-news-link { grid-template-columns: 88px minmax(0,1fr); gap: 12px; }
+  .home-news-thumb, .home-news-thumb img { width: 88px; height: 76px; min-height: 76px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-background-video { display: none; }
+}
