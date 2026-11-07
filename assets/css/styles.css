@@ -4313,3 +4313,8 @@ select {
 
 /* Use the supplied white logo with transparent background on every page. */
 img.brand-logo { content: url('/assets/images/ets-logo-white.svg') !important; }
+
+
+/* Render the transparent supplied logo inside the existing header and footer logo boxes. */
+.brand { background-image: url('/assets/images/ets-logo-white.svg') !important; background-repeat: no-repeat !important; background-position: left center !important; background-size: contain !important; }
+img.brand-logo { content: normal !important; visibility: hidden !important; }
