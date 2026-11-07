@@ -4719,3 +4719,10 @@ main > .hero::before { display: none !important; }
 @media (prefers-reduced-motion: reduce) {
   .hero-background-video { display: none; }
 }
+
+
+/* Prevent old homepage grid-area names from overlapping the new hero-stage items. */
+.hero-media-content > .hero-intro,
+.hero-media-content > .hero-portrait-card {
+  grid-area: auto !important;
+}
