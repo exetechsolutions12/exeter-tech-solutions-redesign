@@ -4726,3 +4726,9 @@ main > .hero::before { display: none !important; }
 .hero-media-content > .hero-portrait-card {
   grid-area: auto !important;
 }
+
+
+/* Start the homepage video immediately below the header, with no main padding gap. */
+body:has(.homepage-hero-grid) main {
+  padding-top: 0 !important;
+}
