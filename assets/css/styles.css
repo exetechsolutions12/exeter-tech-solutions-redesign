@@ -4557,3 +4557,16 @@ main > .hero::before {
     background: linear-gradient(90deg, rgba(5,41,74,.76), rgba(5,41,74,.62)) !important;
   }
 }
+
+
+/* Keep hero text unboxed over the moving footage while preserving the CTAs. */
+.homepage-hero-grid,
+.homepage-hero-grid *:not(.btn):not(button) {
+  background-color: transparent !important;
+}
+.homepage-hero-grid .hero-actions {
+  background: transparent !important;
+}
+.homepage-hero-grid .eyebrow {
+  background: rgba(255,255,255,.1) !important;
+}
