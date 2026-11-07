@@ -4732,3 +4732,9 @@ main > .hero::before { display: none !important; }
 body:has(.homepage-hero-grid) main {
   padding-top: 0 !important;
 }
+
+
+/* Bring homepage video flush to the bottom edge of the navigation. */
+body:has(.homepage-hero-grid) main > .hero {
+  padding-top: 0 !important;
+}
