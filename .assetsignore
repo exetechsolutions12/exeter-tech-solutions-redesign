@@ -1,0 +1,6 @@
+.git/**
+.wrangler/**
+wrangler.jsonc
+readme.txt
+.assetsignore
+.gitignore

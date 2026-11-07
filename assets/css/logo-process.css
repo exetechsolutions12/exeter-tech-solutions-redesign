@@ -1,0 +1,87 @@
+/* Logo design page: five clean process step cards. */
+.logo-process-content > .section-title {
+  max-width: none;
+  margin: 0 0 26px;
+}
+.logo-process-steps {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ .logo-process-step {
+  position: relative;
+  min-width: 0;
+  padding: 22px 18px;
+  border: 1px solid #d7e5f5;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(16, 32, 51, .05);
+}
+.logo-process-step:nth-child(-n+3) { grid-column: span 2; }
+.logo-process-step:nth-child(4) { grid-column: 2 / span 2; }
+.logo-process-step:nth-child(5) { grid-column: 4 / span 2; }
+.logo-process-number {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background: #e5efff;
+  color: #1d4ed8;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+.logo-process-step h3 {
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-size: 1.02rem;
+  line-height: 1.3;
+}
+.logo-process-step p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.65;
+}
+.logo-process-pricing { margin-top: 28px; }
+
+@media (max-width: 1100px) {
+  .logo-process-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .logo-process-step:nth-child(n) { grid-column: auto; }
+  .logo-process-step:last-child { grid-column: 1 / -1; width: calc(50% - 9px); justify-self: center; }
+}
+@media (max-width: 760px) {
+  .logo-process-steps { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .logo-process-step:nth-child(n) { grid-column: auto; }
+  .logo-process-step:last-child { width: 100%; }
+  .logo-process-step { padding: 20px; }
+}
+
+
+/* Logo process pricing panel: soft blue card without the accent stripe. */
+.logo-process-pricing {
+  margin-top: 28px;
+  padding: 30px 32px;
+  border: 0;
+  border-left: 0 !important;
+  border-radius: 18px;
+  background: #edf5ff;
+  box-shadow: none;
+}
+.logo-process-pricing h2 {
+  margin-top: 0;
+}
+.logo-process-pricing p {
+  max-width: none;
+}
+@media (max-width: 760px) {
+  .logo-process-pricing { padding: 22px; }
+}
+
+.logo-process-pricing .btn {
+  margin-top: 12px;
+}

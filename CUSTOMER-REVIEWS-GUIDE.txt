@@ -1,0 +1,25 @@
+HOW TO ADD A CUSTOMER REVIEW
+
+The homepage and full reviews page both read from:
+assets/data/customer-reviews.json
+
+To add a review:
+1. In CloudCannon's file browser, open assets/data/customer-reviews.json.
+2. Edit the JSON file in the source/file editor.
+3. Add a new object inside the "reviews" array, with a comma separating it from the previous object.
+4. Use a unique id and the real date in YYYY-MM-DD format, such as "2026-10-10".
+5. Include the actual rating (1–5), exact review text, and customer area label.
+6. Save and publish.
+
+Example object:
+{
+  "id": "teignmouth-new-review",
+  "date": "2026-10-10",
+  "rating": 5,
+  "text": "Paste the customer's exact review here.",
+  "customer": "Teignmouth customer"
+}
+
+Dated reviews are automatically sorted newest first. The homepage shows the four newest reviews; reviews.html shows all reviews. Reviews without dates remain after dated reviews in their original order. The existing four reviews now have dates entered from the supplied records. When adding more, use the actual review date.
+
+Only enter a star rating the customer actually gave; do not assume a rating.

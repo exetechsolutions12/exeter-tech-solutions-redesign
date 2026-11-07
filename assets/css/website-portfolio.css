@@ -1,0 +1,747 @@
+/* Portfolio section styles for the Websites page only. */
+.website-portfolio-section {
+  background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%);
+}
+
+.website-portfolio-section .section-title {
+  max-width: 820px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.website-portfolio-section .section-title p {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.website-portfolio-grid {
+  display: grid;
+  width: min(1400px, calc(100vw - 56px));
+  margin-left: 50%;
+  transform: translateX(-50%);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+.website-portfolio-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #d7e5f5;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(16, 32, 51, .07);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.website-portfolio-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(16, 32, 51, .11);
+}
+
+.website-portfolio-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: #eaf2fb;
+}
+
+.website-portfolio-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 26px;
+}
+
+.website-portfolio-card h3 {
+  margin: 0;
+  color: #102033;
+  font-size: 1.3rem;
+}
+
+.website-portfolio-card p {
+  margin: 0;
+  color: #526276;
+}
+
+.website-portfolio-card a {
+  margin-top: auto;
+  color: #2457a7;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.website-portfolio-card a:hover,
+.website-portfolio-card a:focus-visible {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .website-portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .website-portfolio-grid {
+    width: calc(100vw - 32px);
+    grid-template-columns: 1fr;
+  }
+
+  .website-portfolio-card-content {
+    padding: 20px;
+  }
+}
+
+/* Visible placeholders until real project screenshots and details are supplied. */
+.website-portfolio-preview {
+  display: flex;
+  aspect-ratio: 16 / 10;
+  min-height: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: clamp(18px, 3vw, 32px);
+  background: linear-gradient(135deg, #edf4fd 0%, #dfeafb 100%);
+  color: #5279ad;
+}
+
+.website-portfolio-screen {
+  position: relative;
+  display: block;
+  width: min(360px, 88%);
+  aspect-ratio: 16 / 9;
+  height: auto;
+  padding: 12px;
+  border: 3px solid #7d9bc4;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .82);
+  box-shadow: 0 8px 18px rgba(35, 77, 137, .1);
+}
+
+.website-portfolio-screen > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #d7e6fa 0 30%, #f7faff 30% 100%);
+}
+
+.website-portfolio-screen::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: -15px;
+  width: 48px;
+  height: 10px;
+  transform: translateX(-50%);
+  border-radius: 0 0 3px 3px;
+  background: #7d9bc4;
+}
+
+.website-portfolio-coming-soon {
+  font-size: .9rem;
+  font-weight: 750;
+  color: #345c93;
+}
+
+
+/* Compact feature labels for each portfolio project. */
+.website-portfolio-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  margin: 2px 0 4px;
+}
+
+.website-portfolio-features span {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 7px 11px;
+  border: 1px solid #d5e3f5;
+  border-radius: 999px;
+  background: #f1f6fd;
+  color: #31598d;
+  font-size: .82rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+
+/* Just Been Laid project case study and feature screenshots. */
+.website-portfolio-grid {
+  align-items: start;
+}
+
+.website-portfolio-project-card > img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.website-portfolio-project-card .website-portfolio-card-content {
+  padding-bottom: 10px;
+}
+
+.website-portfolio-case-study {
+  padding: 0 24px 24px;
+}
+
+.website-portfolio-homepage-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0 0 16px;
+}
+
+.website-portfolio-number {
+  display: inline-flex;
+  flex: 0 0 32px;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #fff;
+  font-size: .82rem;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.website-portfolio-homepage-feature h4,
+.website-portfolio-feature h4 {
+  margin: 0 0 5px;
+  color: #102033;
+  font-size: .96rem;
+  line-height: 1.3;
+}
+
+.website-portfolio-homepage-feature p,
+.website-portfolio-feature p {
+  margin: 0;
+  color: #526276;
+  font-size: .82rem;
+  line-height: 1.45;
+}
+
+.website-portfolio-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.website-portfolio-feature {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #d7e5f5;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.website-portfolio-feature img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: #eaf2fb;
+}
+
+.website-portfolio-feature-content {
+  padding: 12px;
+}
+
+.website-portfolio-feature h4 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  font-size: .9rem;
+}
+
+.website-portfolio-feature h4 .website-portfolio-number {
+  flex-basis: 27px;
+  width: 27px;
+  height: 27px;
+  border-radius: 8px;
+  font-size: .74rem;
+}
+
+@media (max-width: 900px) {
+  .website-portfolio-case-study {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .website-portfolio-feature-grid {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 620px) {
+  .website-portfolio-case-study {
+    padding: 0 18px 18px;
+  }
+
+  .website-portfolio-feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Swish Housekeeping numbered feature cards. */
+.website-portfolio-swish-extra-features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0 24px 24px;
+}
+
+.website-portfolio-swish-feature {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #d7e5f5;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.website-portfolio-swish-feature img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: #eaf2fb;
+  color: #526276;
+  font-size: .9rem;
+}
+
+.website-portfolio-swish-feature-content {
+  padding: 12px;
+}
+
+.website-portfolio-swish-feature-content h4 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 7px;
+  color: #102033;
+  font-size: .9rem;
+  line-height: 1.35;
+}
+
+.website-portfolio-swish-feature-content h4 .website-portfolio-number {
+  flex: 0 0 27px;
+  width: 27px;
+  height: 27px;
+  border-radius: 8px;
+  font-size: .74rem;
+}
+
+.website-portfolio-swish-feature-content p {
+  margin: 0;
+  color: #526276;
+  font-size: .82rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .website-portfolio-swish-extra-features {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 620px) {
+  .website-portfolio-swish-extra-features {
+    grid-template-columns: 1fr;
+    padding: 0 18px 18px;
+  }
+}
+
+
+/* Match Swish portfolio sizing to the Just Been Laid case-study card. */
+.website-portfolio-grid {
+  align-items: stretch;
+}
+
+.website-portfolio-card {
+  height: 100%;
+}
+
+.website-portfolio-swish-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.website-portfolio-swish-card > img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.website-portfolio-swish-card .website-portfolio-card-content {
+  gap: 10px;
+  padding: 20px 22px 14px;
+}
+
+.website-portfolio-swish-homepage-feature {
+  padding: 0 0 12px;
+}
+
+.website-portfolio-swish-homepage-feature h4 {
+  margin: 0 0 4px;
+}
+
+.website-portfolio-swish-homepage-feature p {
+  font-size: .82rem;
+  line-height: 1.4;
+}
+
+.website-portfolio-swish-extra-features {
+  gap: 12px;
+  padding: 0 22px 22px;
+}
+
+.website-portfolio-swish-feature img {
+  aspect-ratio: 16 / 9;
+}
+
+.website-portfolio-swish-feature-content {
+  padding: 10px;
+}
+
+.website-portfolio-swish-feature-content h4 {
+  font-size: .84rem;
+  gap: 6px;
+  margin-bottom: 5px;
+}
+
+.website-portfolio-swish-feature-content p {
+  font-size: .78rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 620px) {
+  .website-portfolio-swish-card .website-portfolio-card-content {
+    padding: 18px 18px 12px;
+  }
+
+  .website-portfolio-swish-homepage-feature {
+    padding: 0 0 12px;
+  }
+
+  .website-portfolio-swish-extra-features {
+    padding: 0 18px 18px;
+  }
+}
+
+
+/* Website pricing cards: match the site's blue-and-white card design. */
+.website-pricing-section {
+  padding: clamp(56px, 6vw, 82px) 0;
+  background:
+    radial-gradient(circle at 12% 15%, rgba(37, 99, 235, .055), transparent 34%),
+    linear-gradient(120deg, #eef6ff 0%, #eaf3ff 58%, #f1f5f9 100%);
+}
+
+.website-pricing-section .container {
+  width: min(1240px, 92%);
+}
+
+.website-pricing-section .section-title {
+  max-width: 820px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.website-pricing-section .section-title h2 {
+  margin: 0 0 12px;
+  color: #102033;
+  font-size: clamp(2rem, 3.3vw, 2.8rem);
+  line-height: 1.1;
+  letter-spacing: -.045em;
+}
+
+.website-pricing-section .section-title p {
+  max-width: 740px;
+  margin: 0 auto;
+  color: #5b6b82;
+  font-size: 1.04rem;
+  line-height: 1.65;
+}
+
+.website-pricing-section .pricing {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 22px;
+}
+
+.website-pricing-section .price-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(23px, 2.2vw, 31px);
+  border: 1px solid #d7e5f5;
+  border-top: 3px solid #dceaff;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .97);
+  box-shadow: 0 9px 26px rgba(16, 32, 51, .055);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.website-pricing-section .price-card:hover {
+  transform: translateY(-4px);
+  border-color: #bfd7f8;
+  box-shadow: 0 15px 32px rgba(16, 32, 51, .09);
+}
+
+.website-pricing-section .price-card h2 {
+  display: flex;
+  align-items: center;
+  min-height: 2.7em;
+  margin: 0;
+  color: #102033;
+  font-size: 1.13rem;
+  line-height: 1.35;
+  letter-spacing: -.02em;
+}
+
+.website-pricing-section .price {
+  margin: 13px 0 16px;
+  color: #2563eb;
+  font-size: clamp(2rem, 2.6vw, 2.45rem);
+  font-weight: 850;
+  line-height: 1.05;
+  letter-spacing: -.045em;
+}
+
+.website-pricing-section .price-card p {
+  margin: 0;
+  color: #526276;
+  font-size: .94rem;
+  line-height: 1.65;
+}
+
+.website-pricing-section .price-card.featured {
+  border: 2px solid #b9d5fa;
+  border-top: 3px solid #d7e5f5;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, .085);
+}
+
+.website-pricing-section .price-card.featured::before {
+  display: none;
+  content: none;
+}
+
+.website-pricing-section .price-card .button-row {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.website-pricing-section .price-card .button-row .btn {
+  width: 100%;
+  min-height: 49px;
+  padding: 12px 15px;
+  border-radius: 999px;
+  text-align: center;
+  white-space: normal;
+}
+
+@media (max-width: 900px) {
+  .website-pricing-section .pricing {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 620px;
+    margin: 0 auto;
+    gap: 16px;
+  }
+
+  .website-pricing-note {
+    grid-column: 1;
+  }
+
+  .website-pricing-section .price-card {
+    padding: 26px;
+  }
+
+  .website-pricing-section .price-card h2 {
+    min-height: 0;
+  }
+
+  .website-pricing-section .price-card .button-row {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .website-pricing-section {
+    padding: 48px 0;
+  }
+
+  .website-pricing-section .section-title {
+    margin-bottom: 27px;
+    text-align: left;
+  }
+
+  .website-pricing-section .section-title p {
+    font-size: .98rem;
+  }
+
+  .website-pricing-section .price-card {
+    padding: 23px;
+    border-radius: 17px;
+  }
+
+  .website-pricing-section .price {
+    font-size: 2.15rem;
+  }
+}
+
+
+/* Website setup inclusions and ownership section, directly below pricing. */
+.website-included-section {
+  margin-top: 0;
+  padding: 14px 0 0;
+  background: transparent;
+}
+
+.website-included-section .website-included-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, .85fr);
+  align-items: stretch;
+  gap: 16px;
+}
+
+.website-included-section .website-included-content,
+.website-included-section .website-control-panel {
+  min-width: 0;
+  padding: 20px 22px;
+  border: 1px solid #d7e5f5;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(16, 32, 51, .045);
+}
+
+.website-included-section .website-included-content > .eyebrow {
+  margin-bottom: 10px;
+}
+
+.website-included-section .website-included-content h2 {
+  margin: 0 0 15px;
+  color: #102033;
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
+  line-height: 1.18;
+  letter-spacing: -.04em;
+}
+
+.website-included-section .website-included-content .check-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 14px;
+  row-gap: 9px;
+}
+
+.website-included-section .website-included-content .check-list li {
+  color: #42536a;
+  font-size: .88rem;
+  line-height: 1.4;
+}
+
+.website-included-section .website-control-panel {
+  align-self: stretch;
+  padding: 21px 22px;
+  border-left: 1px solid #d7e5f5;
+  background: linear-gradient(145deg, #eef6ff 0%, #f8fbff 100%);
+}
+
+.website-included-section .website-control-panel h2 {
+  margin: 0 0 9px;
+  color: #102033;
+  font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+  line-height: 1.2;
+  letter-spacing: -.035em;
+}
+
+.website-included-section .website-control-panel p {
+  margin: 0 0 9px;
+  color: #526276;
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.website-included-section .website-control-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.website-included-section .website-control-panel strong {
+  color: #102033;
+}
+
+@media (max-width: 900px) {
+  .website-included-section .website-included-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 900px;
+    gap: 14px;
+  }
+
+  .website-included-section .website-included-content .check-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .website-included-section .website-control-panel {
+    padding: 20px 22px;
+  }
+}
+
+@media (max-width: 620px) {
+  .website-included-section {
+    padding: 12px 0 0;
+  }
+
+  .website-included-section .website-included-content,
+  .website-included-section .website-control-panel {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .website-included-section .website-included-content .check-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 9px;
+  }
+
+  .website-included-section .website-included-content h2 {
+    margin-bottom: 13px;
+    font-size: 1.45rem;
+  }
+}
+
+
+/* Larger-project scope note inside the Website Care pricing card. */
+.website-pricing-section .website-care-larger-changes {
+  width: 100%;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #d7e5f5;
+}
+
+.website-pricing-section .website-care-larger-changes h3 {
+  margin: 0 0 5px;
+  color: #102033;
+  font-size: .9rem;
+  line-height: 1.4;
+}
+
+.website-pricing-section .website-care-larger-changes p {
+  margin: 0;
+  color: #526276;
+  font-size: .82rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,256 @@
+.news-feature {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+      gap: 36px;
+      align-items: center;
+      padding: 28px;
+      border: 1px solid #d7e5f5;
+      border-radius: 24px;
+      background: #ffffff;
+      box-shadow: 0 18px 45px rgba(16, 32, 51, 0.08);
+    }
+
+    .news-feature-copy {
+      min-width: 0;
+    }
+
+    .news-feature-image {
+      width: 100%;
+      max-width: 420px;
+      height: 320px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 18px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .news-gift-image {
+      display: block !important;
+      width: 260px !important;
+      max-width: 100% !important;
+      height: auto !important;
+      object-fit: contain !important;
+      image-rendering: auto;
+      border-radius: 18px;
+      margin: 0 auto;
+    }
+
+    .news-date {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: #047857;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .news-feature h2 {
+      margin-top: 0;
+    }
+
+    .news-highlights {
+      display: grid;
+      gap: 10px;
+      padding: 0;
+      margin: 22px 0;
+      list-style: none;
+    }
+
+    .news-highlights li {
+      position: relative;
+      padding-left: 28px;
+    }
+
+    .news-highlights li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #059669;
+      font-weight: 800;
+    }
+
+    .news-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .news-card .button-row {
+      margin-top: auto;
+      padding-top: 12px;
+    }
+
+    .news-card time {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: #047857;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .news-card-image {
+      display: block;
+      width: min(100%, 420px);
+      height: auto;
+      margin: 0 auto 22px;
+      border-radius: 16px;
+    }
+
+    .news-closing {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .news-closing .button-row {
+      justify-content: center;
+    }
+
+    @media (max-width: 820px) {
+      .news-feature {
+        grid-template-columns: 1fr;
+        padding: 20px;
+      }
+
+      .news-feature-image {
+        width: 100%;
+        max-width: 100%;
+        height: 280px;
+      }
+    }
+
+    /* Featured Christmas gift cards: copy left, photo right */
+    #news-christmas-gift-cards-featured {
+      display: grid !important;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr) !important;
+      grid-template-areas: "copy photo";
+      align-items: center;
+      gap: 32px;
+      width: 100%;
+    }
+
+    #news-christmas-gift-cards-featured .news-feature-copy {
+      grid-area: copy;
+      min-width: 0;
+      width: auto;
+    }
+
+    #news-christmas-gift-cards-featured .news-gift-image {
+      grid-area: photo;
+      display: block !important;
+      width: 100% !important;
+      max-width: 460px !important;
+      min-width: 0 !important;
+      height: auto !important;
+      object-fit: contain !important;
+      justify-self: end;
+      margin: 0 0 0 auto !important;
+      border-radius: 18px;
+    }
+
+    @media (max-width: 820px) {
+      #news-christmas-gift-cards-featured {
+        grid-template-columns: minmax(0, 1fr) !important;
+        grid-template-areas: "copy" "photo";
+        gap: 22px;
+      }
+
+      #news-christmas-gift-cards-featured .news-feature-copy {
+        width: 100%;
+      }
+
+      #news-christmas-gift-cards-featured .news-gift-image {
+        width: 100% !important;
+        max-width: 460px !important;
+        margin: 0 auto !important;
+        justify-self: center;
+      }
+    }
+
+/* Recent-work article: enlarge the photo in the right-hand column.
+   Kept external so it is allowed by the site's Content-Security-Policy. */
+#news-no-two-technology-visits-are-ever-quite-the-same {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(400px, 0.95fr) !important;
+  align-items: center;
+  gap: 30px;
+}
+
+#news-no-two-technology-visits-are-ever-quite-the-same .news-feature-copy {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+}
+
+#news-no-two-technology-visits-are-ever-quite-the-same .news-local-update-image {
+  grid-column: 2;
+  grid-row: 1;
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 0 !important;
+  border-radius: 18px;
+  justify-self: stretch;
+}
+
+@media (max-width: 820px) {
+  #news-no-two-technology-visits-are-ever-quite-the-same {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 22px;
+  }
+
+  #news-no-two-technology-visits-are-ever-quite-the-same .news-feature-copy {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #news-no-two-technology-visits-are-ever-quite-the-same .news-local-update-image {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100% !important;
+    max-width: 460px !important;
+    margin: 0 auto !important;
+    justify-self: center;
+  }
+}
+
+
+/* Older community updates flow in the same full-width news feed. */
+.news-grid {
+  display: grid;
+  gap: 22px;
+  width: 100%;
+  max-width: none;
+  margin: 30px 0 0;
+}
+
+/* Match the older business/community updates to the featured news cards. */
+.news-grid .news-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 28px;
+  border: 1px solid #d7e5f5;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(16, 32, 51, 0.08);
+}
+
+.news-grid .news-card h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.news-grid .news-card p {
+  max-width: 100%;
+}
+
+@media (max-width: 620px) {
+  .news-grid .news-card {
+    padding: 20px;
+    border-radius: 20px;
+  }
+}

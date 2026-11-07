@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 20 400 260" role="img" aria-label="Exeter Tech Solutions">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 56h244c42 0 70 25 70 62" stroke="#238A8D" stroke-width="42"/>
+    <path d="M60 56v188h218" stroke="#12375B" stroke-width="42"/>
+    <path d="M60 150h142" stroke="#12375B" stroke-width="38"/>
+    <path d="M176 82v162" stroke="#238A8D" stroke-width="42"/>
+    <path d="M276 111c0-31 24-55 58-55h48M276 111c0 28 22 46 51 46h14c30 0 52 18 52 44 0 25-21 43-51 43h-72" stroke="#12375B" stroke-width="42"/>
+  </g>
+  <circle cx="176" cy="56" r="19" fill="#F2B544" stroke="#fff" stroke-width="8"/>
+  <circle cx="276" cy="244" r="16" fill="#238A8D" stroke="#fff" stroke-width="7"/>
+</svg>

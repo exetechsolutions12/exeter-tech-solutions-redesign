@@ -1,0 +1,29 @@
+source: /
+
+paths:
+  static: /
+  uploads: /assets/images/
+
+collections_config:
+  pages:
+    path: /
+    name: Website pages
+    icon: web
+    glob:
+      - "*.html"
+      url: /[filename]
+    output: true
+    disable_add: true
+    disable_add_folder: true
+    _enabled_editors:
+      - visual
+
+_editables:
+  text:
+    allow_custom_markup: false
+  block:
+    allow_custom_markup: false
+  link:
+    allow_custom_markup: false
+  image:
+    allow_custom_markup: false

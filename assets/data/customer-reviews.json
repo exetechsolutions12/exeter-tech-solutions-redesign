@@ -1,0 +1,80 @@
+{
+  "reviews": [
+    {
+      "id": "dawlish-helpful",
+      "date": "2026-09-21",
+      "rating": 5,
+      "text": "“I would highly recommend - very knowledgeable and extremely helpful.”",
+      "customer": "Dawlish customer"
+    },
+    {
+      "id": "dawlish-smart-tv",
+      "date": "2026-09-21",
+      "rating": 5,
+      "text": "“Visited my home in Dawlish to ‘sort out’ my misbehaving Smart TV. Cam was very polite, helpful and explained everything in a language I understand - he didn’t bamboozle me with techspeak! Personally, I would highly recommend ETS: extremely professional and helpful, particularly as I’m not great at tech or the internet. Excellent service. 10/10.”",
+      "customer": "Dawlish customer"
+    },
+    {
+      "id": "teignmouth-bt-hub-printer",
+      "date": "2026-09-14",
+      "rating": 5,
+      "text": "“Cameron is a really pleasant person who worked hard to sort out the BT hub and printer. Cameron also suggested additional features. I would highly recommend this service, as home visits are also provided.”",
+      "customer": "Teignmouth customer"
+    },
+    {
+      "id": "teignmouth-phone-help",
+      "date": "2026-09-08",
+      "rating": 5,
+      "text": "“Cam was very helpful sorting out my husband’s phone. He was on time, patient and very knowledgeable. Will most certainly use again and have no hesitation in recommending, especially for people like us who struggle a bit with modern technology.”",
+      "customer": "Teignmouth customer"
+    },
+    {
+      "id": "exeter-small-business-gdpr-security",
+      "date": "2026-09-27",
+      "rating": 5,
+      "text": "“Cam has been brilliant in setting up my small business, ensuring my tech is GDPR compliant and secure, and installing software. So patient and approachable. I couldn't have done it so easily without him. Thank you so much Cam.”",
+      "customer": "Exeter customer"
+    },
+    {
+      "id": "dawlish-website-design-testimonial",
+      "date": "2026-10-07",
+      "rating": 5,
+      "text": "“Today I have met with this wonderful individual, Cam Cater, who has started up this incredible service for people who need help with technical difficulties, it could be phones, laptops, computers, emails, internet, WiFi, websites, you name it ... he comes and sorts it for you ...\n\nHe is a fixer of all things technical ..as well as a creator of web sites. I can't recommend this guy enough. He has created us a website that left me speechless, did all his own research about Swish Housekeeping before we had even met, he was steps ahead of me, I didn't need to change a thing! His enthusiasm for his work is infectious, impressive and inspiring. If you ever find yourself stuck with a technical problem just give him a try, you won't be disappointed”",
+      "customer": "Swish Housekeeping"
+    },
+    {
+      "id": "customer-helpful-fast-service",
+      "date": "2026-10-13",
+      "rating": 5,
+      "text": "“Very helpful and kind and fast service I’m happy with the support and service they gave me”"
+    },
+    {
+      "id": "kenton-home-visit-computer-support",
+      "date": "2026-10-16",
+      "rating": 5,
+      "text": "“Excellent communication. very respectful, knowledgeable and patient. very happy after  our home visit for our computer problem from Cam. would highly recommend as he goes that extra mile for customer satisfaction. Thank you so much.”",
+      "customer": "Kenton customer"
+    },
+    {
+      "id": "google-review-2026-10-18",
+      "date": "2026-10-18",
+      "rating": 5,
+      "text": "“Cam did a great job in resolving my issues. He is extremely personable and professional and I cannot recommend him highly enough.”",
+      "customer": "Google Review"
+    },
+    {
+      "id": "dawlish-laptop-repair-2026-10-21",
+      "date": "2026-10-21",
+      "rating": 5,
+      "text": "“Cam was so polite and full of knowledge. He was very efficient and the problem with my laptop was solved. I would have no hesitation using Cam again. HIGHLY RECOMMEND.”",
+      "customer": "Dawlish customer"
+    },
+    {
+      "id": "scouts-adventure-walks-logo-design-2026-10-28",
+      "date": "2026-10-28",
+      "rating": 5,
+      "text": "“Cam was brilliant at helping me design my logo for Scout’s Adventure Walks. He was friendly, patient and really listened to my ideas, helping me turn my vision into a logo I absolutely love. His creativity, attention to detail and willingness to make sure everything was just right made the whole process so easy. I’m so pleased with the finished result and would highly recommend Cam at Exeter Tech Solutions to anyone looking for help with their branding. Thank you, Cam!”",
+      "customer": "Scout’s Adventure Walks"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+.turnstile-wrap{display:flex;justify-content:center;min-height:65px;margin:0 0 1rem}.form-message{display:none;margin-top:1rem;padding:.9rem 1rem;border-radius:9px;font-size:.9rem;line-height:1.5}.form-message.success{display:block;background:#e7f9f0;color:#065f46}.form-message.error{display:block;background:#fff0f0;color:#8a2d2d}.submit-button:disabled{cursor:wait;opacity:.72}
