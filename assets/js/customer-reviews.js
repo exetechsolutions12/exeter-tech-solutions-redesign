@@ -35,15 +35,14 @@
       var date = element("time", "review-date", formatDate(review.date));
       date.dateTime = review.date;
       dateRow.appendChild(date);
-      if (typeof review.customer === "string" && review.customer.trim().toLowerCase() === "google review") {
-        var googleIcon = element("img", "review-google-icon");
-        googleIcon.src = "assets/images/google-logo.png";
-        googleIcon.alt = "Google";
-        googleIcon.width = 28;
-        googleIcon.height = 28;
-        googleIcon.loading = "lazy";
-        dateRow.appendChild(googleIcon);
-      }
+      var isGoogleReview = typeof review.customer === "string" && review.customer.trim().toLowerCase() === "google review";
+      var sourceIcon = element("img", "review-source-icon");
+      sourceIcon.src = isGoogleReview ? "assets/images/google-logo.png" : "assets/images/facebook-logo.png";
+      sourceIcon.alt = isGoogleReview ? "Google review" : "Facebook review";
+      sourceIcon.width = 28;
+      sourceIcon.height = 28;
+      sourceIcon.loading = "lazy";
+      dateRow.appendChild(sourceIcon);
       card.appendChild(dateRow);
     }
 
