@@ -5912,3 +5912,15 @@ button:hover {
   grid-column: 1;
   grid-row: 1;
 }
+
+/* Review source icons sit beside the date on homepage and reviews archive. */
+.review-source-icon {
+  display: block;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  background: transparent !important;
+  border: 0;
+  box-shadow: none;
+}
