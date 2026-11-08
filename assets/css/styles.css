@@ -5323,3 +5323,23 @@ button:hover {
 #support-options .service-choice-card .support-option-icon svg * {
   stroke: #05294a !important;
 }
+
+
+/* Enlarge the support section introduction to match the trust row above. */
+#support-options > .container > .section-title > .eyebrow {
+  font-size: 1.65rem !important;
+  line-height: 1.2 !important;
+}
+#support-options > .container > .section-title > h2 {
+  font-size: clamp(2.7rem, 3.4vw, 3.6rem) !important;
+  line-height: 1.08 !important;
+}
+#support-options > .container > .section-title > p {
+  font-size: clamp(1.35rem, 1.65vw, 1.65rem) !important;
+  line-height: 1.45 !important;
+}
+@media (max-width: 700px) {
+  #support-options > .container > .section-title > .eyebrow { font-size: 1.35rem !important; }
+  #support-options > .container > .section-title > h2 { font-size: clamp(2rem, 7vw, 2.6rem) !important; }
+  #support-options > .container > .section-title > p { font-size: 1.1rem !important; }
+}
