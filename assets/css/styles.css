@@ -6361,3 +6361,30 @@ button:hover {
   #customer-feedback .review-card:first-child .review-quote { order: 4 !important; }
   #customer-feedback .review-card:first-child .review-customer { order: 5 !important; }
 }
+
+
+/* Recent-news cards: stretch the image column to the full card height. */
+.homepage-hero-grid .home-recent-news-list .home-news-card {
+  height: 100% !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-link {
+  display: grid !important;
+  align-items: stretch !important;
+  height: 100% !important;
+  min-height: 100% !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-thumb {
+  align-self: stretch !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  overflow: hidden !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-thumb img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
