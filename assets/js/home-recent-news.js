@@ -95,7 +95,7 @@
     }
     addText(copy, "strong", "", entry.title);
     if (entry.excerpt) addText(copy, "p", "", shorten(entry.excerpt, 112));
-    addText(copy, "span", "home-news-read", "Read update →");
+    addText(copy, "span", "home-news-read", "Read update");
 
     link.appendChild(thumb);
     link.appendChild(copy);
