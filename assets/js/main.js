@@ -195,3 +195,32 @@ accessibilityTools.addEventListener('click', (event) => {
     subfooter.appendChild(button);
   }
 })();
+
+
+// Add the homepage background footage to every page intro, reusing the same video asset.
+(() => {
+  const existingVideo = document.querySelector('.hero-background-video');
+  if (existingVideo) return; // The homepage already contains its own hero video.
+
+  const intro = document.querySelector(
+    'main .page-hero, main .about-hero, main .services-options-section, main .review-archive, main.confirmation, main .not-found'
+  );
+  if (!intro) return;
+
+  intro.classList.add('site-video-hero');
+  const video = document.createElement('video');
+  video.className = 'site-page-background-video';
+  video.autoplay = true;
+  video.muted = true;
+  video.loop = true;
+  video.playsInline = true;
+  video.preload = 'metadata';
+  video.setAttribute('aria-hidden', 'true');
+  video.setAttribute('tabindex', '-1');
+  video.innerHTML = '<source src="/assets/videos/welcome-to-my-channel.mp4?v=1" type="video/mp4">';
+  intro.prepend(video);
+  const playAttempt = video.play();
+  if (playAttempt && typeof playAttempt.catch === 'function') {
+    playAttempt.catch(() => { /* Keep the poster-colour fallback if autoplay is blocked. */ });
+  }
+})();
