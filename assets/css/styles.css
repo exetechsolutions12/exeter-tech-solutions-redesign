@@ -5050,3 +5050,42 @@ button:hover {
 .homepage-hero-grid .hero-proof-strip .hero-proof-icon svg * {
   stroke: #05294A !important;
 }
+
+
+/* Let news photos use the full image column instead of the legacy thumbnail width. */
+.homepage-hero-grid .home-recent-news-list .home-news-thumb {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0;
+  min-height: 300px;
+  overflow: hidden;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-thumb img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 1020px) {
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb,
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb img {
+    min-height: 260px;
+  }
+}
+@media (max-width: 700px) {
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb,
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb img {
+    min-height: 190px;
+  }
+}
+@media (max-width: 420px) {
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb,
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb img {
+    height: 190px !important;
+    min-height: 190px;
+  }
+}
