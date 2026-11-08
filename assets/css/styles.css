@@ -5252,3 +5252,24 @@ button:hover {
   align-self: flex-start !important;
   width: auto !important;
 }
+
+
+/* Final reference match: dark line icons, prominent card titles, inline arrows. */
+#support-options .service-choice-card .support-option-icon svg,
+#support-options .service-choice-card .support-option-icon svg * {
+  color: #05294a !important;
+  stroke: #05294a !important;
+}
+#support-options .service-choice-card .support-option-icon svg * {
+  fill: none !important;
+}
+#support-options .service-choice-card h3 {
+  font-size: clamp(1.2rem, 1.65vw, 1.55rem) !important;
+  font-weight: 700 !important;
+}
+#support-options .service-choice-card a.btn,
+#support-options .service-choice-card a.btn.secondary {
+  flex: 0 0 auto !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+}
