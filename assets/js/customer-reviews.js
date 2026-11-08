@@ -31,9 +31,20 @@
     var card = element("article", "review-card");
 
     if (review.date && validDate(review.date) !== null) {
+      var dateRow = element("div", "review-date-row");
       var date = element("time", "review-date", formatDate(review.date));
       date.dateTime = review.date;
-      card.appendChild(date);
+      dateRow.appendChild(date);
+      if (typeof review.customer === "string" && review.customer.trim().toLowerCase() === "google review") {
+        var googleIcon = element("img", "review-google-icon");
+        googleIcon.src = "assets/images/google-logo.png";
+        googleIcon.alt = "Google";
+        googleIcon.width = 28;
+        googleIcon.height = 28;
+        googleIcon.loading = "lazy";
+        dateRow.appendChild(googleIcon);
+      }
+      card.appendChild(dateRow);
     }
 
     var rating = Number(review.rating);
