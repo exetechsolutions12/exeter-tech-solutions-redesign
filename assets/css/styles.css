@@ -7056,3 +7056,65 @@ body .site-video-hero .about-hero-grid {
   position: relative !important;
   z-index: 1 !important;
 }
+
+
+/* FINAL shared page-hero video treatment.
+   Paint order is intentional: footage, then the same navy overlay used on the homepage,
+   then readable page content. This keeps the video filling the complete hero section. */
+.site-video-hero {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  background: #05294a !important;
+}
+.site-video-hero > .site-page-background-video {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  pointer-events: none !important;
+}
+/* The overlay must sit ABOVE the video (not behind it). */
+.site-video-hero::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  background:
+    linear-gradient(90deg, rgba(5,41,74,.84) 0%, rgba(5,41,74,.66) 50%, rgba(5,41,74,.54) 100%),
+    linear-gradient(0deg, rgba(5,41,74,.55) 0%, transparent 45%, rgba(5,41,74,.18) 100%) !important;
+}
+.site-video-hero > .container,
+.site-video-hero > .container > *,
+.site-video-hero .about-hero-grid,
+.site-video-hero .about-hero-copy,
+.site-video-hero .about-trust-grid,
+.site-video-hero .page-hero-content,
+.site-video-hero .services-options-heading,
+.site-video-hero .review-archive-heading {
+  position: relative !important;
+  z-index: 2 !important;
+}
+.site-video-hero .about-hero-copy,
+.site-video-hero .about-hero-copy > h1,
+.site-video-hero .about-hero-copy > p,
+.site-video-hero .about-hero-copy > .button-row,
+.site-video-hero .page-hero-content,
+.site-video-hero .section-title,
+.site-video-hero .services-options-heading,
+.site-video-hero .review-archive-heading {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-video-hero > .site-page-background-video { display: none !important; }
+  .site-video-hero { background: #05294a !important; }
+}
