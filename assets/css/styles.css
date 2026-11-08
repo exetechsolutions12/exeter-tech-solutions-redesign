@@ -5954,3 +5954,8 @@ button:hover {
   box-shadow: none !important;
   border: 0 !important;
 }
+
+/* Date and source mark share one centred horizontal row. */
+.review-date-row { display:flex !important; flex-direction:row !important; align-items:center !important; gap:10px !important; width:max-content !important; max-width:100%; }
+.review-date-row .review-date { display:inline-flex !important; align-items:center !important; margin:0 !important; flex:none !important; }
+.review-date-row .review-source-icon { display:block !important; width:28px !important; height:28px !important; flex:0 0 28px !important; margin:0 !important; padding:0 !important; object-fit:contain !important; background:transparent !important; background-color:transparent !important; border:0 !important; box-shadow:none !important; vertical-align:middle !important; }
