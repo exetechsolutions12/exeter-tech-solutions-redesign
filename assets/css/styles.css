@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Oxanium';
-  src: url('/assets/fonts/Oxanium[wght].ttf') format('truetype');
+  font-family: 'Barlow Condensed';
+  src: url('/assets/fonts/BarlowCondensed-Bold.ttf') format('truetype');
   font-style: normal;
-  font-weight: 200 800;
+  font-weight: 700;
   font-display: swap;
 }
 
@@ -4748,7 +4748,7 @@ body:has(.homepage-hero-grid) main > .hero {
 }
 
 
-/* Give every page heading the sharper Oxanium display style. */
+/* Give every page heading the sharper Barlow Condensed display style. */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oxanium', 'Segoe UI', Arial, sans-serif !important;
+  font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif !important;
 }
