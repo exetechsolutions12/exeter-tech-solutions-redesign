@@ -5314,3 +5314,12 @@ button:hover {
     min-height: 0 !important;
   }
 }
+
+#support-options .service-choice-card .support-option-icon {
+  background-color: #8de4fb !important;
+  color: #05294a !important;
+}
+#support-options .service-choice-card .support-option-icon svg,
+#support-options .service-choice-card .support-option-icon svg * {
+  stroke: #05294a !important;
+}
