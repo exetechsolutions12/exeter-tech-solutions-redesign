@@ -6734,3 +6734,36 @@ button:hover {
   .home-approach-credentials { font-size: .98rem; }
   .home-approach-trust-copy .small-print { font-size: .92rem; }
 }
+
+/* Desktop footer: reduce vertical padding and tighten the column rhythm. */
+@media (min-width: 861px) {
+  .footer {
+    padding: 30px 0 16px !important;
+  }
+  .footer .footer-grid > div {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .footer .footer-brand {
+    margin-bottom: 9px;
+  }
+  .footer .footer-brand .brand-logo {
+    width: min(100%, 235px);
+  }
+  .footer .footer-grid h2 {
+    margin-bottom: 14px !important;
+    padding-bottom: 9px;
+  }
+  .footer .footer-grid a:not(.footer-brand) {
+    margin-bottom: 8px !important;
+    line-height: 1.35;
+  }
+  .footer .footer-grid p {
+    margin: 6px 0;
+    line-height: 1.45;
+  }
+  .footer .subfooter {
+    margin-top: 20px !important;
+    padding-top: 12px !important;
+  }
+}
