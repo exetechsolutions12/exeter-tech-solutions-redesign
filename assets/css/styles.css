@@ -6551,3 +6551,16 @@ button:hover {
     min-height: 210px !important;
   }
 }
+
+/* Footer width: let the footer content use the full site canvas rather than
+   inheriting the narrower 1120px page container. Keep comfortable gutters. */
+@media (min-width: 861px) {
+  .footer > .container {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: clamp(32px, 5vw, 88px) !important;
+    padding-right: clamp(32px, 5vw, 88px) !important;
+  }
+}
