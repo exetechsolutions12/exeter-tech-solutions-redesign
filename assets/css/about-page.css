@@ -1227,3 +1227,9 @@
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+/* Slightly tighten the vertical spacing around the About facts row. */
+.about-page .about-trust-grid {
+  padding-top: 6px !important;
+  margin-top: -12px !important;
+}
