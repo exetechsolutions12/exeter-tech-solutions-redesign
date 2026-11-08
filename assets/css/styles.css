@@ -5550,7 +5550,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 2px;
 }
 .home-contact-hub-kicker,
 .home-contact-hub-direct h3 {
