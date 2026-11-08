@@ -37,7 +37,7 @@
       dateRow.appendChild(date);
       var isGoogleReview = typeof review.customer === "string" && review.customer.trim().toLowerCase() === "google review";
       var sourceIcon = element("img", "review-source-icon");
-      sourceIcon.src = isGoogleReview ? "assets/images/google-logo.png" : "assets/images/facebook-logo.png";
+      sourceIcon.src = isGoogleReview ? "assets/images/google-logo.png" : "assets/images/facebook-logo.svg";
       sourceIcon.alt = isGoogleReview ? "Google review" : "Facebook review";
       sourceIcon.width = 28;
       sourceIcon.height = 28;
