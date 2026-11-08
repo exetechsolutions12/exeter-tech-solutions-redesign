@@ -6251,3 +6251,19 @@ button:hover {
   border: 0 !important;
   padding: 0 !important;
 }
+
+
+/* Actual alignment fix: remove the more-specific card rule's bottom margin
+   from the date pill. A bottom margin on the flex item was lifting the pill
+   while the source icon stayed centred in the row. */
+#customer-feedback .review-card .review-date-row .review-date,
+#customer-feedback .review-card:not(:first-child) .review-date-row .review-date,
+.review-archive .review-card .review-date-row .review-date {
+  margin: 0 !important;
+  align-self: center !important;
+  transform: none !important;
+}
+#customer-feedback .review-card .review-date-row,
+.review-archive .review-card .review-date-row {
+  align-items: center !important;
+}
