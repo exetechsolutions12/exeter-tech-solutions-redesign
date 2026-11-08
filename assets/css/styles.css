@@ -5237,3 +5237,18 @@ button:hover {
   border: 0 !important;
   transform: none !important;
 }
+
+
+/* Match the reference's clean icon tiles and unboxed arrow links. */
+#support-options .service-choice-card .support-option-icon svg {
+  display: block !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+#support-options .service-choice-card a.btn,
+#support-options .service-choice-card a.btn.secondary {
+  justify-content: flex-start !important;
+  align-self: flex-start !important;
+  width: auto !important;
+}
