@@ -5208,3 +5208,32 @@ button:hover {
   #support-options .service-choice-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
   #support-options .service-choice-card p { font-size: .92rem; margin-bottom: 12px; }
 }
+
+
+/* Keep the support option icon tiles and text links clear of global button overrides. */
+#support-options .service-choice-card .support-option-icon {
+  background-color: #aad6ec !important;
+  color: #05294a !important;
+}
+#support-options .service-choice-card .support-option-divider {
+  background-color: #81b1ce !important;
+}
+#support-options .service-choice-card a.btn,
+#support-options .service-choice-card a.btn.secondary {
+  display: inline-flex !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  color: #aad6ec !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+#support-options .service-choice-card a.btn:hover,
+#support-options .service-choice-card a.btn.secondary:hover {
+  color: #ffffff !important;
+  background: transparent !important;
+  border: 0 !important;
+  transform: none !important;
+}
