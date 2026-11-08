@@ -5672,3 +5672,43 @@ button:hover {
   }
   .home-contact-hub-link > span:last-child { gap: 2px; }
 }
+
+
+/* Contact hub: remove the unwanted dark panels and dark hover blocks. */
+#support-options .home-contact-hub-intro,
+#support-options .home-contact-hub-direct,
+#support-options .home-contact-hub-intro > *,
+#support-options .home-contact-hub-direct > * {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+#support-options .home-contact-hub-intro h2,
+#support-options .home-contact-hub-intro p,
+#support-options .home-contact-hub-direct h3,
+#support-options .home-contact-hub-direct p,
+#support-options .home-contact-hub-link strong,
+#support-options .home-contact-hub-link small {
+  background: transparent !important;
+}
+#support-options .home-contact-hub-link,
+#support-options .home-contact-hub-link:visited {
+  background: rgba(141, 228, 251, .07) !important;
+}
+#support-options .home-contact-hub-link:hover,
+#support-options .home-contact-hub-link:focus-visible {
+  background: rgba(141, 228, 251, .2) !important;
+  border-color: #8de4fb !important;
+}
+#support-options .home-contact-hub-link > span,
+#support-options .home-contact-hub-link > span:last-child {
+  background: transparent !important;
+}
+#support-options .home-contact-hub-icon {
+  background: #8de4fb !important;
+  color: #05294a !important;
+}
+#support-options .home-contact-hub-cta,
+#support-options .home-contact-hub-cta:hover {
+  color: #fff !important;
+  background: #23649e !important;
+}
