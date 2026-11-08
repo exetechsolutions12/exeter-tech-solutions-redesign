@@ -6925,3 +6925,61 @@ main .not-found-card > p {
     line-height: 1.7 !important;
   }
 }
+
+
+/* Shared moving video background for every page's introductory hero. */
+.site-video-hero {
+  position: relative !important;
+  isolation: isolate;
+  overflow: hidden;
+  background: #05294a !important;
+  color: #fff !important;
+}
+.site-page-background-video {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: #05294a;
+  pointer-events: none;
+}
+.site-video-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(5,41,74,.91) 0%, rgba(5,41,74,.78) 58%, rgba(5,41,74,.68) 100%);
+  pointer-events: none;
+}
+.site-video-hero > .container,
+.site-video-hero > .container > *,
+.site-video-hero .about-hero-grid,
+.site-video-hero .services-options-heading {
+  position: relative;
+  z-index: 1;
+}
+.site-video-hero h1,
+.site-video-hero h2,
+.site-video-hero p,
+.site-video-hero .eyebrow {
+  color: #fff !important;
+}
+.site-video-hero .eyebrow {
+  background: rgba(255,255,255,.1) !important;
+  border-color: rgba(255,255,255,.35) !important;
+}
+.site-video-hero .about-trust-grid,
+.site-video-hero .services-choice-grid,
+.site-video-hero .review-cards-grid {
+  position: relative;
+  z-index: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-page-background-video { display: none; }
+  .site-video-hero { background: #05294a !important; }
+}
