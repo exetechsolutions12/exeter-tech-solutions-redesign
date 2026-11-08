@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&display=swap');
+
 :root {
   --navy: #102033;
   --blue: #2563eb;
@@ -4737,4 +4739,10 @@ body:has(.homepage-hero-grid) main {
 /* Bring homepage video flush to the bottom edge of the navigation. */
 body:has(.homepage-hero-grid) main > .hero {
   padding-top: 0 !important;
+}
+
+
+/* Give every page heading the sharper Oxanium display style. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oxanium', 'Segoe UI', Arial, sans-serif !important;
 }
