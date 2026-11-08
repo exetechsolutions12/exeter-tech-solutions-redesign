@@ -5043,3 +5043,10 @@ button:hover {
   color: #05294A !important;
   border-radius: 18px !important;
 }
+
+
+/* Match the reference icon contrast inside the cyan trust tiles. */
+.homepage-hero-grid .hero-proof-strip .hero-proof-icon svg,
+.homepage-hero-grid .hero-proof-strip .hero-proof-icon svg * {
+  stroke: #05294A !important;
+}
