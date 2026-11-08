@@ -68,7 +68,7 @@
 
     var thumb = document.createElement("span");
     thumb.className = "home-news-thumb";
-    thumb.setAttribute("aria-hidden", "true");
+    
 
     if (entry.imageSrc) {
       var image = document.createElement("img");
