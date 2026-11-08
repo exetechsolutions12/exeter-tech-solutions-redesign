@@ -5959,3 +5959,56 @@ button:hover {
 .review-date-row { display:flex !important; flex-direction:row !important; align-items:center !important; gap:10px !important; width:max-content !important; max-width:100%; }
 .review-date-row .review-date { display:inline-flex !important; align-items:center !important; margin:0 !important; flex:none !important; }
 .review-date-row .review-source-icon { display:block !important; width:28px !important; height:28px !important; flex:0 0 28px !important; margin:0 !important; padding:0 !important; object-fit:contain !important; background:transparent !important; background-color:transparent !important; border:0 !important; box-shadow:none !important; vertical-align:middle !important; }
+
+/* Final alignment: centre the source logo against the visible cyan date pill,
+   not against the date element's former bottom margin. */
+#customer-feedback .review-date-row,
+.review-date-row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  width: max-content !important;
+  max-width: 100%;
+  min-height: 30px;
+  margin: 0 0 12px !important;
+}
+#customer-feedback .review-date-row .review-date,
+.review-date-row .review-date {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  height: 30px !important;
+  min-height: 30px !important;
+  line-height: 1 !important;
+  padding: 0 14px !important;
+  margin: 0 !important;
+  align-self: center !important;
+  flex: 0 0 auto !important;
+}
+#customer-feedback .review-date-row .review-source-icon,
+.review-date-row .review-source-icon {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  min-height: 28px !important;
+  flex: 0 0 28px !important;
+  align-self: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: contain !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  vertical-align: middle !important;
+}
+#customer-feedback .review-card:first-child .review-date-row {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  align-self: start !important;
+}
