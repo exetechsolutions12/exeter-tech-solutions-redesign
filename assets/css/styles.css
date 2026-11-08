@@ -5882,3 +5882,33 @@ button:hover {
 #customer-feedback .review-card:first-child {
   background: rgba(141, 228, 251, .07) !important;
 }
+
+
+/* Keep the Google source mark beside its review date, outside the date pill. */
+#customer-feedback .review-date-row,
+.review-date-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 12px;
+}
+#customer-feedback .review-date-row .review-date,
+.review-date-row .review-date {
+  margin: 0 !important;
+}
+.review-google-icon {
+  display: block;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0;
+}
+#customer-feedback .review-card:first-child .review-date-row {
+  grid-column: 1;
+  grid-row: 1;
+}
