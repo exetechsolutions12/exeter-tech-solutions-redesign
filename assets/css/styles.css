@@ -6356,3 +6356,91 @@ button:hover {
     gap: 18px;
   }
 }
+
+
+/* Final visual pass: gold five-star ratings across both review surfaces. */
+#customer-feedback .review-rating,
+#customer-feedback .review-stars,
+#customer-feedback .review-stars-empty,
+.review-archive .review-rating,
+.review-archive .review-stars,
+.review-archive .review-stars-empty {
+  color: #f5c451 !important;
+}
+
+/* Homepage news images: remove any inherited link spacing and make the
+   image occupy the complete left-hand grid track, edge-to-edge. */
+.homepage-hero-grid .home-recent-news-list .home-news-card {
+  display: grid !important;
+  grid-template-rows: minmax(0, 1fr) !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-link {
+  display: grid !important;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.2fr) !important;
+  align-items: stretch !important;
+  gap: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 340px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: inherit !important;
+  box-sizing: border-box !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-thumb {
+  position: relative !important;
+  display: block !important;
+  align-self: stretch !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: 0 !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-thumb img {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-copy {
+  min-width: 0 !important;
+  min-height: 100% !important;
+  box-sizing: border-box !important;
+}
+@media (max-width: 700px) {
+  .homepage-hero-grid .home-recent-news-list .home-news-link {
+    grid-template-columns: 40% minmax(0, 1fr) !important;
+    min-height: 240px !important;
+  }
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb {
+    min-height: 100% !important;
+  }
+}
+@media (max-width: 420px) {
+  .homepage-hero-grid .home-recent-news-list .home-news-link {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb {
+    min-height: 190px !important;
+    height: 190px !important;
+  }
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb img {
+    min-height: 190px !important;
+  }
+}
