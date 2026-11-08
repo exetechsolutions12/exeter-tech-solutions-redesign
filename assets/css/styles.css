@@ -5583,9 +5583,13 @@ button:hover {
   border-left: 1px solid rgba(141, 228, 251, .62);
 }
 .home-contact-hub-direct h3 {
-  margin: 2px 0 6px;
-  color: #fff !important;
-  font-size: 1.3rem;
+  margin: 2px 0 10px;
+  color: #8de4fb !important;
+  font-size: .88rem !important;
+  font-weight: 800 !important;
+  letter-spacing: .12em !important;
+  line-height: 1.4;
+  text-transform: uppercase !important;
 }
 .home-contact-hub-links {
   display: grid;
