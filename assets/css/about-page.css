@@ -914,3 +914,16 @@
     padding: 24px 21px;
   }
 }
+
+
+/* About hero: transparent copy area so the shared footage remains visible behind all text. */
+.about-page .about-hero.site-video-hero,
+.about-page .about-hero.site-video-hero .about-hero-copy,
+.about-page .about-hero.site-video-hero .about-hero-copy > h1,
+.about-page .about-hero.site-video-hero .about-hero-copy > p,
+.about-page .about-hero.site-video-hero .about-hero-copy > .button-row {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
