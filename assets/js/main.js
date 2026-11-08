@@ -218,6 +218,13 @@ accessibilityTools.addEventListener('click', (event) => {
   video.setAttribute('aria-hidden', 'true');
   video.setAttribute('tabindex', '-1');
   video.innerHTML = '<source src="/assets/videos/welcome-to-my-channel.mp4?v=1" type="video/mp4">';
+
+  // Use a real overlay element so page-specific pseudo-elements cannot cover it.
+  const overlay = document.createElement('div');
+  overlay.className = 'site-page-background-overlay';
+  overlay.setAttribute('aria-hidden', 'true');
+
+  intro.prepend(overlay);
   intro.prepend(video);
   const playAttempt = video.play();
   if (playAttempt && typeof playAttempt.catch === 'function') {
