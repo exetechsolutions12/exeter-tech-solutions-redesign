@@ -35,10 +35,12 @@
       var date = element("time", "review-date", formatDate(review.date));
       date.dateTime = review.date;
       dateRow.appendChild(date);
-      var isGoogleReview = typeof review.customer === "string" && review.customer.trim().toLowerCase() === "google review";
+      var reviewSource = typeof review.customer === "string" ? review.customer.trim().toLowerCase() : "";
+      var isGoogleReview = reviewSource === "google review";
+      var isNextdoorReview = reviewSource === "nextdoor review";
       var sourceIcon = element("img", "review-source-icon");
-      sourceIcon.src = isGoogleReview ? "assets/images/google-logo.png" : "assets/images/facebook-logo.svg";
-      sourceIcon.alt = isGoogleReview ? "Google review" : "Facebook review";
+      sourceIcon.src = isGoogleReview ? "assets/images/google-logo.png" : (isNextdoorReview ? "assets/images/nextdoor-logo.svg" : "assets/images/facebook-logo.svg");
+      sourceIcon.alt = isGoogleReview ? "Google review" : (isNextdoorReview ? "Nextdoor review" : "Facebook review");
       sourceIcon.width = 28;
       sourceIcon.height = 28;
       sourceIcon.loading = "lazy";
