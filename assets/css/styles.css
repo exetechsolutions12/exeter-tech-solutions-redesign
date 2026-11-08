@@ -4781,3 +4781,9 @@ button:hover {
   background-color: #23649E !important;
   border-color: #23649E !important;
 }
+
+
+/* Remove the top service and location strip on every page. */
+.topbar {
+  display: none !important;
+}
