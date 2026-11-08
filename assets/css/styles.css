@@ -7219,3 +7219,25 @@ body .site-video-hero .about-hero-grid {
 
 /* Preserve each page's original hero and grid layout while extending its backdrop. */
 .site-video-hero { display: block !important; align-items: initial !important; }
+
+/* Reliable video overlay layer: a real element avoids conflicts with page pseudo-elements. */
+.site-video-hero::before {
+  background: transparent !important;
+}
+.site-video-hero > .site-page-background-video {
+  z-index: 0 !important;
+}
+.site-video-hero > .site-page-background-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  display: block !important;
+  pointer-events: none !important;
+  background:
+    linear-gradient(90deg, rgba(5, 41, 74, .94) 0%, rgba(5, 41, 74, .82) 46%, rgba(5, 41, 74, .68) 100%),
+    linear-gradient(0deg, rgba(5, 41, 74, .94) 0%, transparent 35%, rgba(5, 41, 74, .22) 100%) !important;
+}
+.site-video-hero > :not(.site-page-background-video):not(.site-page-background-overlay) {
+  position: relative !important;
+  z-index: 2 !important;
+}
