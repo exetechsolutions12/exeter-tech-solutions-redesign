@@ -5360,3 +5360,63 @@ button:hover {
   #support-options > .container > .section-title > h2 { font-size: clamp(1.9rem, 6.5vw, 2.4rem) !important; }
   #support-options > .container > .section-title > p { font-size: 1.05rem !important; }
 }
+
+
+/* Homepage reviews: aligned cards with the established cyan accent. */
+#customer-feedback .review-cards-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 22px;
+  column-count: initial;
+  column-gap: 0;
+  column-fill: initial;
+}
+#customer-feedback .review-card {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 24px;
+  border: 1px solid rgba(141, 228, 251, .68);
+  border-radius: 20px;
+  color: #fff;
+  background: rgba(5, 41, 74, .32);
+  box-shadow: none;
+}
+#customer-feedback .review-date,
+#customer-feedback .review-customer {
+  color: #d8edf6;
+}
+#customer-feedback .review-rating {
+  color: #8de4fb;
+}
+#customer-feedback .review-quote {
+  flex: 1 0 auto;
+  color: #fff;
+}
+#customer-feedback .review-more {
+  padding-top: 24px;
+  border-top: 1px solid #8de4fb;
+}
+@media (max-width: 900px) {
+  #customer-feedback .review-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 620px) {
+  #customer-feedback .review-cards-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  #customer-feedback .review-card {
+    padding: 20px;
+    border-radius: 17px;
+  }
+  #customer-feedback .review-more {
+    border-top: 0;
+    padding-top: 0;
+  }
+}
