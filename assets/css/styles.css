@@ -6012,3 +6012,155 @@ button:hover {
   grid-row: 1 !important;
   align-self: start !important;
 }
+
+
+/* Shared review presentation: homepage and full reviews archive. */
+.review-date-row {
+  display: grid !important;
+  grid-template-columns: max-content 28px !important;
+  align-items: center !important;
+  justify-content: start !important;
+  column-gap: 10px !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  height: 30px !important;
+  min-height: 30px !important;
+  margin: 0 0 12px !important;
+}
+.review-date-row .review-date {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  width: max-content !important;
+  height: 30px !important;
+  min-height: 30px !important;
+  margin: 0 !important;
+  padding: 0 14px !important;
+  line-height: 1 !important;
+  align-self: center !important;
+}
+.review-date-row .review-source-icon {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  min-height: 28px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-self: center !important;
+  object-fit: contain !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* The full reviews page uses the same navy cards and featured layout as the homepage. */
+.review-archive .section-title {
+  max-width: 100% !important;
+  margin: 0 0 34px !important;
+  text-align: left !important;
+}
+.review-archive .section-title h1,
+.review-archive .section-title p { color: #fff !important; }
+.review-archive .section-title .eyebrow {
+  color: #fff !important;
+  border-color: rgba(141, 228, 251, .7) !important;
+  background: transparent !important;
+}
+.review-archive .review-cards-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  width: 100% !important;
+  column-count: initial !important;
+  column-gap: 0 !important;
+  column-fill: initial !important;
+}
+.review-archive .review-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 22px 26px !important;
+  border: 1px solid rgba(141, 228, 251, .65) !important;
+  border-radius: 20px !important;
+  background: rgba(141, 228, 251, .07) !important;
+  box-shadow: none !important;
+  color: #fff !important;
+}
+.review-archive .review-card:first-child {
+  grid-column: 1 / -1 !important;
+  display: grid !important;
+  grid-template-columns: minmax(170px, .32fr) minmax(0, 1fr) !important;
+  grid-template-rows: auto 1fr auto !important;
+  column-gap: 34px !important;
+  row-gap: 10px !important;
+  padding: 30px 34px !important;
+}
+.review-archive .review-card:first-child .review-date-row {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  align-self: center !important;
+}
+.review-archive .review-card:first-child .review-rating {
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+  align-self: start !important;
+  margin: 2px 0 0 !important;
+}
+.review-archive .review-card:first-child .review-quote {
+  grid-column: 2 !important;
+  grid-row: 1 / span 2 !important;
+  color: #fff !important;
+  font-size: 1.08rem !important;
+  line-height: 1.75 !important;
+}
+.review-archive .review-card:first-child .review-customer {
+  grid-column: 2 !important;
+  grid-row: 3 !important;
+  margin: 8px 0 0 !important;
+}
+.review-archive .review-date {
+  color: #05294a !important;
+  background: #8de4fb !important;
+  background-color: #8de4fb !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  font-size: .88rem !important;
+  font-weight: 750 !important;
+}
+.review-archive .review-rating,
+.review-archive .review-quote,
+.review-archive .review-customer { color: #fff !important; }
+.review-archive .review-rating { margin: 0 0 12px !important; }
+.review-archive .review-customer { margin: 18px 0 0 !important; }
+.review-archive.section,
+.review-archive.section.soft { background: #062b4b !important; }
+.review-archive .review-archive-cta { border-top-color: rgba(141, 228, 251, .65) !important; }
+.review-archive .review-archive-cta p { color: #fff !important; }
+.review-archive .review-archive-cta .btn.secondary {
+  color: #fff !important;
+  border-color: rgba(141, 228, 251, .65) !important;
+  background: transparent !important;
+}
+@media (max-width: 700px) {
+  .review-archive .review-cards-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 14px !important;
+  }
+  .review-archive .review-card:first-child {
+    grid-column: auto !important;
+    display: flex !important;
+    padding: 22px !important;
+  }
+  .review-archive .review-card:first-child .review-quote,
+  .review-archive .review-card:first-child .review-customer {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+}
