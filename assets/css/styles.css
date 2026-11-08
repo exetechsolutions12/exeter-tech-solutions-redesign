@@ -6830,3 +6830,98 @@ button:hover {
     margin-left: 9px;
   }
 }
+
+
+/* SITE-WIDE PAGE INTRO TYPOGRAPHY
+   Match every page's introductory heading group to the homepage hero:
+   Barlow display headings, consistent eyebrow labels and readable lead copy. */
+:root {
+  --ets-intro-heading-font: 'Barlow', Arial, sans-serif;
+  --ets-intro-copy-font: 'Segoe UI', Arial, sans-serif;
+  --ets-intro-heading-size: clamp(2.4rem, 5.2vw, 4.8rem);
+  --ets-intro-copy-size: 1.25rem;
+}
+
+/* Small label above the main page heading */
+main .page-hero .eyebrow,
+main .about-hero-copy > .eyebrow,
+main .services-options-heading > .eyebrow,
+main .section-title > .eyebrow,
+main .confirmation-card > .eyebrow,
+main .not-found-card > .eyebrow {
+  font-family: var(--ets-intro-heading-font) !important;
+  font-size: 1rem !important;
+  font-weight: 750 !important;
+  line-height: 1.35 !important;
+  letter-spacing: .01em !important;
+}
+
+/* Main page headings: same display scale and Barlow styling as the homepage hero */
+main .page-hero h1,
+main .about-hero-copy h1,
+main .services-options-heading h1,
+main .section-title h1,
+main .confirmation-card h1,
+main .not-found-card h1 {
+  font-family: var(--ets-intro-heading-font) !important;
+  font-size: var(--ets-intro-heading-size) !important;
+  font-weight: 500 !important;
+  line-height: .99 !important;
+  letter-spacing: -.055em !important;
+}
+
+/* Lead description directly beneath each page heading */
+main .page-hero .container > p,
+main .about-hero-copy > p,
+main .services-options-heading > p:not(.services-direct-contact),
+main .section-title > p,
+main .confirmation-card > p,
+main .not-found-card > p {
+  font-family: var(--ets-intro-copy-font) !important;
+  font-size: var(--ets-intro-copy-size) !important;
+  font-weight: 400 !important;
+  line-height: 1.75 !important;
+}
+
+/* The homepage hero remains the reference and uses the same values. */
+.hero-media-content .hero-intro h1 {
+  font-family: var(--ets-intro-heading-font) !important;
+  font-size: var(--ets-intro-heading-size) !important;
+  font-weight: 500 !important;
+  line-height: .99 !important;
+  letter-spacing: -.055em !important;
+}
+.hero-media-content .hero-intro > p {
+  font-family: var(--ets-intro-copy-font) !important;
+  font-size: var(--ets-intro-copy-size) !important;
+  line-height: 1.75 !important;
+}
+.hero-media-content .hero-intro > .eyebrow {
+  font-family: var(--ets-intro-heading-font) !important;
+  font-size: 1rem !important;
+  font-weight: 750 !important;
+  line-height: 1.35 !important;
+  letter-spacing: .01em !important;
+}
+
+@media (max-width: 680px) {
+  main .page-hero h1,
+  main .about-hero-copy h1,
+  main .services-options-heading h1,
+  main .section-title h1,
+  main .confirmation-card h1,
+  main .not-found-card h1,
+  .hero-media-content .hero-intro h1 {
+    font-size: clamp(2.45rem, 12vw, 3.4rem) !important;
+  }
+  main .page-hero .container > p,
+  main .about-hero-copy > p,
+  main .services-options-heading > p:not(.services-direct-contact),
+  main .section-title > p,
+  main .confirmation-card > p,
+  main .not-found-card > p,
+  .hero-media-content .hero-intro > p {
+    font-size: 1.08rem !important;
+    line-height: 1.7 !important;
+  }
+}
