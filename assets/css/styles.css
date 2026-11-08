@@ -5089,3 +5089,12 @@ button:hover {
     min-height: 190px;
   }
 }
+
+
+/* Extend the video backdrop below the intro before the news section begins. */
+.hero-media-stage {
+  padding-bottom: clamp(56px, 6vw, 88px);
+}
+@media (max-width: 620px) {
+  .hero-media-stage { padding-bottom: 48px; }
+}
