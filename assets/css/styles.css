@@ -5741,3 +5741,23 @@ button:hover {
 .home-contact-hub .home-contact-hub-icon svg * {
   fill: none !important;
 }
+
+
+/* Review dates: cyan pill label matching the supplied reference. */
+#customer-feedback .review-date {
+  display: inline-flex !important;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 14px !important;
+  padding: 8px 16px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  color: #05294a !important;
+  background: #8de4fb !important;
+  background-color: #8de4fb !important;
+  background-image: none !important;
+  font-size: .95rem !important;
+  font-weight: 750 !important;
+  line-height: 1.35 !important;
+}
