@@ -5343,3 +5343,20 @@ button:hover {
   #support-options > .container > .section-title > h2 { font-size: clamp(2rem, 7vw, 2.6rem) !important; }
   #support-options > .container > .section-title > p { font-size: 1.1rem !important; }
 }
+
+
+/* Slightly reduce only the support section introduction. */
+#support-options > .container > .section-title > .eyebrow {
+  font-size: 1.45rem !important;
+}
+#support-options > .container > .section-title > h2 {
+  font-size: clamp(2.45rem, 3.05vw, 3.25rem) !important;
+}
+#support-options > .container > .section-title > p {
+  font-size: clamp(1.22rem, 1.48vw, 1.48rem) !important;
+}
+@media (max-width: 700px) {
+  #support-options > .container > .section-title > .eyebrow { font-size: 1.2rem !important; }
+  #support-options > .container > .section-title > h2 { font-size: clamp(1.9rem, 6.5vw, 2.4rem) !important; }
+  #support-options > .container > .section-title > p { font-size: 1.05rem !important; }
+}
