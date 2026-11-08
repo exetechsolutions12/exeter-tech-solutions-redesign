@@ -1198,3 +1198,32 @@
     border: 0 !important;
   }
 }
+
+/* Align every label and description precisely on the icon's centre line. */
+.about-page .about-trust-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: center !important;
+}
+.about-page .about-trust-item > .about-trust-icon,
+.about-page .about-trust-item > strong,
+.about-page .about-trust-item > span:last-child {
+  align-self: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.about-page .about-trust-item > strong,
+.about-page .about-trust-item > span:last-child {
+  display: block !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
