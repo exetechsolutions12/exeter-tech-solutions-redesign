@@ -5924,3 +5924,33 @@ button:hover {
   border: 0;
   box-shadow: none;
 }
+
+/* Keep each review source icon on the same line as its date. */
+.review-date-row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  width: auto !important;
+}
+.review-date-row .review-date {
+  display: inline-flex !important;
+  align-items: center;
+  flex: 0 0 auto;
+  margin: 0 !important;
+}
+.review-date-row .review-source-icon {
+  display: inline-block !important;
+  flex: 0 0 28px;
+  width: 28px !important;
+  height: 28px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: contain;
+  background: transparent !important;
+  background-color: transparent !important;
+  mix-blend-mode: screen;
+  box-shadow: none !important;
+  border: 0 !important;
+}
