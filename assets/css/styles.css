@@ -6983,3 +6983,32 @@ main .not-found-card > p {
   .site-page-background-video { display: none; }
   .site-video-hero { background: #05294a !important; }
 }
+
+
+/* Video-backed page intros: keep the footage visible directly behind all text.
+   Only content wrappers are cleared; buttons, portrait imagery and intentional cards retain their styling. */
+.site-video-hero,
+.site-video-hero > .container,
+.site-video-hero > .container > .about-hero-grid,
+.site-video-hero > .container > .page-hero-content,
+.site-video-hero > .container > .section-title,
+.site-video-hero > .container > .services-options-heading,
+.site-video-hero > .container > .review-archive-heading,
+.site-video-hero .about-hero-copy,
+.site-video-hero .about-trust-grid {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.site-video-hero > .container::before,
+.site-video-hero > .container::after,
+.site-video-hero .about-hero-grid::before,
+.site-video-hero .about-hero-grid::after,
+.site-video-hero .about-hero-copy::before,
+.site-video-hero .about-hero-copy::after {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.site-video-hero .about-hero-portrait,
+.site-video-hero .about-hero-portrait figcaption {
+  background: transparent !important;
+}
