@@ -6164,3 +6164,90 @@ button:hover {
     grid-row: auto !important;
   }
 }
+
+
+/* Final source/date alignment: enforce identical box dimensions on every card. */
+.review-date-row,
+#customer-feedback .review-date-row,
+.review-archive .review-date-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  height: 30px !important;
+  min-height: 30px !important;
+  margin: 0 0 12px !important;
+  padding: 0 !important;
+}
+#customer-feedback .review-date-row .review-date,
+.review-archive .review-date-row .review-date,
+.review-date-row .review-date {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  flex: 0 0 auto !important;
+  height: 30px !important;
+  min-height: 30px !important;
+  margin: 0 !important;
+  padding: 0 14px !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+}
+#customer-feedback .review-date-row .review-source-icon,
+.review-archive .review-date-row .review-source-icon,
+.review-date-row .review-source-icon {
+  display: block !important;
+  box-sizing: border-box !important;
+  flex: 0 0 28px !important;
+  width: 28px !important;
+  min-width: 28px !important;
+  height: 28px !important;
+  min-height: 28px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-self: center !important;
+  object-fit: contain !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Archive cards must use the same clean surface as homepage cards:
+   remove inherited highlight/background blocks from quotes and customer labels. */
+.review-archive .review-card,
+.review-archive .review-card *,
+.review-archive .review-card *::before,
+.review-archive .review-card *::after {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.review-archive .review-card {
+  background: rgba(141, 228, 251, .07) !important;
+}
+.review-archive .review-card:first-child {
+  background: rgba(141, 228, 251, .07) !important;
+}
+.review-archive .review-card .review-date {
+  background: #8de4fb !important;
+  background-color: #8de4fb !important;
+}
+.review-archive .review-card .review-quote,
+.review-archive .review-card blockquote,
+.review-archive .review-card .review-customer,
+.review-archive .review-card .review-customer strong,
+.review-archive .review-card .review-rating,
+.review-archive .review-card .review-rating span {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.review-archive .review-card .review-quote,
+.review-archive .review-card blockquote {
+  border: 0 !important;
+  padding: 0 !important;
+}
