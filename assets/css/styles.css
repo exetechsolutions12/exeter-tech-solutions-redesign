@@ -7127,3 +7127,92 @@ body .site-video-hero .about-hero-grid {
     linear-gradient(90deg, rgba(5, 41, 74, .94) 0%, rgba(5, 41, 74, .82) 46%, rgba(5, 41, 74, .68) 100%),
     linear-gradient(0deg, rgba(5, 41, 74, .94) 0%, transparent 35%, rgba(5, 41, 74, .22) 100%) !important;
 }
+
+/* === Shared inner-page hero: match the homepage video and navy treatment === */
+.site-video-hero {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  min-height: clamp(620px, calc(100svh - 150px), 860px) !important;
+  padding-block: clamp(64px, 7vw, 104px) !important;
+  background: #05294a !important;
+  background-image: none !important;
+}
+.site-video-hero > .site-page-background-video {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  opacity: 1 !important;
+  pointer-events: none !important;
+}
+/* Keep the footage behind a navy wash, using the homepage hero's exact overlay. */
+.site-video-hero::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  display: block !important;
+  pointer-events: none !important;
+  background:
+    linear-gradient(90deg, rgba(5, 41, 74, .94) 0%, rgba(5, 41, 74, .82) 46%, rgba(5, 41, 74, .68) 100%),
+    linear-gradient(0deg, rgba(5, 41, 74, .94) 0%, transparent 35%, rgba(5, 41, 74, .22) 100%) !important;
+}
+.site-video-hero > :not(.site-page-background-video) {
+  position: relative !important;
+  z-index: 2 !important;
+}
+.site-video-hero > .container,
+.site-video-hero > .container > *,
+.site-video-hero .about-hero-grid,
+.site-video-hero .about-hero-copy,
+.site-video-hero .page-hero-content,
+.site-video-hero .section-title,
+.site-video-hero .services-options-heading,
+.site-video-hero .review-archive-heading,
+.site-video-hero .about-trust-grid {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.site-video-hero .about-hero-copy > h1,
+.site-video-hero .about-hero-copy > p,
+.site-video-hero .page-hero-content h1,
+.site-video-hero .page-hero-content p,
+.site-video-hero .container > h1,
+.site-video-hero .container > p,
+.site-video-hero .eyebrow {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.site-video-hero h1,
+.site-video-hero h2,
+.site-video-hero p,
+.site-video-hero .eyebrow {
+  color: #fff !important;
+}
+.site-video-hero .eyebrow {
+  background: rgba(255,255,255,.10) !important;
+  border-color: rgba(255,255,255,.35) !important;
+}
+@media (max-width: 760px) {
+  .site-video-hero {
+    min-height: 0 !important;
+    padding-block: 56px 64px !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-video-hero > .site-page-background-video { display: none !important; }
+  .site-video-hero { background: #05294a !important; }
+}
