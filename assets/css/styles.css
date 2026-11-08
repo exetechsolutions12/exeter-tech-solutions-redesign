@@ -5876,3 +5876,9 @@ button:hover {
   background: #8de4fb !important;
   background-color: #8de4fb !important;
 }
+
+
+/* Keep the featured review card exactly the same surface colour as the other reviews. */
+#customer-feedback .review-card:first-child {
+  background: rgba(141, 228, 251, .07) !important;
+}
