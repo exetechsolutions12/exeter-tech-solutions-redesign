@@ -5273,3 +5273,5 @@ button:hover {
   width: fit-content !important;
   max-width: 100% !important;
 }
+
+#support-options .service-choice-card .btn::after { content: none !important; }
