@@ -6267,3 +6267,20 @@ button:hover {
 .review-archive .review-card .review-date-row {
   align-items: center !important;
 }
+
+
+/* Give review cards clear separation; override older zero column-gap rules. */
+#customer-feedback .review-cards-grid,
+.review-archive .review-cards-grid {
+  gap: 24px !important;
+  column-gap: 24px !important;
+  row-gap: 24px !important;
+}
+@media (max-width: 700px) {
+  #customer-feedback .review-cards-grid,
+  .review-archive .review-cards-grid {
+    gap: 16px !important;
+    column-gap: 16px !important;
+    row-gap: 16px !important;
+  }
+}
