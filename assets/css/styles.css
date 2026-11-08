@@ -7216,3 +7216,6 @@ body .site-video-hero .about-hero-grid {
   .site-video-hero > .site-page-background-video { display: none !important; }
   .site-video-hero { background: #05294a !important; }
 }
+
+/* Preserve each page's original hero and grid layout while extending its backdrop. */
+.site-video-hero { display: block !important; align-items: initial !important; }
