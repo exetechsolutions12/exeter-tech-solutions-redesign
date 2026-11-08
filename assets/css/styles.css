@@ -6286,83 +6286,6 @@ button:hover {
 }
 
 
-/* Homepage featured review: archive link sits at the upper-right of the first card. */
-#customer-feedback .review-card:first-child {
-  grid-template-columns: minmax(170px, .32fr) minmax(0, 1fr) !important;
-  grid-template-rows: auto auto auto !important;
-  align-items: start !important;
-}
-#customer-feedback .review-card:first-child .review-date-row {
-  grid-column: 1 !important;
-  grid-row: 1 !important;
-}
-#customer-feedback .review-card:first-child .review-card-more-link {
-  grid-column: 2 !important;
-  grid-row: 1 !important;
-  justify-self: end !important;
-  align-self: start !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 82px !important;
-  padding: 22px 42px !important;
-  border: 4px solid #8de4fb !important;
-  border-radius: 999px !important;
-  background: transparent !important;
-  background-color: transparent !important;
-  color: #ffffff !important;
-  font-size: 1.35rem !important;
-  font-weight: 750 !important;
-  line-height: 1.2 !important;
-  text-align: center !important;
-  text-decoration: none !important;
-  white-space: nowrap !important;
-  box-shadow: none !important;
-  transition: background-color .2s ease, color .2s ease !important;
-}
-#customer-feedback .review-card:first-child .review-card-more-link:hover,
-#customer-feedback .review-card:first-child .review-card-more-link:focus-visible {
-  background: #8de4fb !important;
-  background-color: #8de4fb !important;
-  color: #05294a !important;
-  outline: none;
-}
-#customer-feedback .review-card:first-child .review-rating {
-  grid-column: 1 !important;
-  grid-row: 2 !important;
-}
-#customer-feedback .review-card:first-child .review-quote {
-  grid-column: 2 !important;
-  grid-row: 2 !important;
-  align-self: start !important;
-}
-#customer-feedback .review-card:first-child .review-customer {
-  grid-column: 2 !important;
-  grid-row: 3 !important;
-}
-#customer-feedback .review-more {
-  display: none !important;
-}
-@media (max-width: 700px) {
-  #customer-feedback .review-card:first-child {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  #customer-feedback .review-card:first-child .review-card-more-link {
-    order: 2 !important;
-    align-self: flex-start !important;
-    min-height: 58px !important;
-    padding: 14px 26px !important;
-    font-size: 1.05rem !important;
-    border-width: 3px !important;
-    margin: 4px 0 8px !important;
-  }
-  #customer-feedback .review-card:first-child .review-rating { order: 3 !important; }
-  #customer-feedback .review-card:first-child .review-quote { order: 4 !important; }
-  #customer-feedback .review-card:first-child .review-customer { order: 5 !important; }
-}
-
-
 /* Recent-news cards: stretch the image column to the full card height. */
 .homepage-hero-grid .home-recent-news-list .home-news-card {
   height: 100% !important;
@@ -6387,4 +6310,49 @@ button:hover {
   max-height: none !important;
   object-fit: cover !important;
   object-position: center !important;
+}
+
+
+/* Homepage customer reviews: place the archive link in the section header,
+   matching the outlined All news pill rather than placing it inside a review card. */
+#customer-feedback .customer-feedback-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+#customer-feedback .customer-feedback-header .section-title {
+  margin: 0 !important;
+}
+#customer-feedback .review-archive-link {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 9px 25px;
+  border: 2px solid #8de4fb;
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color .2s ease, color .2s ease;
+}
+#customer-feedback .review-archive-link:hover,
+#customer-feedback .review-archive-link:focus-visible {
+  background: #8de4fb;
+  color: #05294a;
+  outline: none;
+}
+@media (max-width: 700px) {
+  #customer-feedback .customer-feedback-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
 }
