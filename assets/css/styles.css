@@ -5729,3 +5729,15 @@ button:hover {
   color: #05294a !important;
   stroke: #05294a !important;
 }
+
+
+/* Contact hub icons: white line artwork on the existing cyan icon tiles. */
+.home-contact-hub .home-contact-hub-icon,
+.home-contact-hub .home-contact-hub-icon svg,
+.home-contact-hub .home-contact-hub-icon svg * {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+.home-contact-hub .home-contact-hub-icon svg * {
+  fill: none !important;
+}
