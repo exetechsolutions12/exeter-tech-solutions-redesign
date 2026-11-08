@@ -5712,3 +5712,20 @@ button:hover {
   color: #fff !important;
   background: #23649e !important;
 }
+
+
+/* Contact icon tiles: explicitly override the site-wide dark surface rule. */
+.home-contact-hub .home-contact-hub-icon,
+.home-contact-hub .home-contact-hub-link:hover .home-contact-hub-icon,
+.home-contact-hub .home-contact-hub-link:focus-visible .home-contact-hub-icon {
+  background: #8de4fb !important;
+  background-color: #8de4fb !important;
+  background-image: none !important;
+  color: #05294a !important;
+}
+.home-contact-hub .home-contact-hub-icon svg,
+.home-contact-hub .home-contact-hub-icon svg * {
+  background: transparent !important;
+  color: #05294a !important;
+  stroke: #05294a !important;
+}
