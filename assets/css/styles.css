@@ -5275,3 +5275,23 @@ button:hover {
 }
 
 #support-options .service-choice-card .btn::after { content: none !important; }
+
+
+/* Align each row's service links despite different description lengths. */
+#support-options .service-choice-card {
+  align-items: stretch !important;
+}
+#support-options .service-choice-card .support-option-icon,
+#support-options .service-choice-card .support-option-divider {
+  align-self: start !important;
+}
+#support-options .service-choice-content {
+  height: 100%;
+}
+#support-options .service-choice-card p {
+  flex: 1 1 auto !important;
+}
+#support-options .service-choice-card a.btn,
+#support-options .service-choice-card a.btn.secondary {
+  margin-top: auto !important;
+}
