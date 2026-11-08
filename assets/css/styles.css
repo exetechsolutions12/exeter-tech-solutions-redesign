@@ -7012,3 +7012,47 @@ main .not-found-card > p {
 .site-video-hero .about-hero-portrait figcaption {
   background: transparent !important;
 }
+
+
+/* Hard override: page-specific hero styles must never paint opaque panels over the shared video. */
+body .about-page main .about-hero.site-video-hero,
+body main .page-hero.site-video-hero,
+body main .services-options-section.site-video-hero,
+body main .review-archive.site-video-hero,
+body main .confirmation.site-video-hero,
+body main .not-found.site-video-hero {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+body .site-video-hero .about-hero-copy,
+body .site-video-hero .about-hero-copy > h1,
+body .site-video-hero .about-hero-copy > p,
+body .site-video-hero .about-hero-copy > .about-hero-kicker,
+body .site-video-hero .about-hero-copy > .button-row,
+body .site-video-hero .page-hero-content,
+body .site-video-hero .section-title,
+body .site-video-hero .services-options-heading,
+body .site-video-hero .review-archive-heading {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+body .site-video-hero .about-hero-copy > h1,
+body .site-video-hero .about-hero-copy > p {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+body .site-video-hero .site-page-background-video {
+  z-index: 0 !important;
+}
+body .site-video-hero::before {
+  z-index: 0 !important;
+}
+body .site-video-hero > .container,
+body .site-video-hero > .container > *,
+body .site-video-hero .about-hero-grid {
+  position: relative !important;
+  z-index: 1 !important;
+}
