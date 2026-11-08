@@ -27,7 +27,7 @@
     return node;
   }
 
-  function renderReview(review, includeArchiveLink) {
+  function renderReview(review) {
     var card = element("article", "review-card");
 
     if (review.date && validDate(review.date) !== null) {
@@ -46,12 +46,6 @@
       sourceIcon.loading = "lazy";
       dateRow.appendChild(sourceIcon);
       card.appendChild(dateRow);
-    }
-
-    if (includeArchiveLink) {
-      var archiveLink = element("a", "review-card-more-link", "Read more reviews");
-      archiveLink.href = "/reviews";
-      card.appendChild(archiveLink);
     }
 
     var rating = Number(review.rating);
@@ -104,8 +98,7 @@
         var selected = entries.slice(0, limit);
         container.replaceChildren();
         selected.forEach(function (entry, index) {
-          var isHomepageFeature = container.hasAttribute("data-review-limit") && index === 0 && container.closest("#customer-feedback");
-          container.appendChild(renderReview(entry.review, Boolean(isHomepageFeature)));
+          container.appendChild(renderReview(entry.review));
         });
         if (!selected.length) showFailure(container);
       });
