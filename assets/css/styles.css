@@ -6444,3 +6444,106 @@ button:hover {
     min-height: 190px !important;
   }
 }
+
+
+/* Corrective layout: make the news card itself establish the height.
+   The image column then stretches to the exact same grid-row height as the
+   text column, including when the text makes a card taller than its minimum. */
+.homepage-hero-grid .home-recent-news-list .home-news-card {
+  display: block !important;
+  height: auto !important;
+  min-height: 340px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-link {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: 44% minmax(0, 56%) !important;
+  grid-template-rows: 1fr !important;
+  align-items: stretch !important;
+  gap: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 340px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-thumb {
+  position: relative !important;
+  display: block !important;
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  align-self: stretch !important;
+  width: 100% !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 340px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: 0 !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-thumb img {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-copy {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  align-self: stretch !important;
+  min-width: 0 !important;
+  min-height: 340px !important;
+  box-sizing: border-box !important;
+}
+@media (max-width: 1020px) {
+  .homepage-hero-grid .home-recent-news-list .home-news-link,
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb {
+    min-height: 300px !important;
+  }
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb img {
+    min-height: 0 !important;
+  }
+}
+@media (max-width: 700px) {
+  .homepage-hero-grid .home-recent-news-list .home-news-link {
+    grid-template-columns: 40% minmax(0, 60%) !important;
+    min-height: 240px !important;
+  }
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb,
+  .homepage-hero-grid .home-recent-news-list .home-news-copy {
+    min-height: 240px !important;
+  }
+}
+@media (max-width: 420px) {
+  .homepage-hero-grid .home-recent-news-list .home-news-link {
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: 190px auto !important;
+  }
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    height: 190px !important;
+    min-height: 190px !important;
+  }
+  .homepage-hero-grid .home-recent-news-list .home-news-thumb img {
+    min-height: 0 !important;
+  }
+  .homepage-hero-grid .home-recent-news-list .home-news-copy {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    min-height: 210px !important;
+  }
+}
