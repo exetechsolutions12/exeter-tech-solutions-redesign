@@ -5854,3 +5854,25 @@ button:hover {
     margin-top: 18px;
   }
 }
+
+
+/* Reviews: prevent the global dark-surface rule from painting text-sized blocks. */
+#customer-feedback .review-card > *,
+#customer-feedback .review-card .review-rating *,
+#customer-feedback .review-card .review-quote,
+#customer-feedback .review-card .review-customer,
+#customer-feedback .review-card .review-customer strong {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+#customer-feedback .review-card {
+  background: rgba(141, 228, 251, .07) !important;
+}
+#customer-feedback .review-card:first-child {
+  background: rgba(141, 228, 251, .11) !important;
+}
+#customer-feedback .review-card .review-date {
+  background: #8de4fb !important;
+  background-color: #8de4fb !important;
+}
