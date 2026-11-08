@@ -7118,3 +7118,12 @@ body .site-video-hero .about-hero-grid {
   .site-video-hero > .site-page-background-video { display: none !important; }
   .site-video-hero { background: #05294a !important; }
 }
+
+
+/* Keep every inner-page video hero visually consistent with the homepage.
+   Match its left-to-right navy gradient and darker lower-edge overlay exactly. */
+.site-video-hero::before {
+  background:
+    linear-gradient(90deg, rgba(5, 41, 74, .94) 0%, rgba(5, 41, 74, .82) 46%, rgba(5, 41, 74, .68) 100%),
+    linear-gradient(0deg, rgba(5, 41, 74, .94) 0%, transparent 35%, rgba(5, 41, 74, .22) 100%) !important;
+}
