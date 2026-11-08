@@ -5019,3 +5019,27 @@ button:hover {
   .homepage-hero-grid .hero-proof-item:nth-child(2) { border-bottom: 1px solid rgba(141,228,251,.36) !important; }
   .homepage-hero-grid .hero-proof-item:last-child { border-bottom: 0 !important; }
 }
+
+
+/* Restore visible news photos and the cyan trust icon tiles over inherited transparency rules. */
+.homepage-hero-grid .home-recent-news-list .home-news-card {
+  display: block;
+  border: 1px solid rgba(88, 174, 213, .72) !important;
+  border-radius: 22px !important;
+  background-color: rgba(5, 41, 74, .32) !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-thumb {
+  display: block !important;
+  min-width: 0;
+  background-color: rgba(141, 228, 251, .1) !important;
+}
+.homepage-hero-grid .home-recent-news-list .home-news-thumb img {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.homepage-hero-grid .hero-proof-strip .hero-proof-icon {
+  background-color: #8de4fb !important;
+  color: #05294A !important;
+  border-radius: 18px !important;
+}
