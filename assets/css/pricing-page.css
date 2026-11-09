@@ -982,3 +982,16 @@ body.pricing-page .pricing-notices .notice-copy{
   align-self:start !important;
   margin-top:20px !important;
 }
+
+
+/* Keep the vertical separators level with the icon bubbles, rather than running from the card top. */
+body.pricing-page .pricing-notices .pricing-notice-card::before{
+  align-self:center !important;
+  height:76px !important;
+  min-height:0 !important;
+}
+@media(max-width:520px){
+  body.pricing-page .pricing-notices .pricing-notice-card::before{
+    height:54px !important;
+  }
+}
