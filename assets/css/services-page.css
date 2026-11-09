@@ -868,3 +868,34 @@ body.services-page .services-options-heading.site-video-hero .services-contact-m
     gap:12px !important;
   }
 }
+
+
+/* Slightly enlarge the Services contact prompt and contact details for readability. */
+body.services-page .services-options-heading.site-video-hero .services-direct-contact > strong{
+  font-size:1.3rem !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-contact-method{
+  font-size:1.1rem !important;
+  line-height:1.6 !important;
+  gap:11px !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-contact-method svg{
+  width:25px !important;
+  height:25px !important;
+  min-width:25px !important;
+  min-height:25px !important;
+  max-width:25px !important;
+  max-height:25px !important;
+  flex-basis:25px !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-direct-contact{
+  padding:21px 28px !important;
+}
+@media(max-width:760px){
+  body.services-page .services-options-heading.site-video-hero .services-direct-contact > strong{
+    font-size:1.22rem !important;
+  }
+  body.services-page .services-options-heading.site-video-hero .services-contact-method{
+    font-size:1rem !important;
+  }
+}
