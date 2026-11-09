@@ -3413,3 +3413,12 @@ body.pricing-page .page-hero > .container > .pricing-notices > article.notice.pa
     max-height:none !important;
   }
 }
+
+
+/* With the Support prices title removed, bring the first category up neatly. */
+body.pricing-page .pricing-main-section {
+  padding-top:24px !important;
+}
+body.pricing-page .pricing-main-section > .container {
+  padding-top:0 !important;
+}
