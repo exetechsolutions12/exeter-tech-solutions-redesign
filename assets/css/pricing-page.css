@@ -3132,3 +3132,36 @@ body.pricing-page #main .pricing-main-section .pricing-notices > article.notice:
   background-image:none !important;
   box-shadow:none !important;
 }
+
+
+/* Reduce and equalise the vertical space around every pricing category. */
+body.pricing-page .pricing-layout .pricing-category,
+body.pricing-page .pricing-layout .pricing-category:first-child,
+body.pricing-page .pricing-layout .pricing-category:last-child {
+  padding-top:24px !important;
+  padding-bottom:24px !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+}
+body.pricing-page .pricing-layout .pricing-category-content,
+body.pricing-page .pricing-layout .pricing-category-heading {
+  align-self:center !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+}
+@media(max-width:900px) {
+  body.pricing-page .pricing-layout .pricing-category,
+  body.pricing-page .pricing-layout .pricing-category:first-child,
+  body.pricing-page .pricing-layout .pricing-category:last-child {
+    padding-top:22px !important;
+    padding-bottom:22px !important;
+  }
+}
+@media(max-width:620px) {
+  body.pricing-page .pricing-layout .pricing-category,
+  body.pricing-page .pricing-layout .pricing-category:first-child,
+  body.pricing-page .pricing-layout .pricing-category:last-child {
+    padding-top:18px !important;
+    padding-bottom:18px !important;
+  }
+}
