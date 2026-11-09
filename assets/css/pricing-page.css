@@ -2583,3 +2583,114 @@ body.pricing-page .pricing-notices .pricing-notice-card p {
     height:52px !important;
   }
 }
+
+
+/* Final consistency pass: shared columns, row rhythm and text spacing. */
+body.pricing-page .pricing-layout {
+  width:100% !important;
+}
+body.pricing-page .pricing-layout .pricing-category {
+  grid-template-columns:minmax(220px,24%) minmax(0,1fr) !important;
+  column-gap:44px !important;
+  align-items:stretch !important;
+  padding:38px 0 !important;
+}
+body.pricing-page .pricing-layout .pricing-category:first-child {
+  padding-top:0 !important;
+}
+body.pricing-page .pricing-layout .pricing-category:last-child {
+  padding-bottom:0 !important;
+}
+body.pricing-page .pricing-layout .pricing-category-heading {
+  align-self:stretch !important;
+  justify-content:center !important;
+}
+body.pricing-page .pricing-layout .pricing-category-content {
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  gap:30px !important;
+}
+body.pricing-page .pricing-layout .pricing-row {
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) 150px 134px !important;
+  column-gap:30px !important;
+  align-items:center !important;
+}
+body.pricing-page .pricing-layout .pricing-row-copy {
+  min-width:0 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  gap:0 !important;
+}
+body.pricing-page .pricing-layout .pricing-row-copy h3 {
+  margin:0 0 8px !important;
+  padding:0 !important;
+  line-height:1.25 !important;
+}
+body.pricing-page .pricing-layout .pricing-row-copy p {
+  margin:0 !important;
+  padding:0 !important;
+  line-height:1.55 !important;
+}
+body.pricing-page .pricing-layout .pricing-row-copy p + p {
+  margin-top:10px !important;
+}
+body.pricing-page .pricing-layout .pricing-row-price {
+  align-self:center !important;
+  justify-self:stretch !important;
+  text-align:center !important;
+  white-space:nowrap !important;
+}
+body.pricing-page .pricing-layout .pricing-row-button {
+  align-self:center !important;
+  justify-self:stretch !important;
+  width:134px !important;
+  margin:0 !important;
+}
+body.pricing-page .pricing-layout .pricing-category-underline {
+  flex:0 0 auto !important;
+}
+@media(max-width:900px) {
+  body.pricing-page .pricing-layout .pricing-category {
+    grid-template-columns:minmax(170px,27%) minmax(0,1fr) !important;
+    column-gap:28px !important;
+    padding:34px 0 !important;
+  }
+  body.pricing-page .pricing-layout .pricing-row {
+    grid-template-columns:minmax(0,1fr) 130px !important;
+    column-gap:22px !important;
+  }
+  body.pricing-page .pricing-layout .pricing-row-price {
+    justify-self:end !important;
+  }
+  body.pricing-page .pricing-layout .pricing-row-button {
+    grid-column:2 !important;
+    justify-self:end !important;
+    width:130px !important;
+  }
+}
+@media(max-width:620px) {
+  body.pricing-page .pricing-layout .pricing-category {
+    padding:28px 0 !important;
+  }
+  body.pricing-page .pricing-layout .pricing-category-content {
+    gap:26px !important;
+  }
+  body.pricing-page .pricing-layout .pricing-row {
+    row-gap:10px !important;
+  }
+  body.pricing-page .pricing-layout .pricing-row-copy {
+    grid-column:1 / -1 !important;
+  }
+  body.pricing-page .pricing-layout .pricing-row-price {
+    grid-column:1 !important;
+    justify-self:start !important;
+  }
+  body.pricing-page .pricing-layout .pricing-row-button {
+    grid-column:2 !important;
+    justify-self:end !important;
+    width:124px !important;
+  }
+}
