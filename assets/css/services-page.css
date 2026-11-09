@@ -2177,3 +2177,34 @@ body.services-page .services-followup-safety-copy > p:last-child .btn{
     white-space:nowrap !important;
   }
 }
+
+
+/* Match the two follow-up columns and keep icon artwork transparent. */
+@media(min-width:761px){
+  body.services-page .services-followup-safety{
+    padding-top:71px !important;
+  }
+}
+body.services-page .services-followup-icon{
+  background:#8de4fb !important;
+  color:#062b49 !important;
+  box-shadow:none !important;
+  overflow:visible !important;
+}
+body.services-page .services-followup-icon svg{
+  display:block !important;
+  background:transparent !important;
+  fill:none !important;
+  box-shadow:none !important;
+  border:0 !important;
+  color:#062b49 !important;
+}
+body.services-page .services-followup-icon svg path{
+  fill:none !important;
+  stroke:currentColor !important;
+}
+@media(max-width:760px){
+  body.services-page .services-followup-safety{
+    padding-top:26px !important;
+  }
+}
