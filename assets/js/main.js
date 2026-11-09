@@ -203,7 +203,7 @@ accessibilityTools.addEventListener('click', (event) => {
   if (existingVideo) return; // The homepage already contains its own hero video.
 
   const intro = document.querySelector(
-    'main .page-hero, main .about-hero, main .services-options-section, main .review-archive, main.confirmation, main .not-found'
+    'main .page-hero, main .about-hero, main .services-options-heading, main .review-archive, main.confirmation, main .not-found'
   );
   if (!intro) return;
 
