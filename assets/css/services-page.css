@@ -899,3 +899,30 @@ body.services-page .services-options-heading.site-video-hero .services-direct-co
     font-size:1rem !important;
   }
 }
+
+
+/* Restore the email envelope artwork: size the SVG viewport, not its inner shapes. */
+body.services-page .services-options-heading.site-video-hero .services-contact-method svg{
+  display:block !important;
+  width:25px !important;
+  height:25px !important;
+  min-width:25px !important;
+  min-height:25px !important;
+  max-width:25px !important;
+  max-height:25px !important;
+  flex:0 0 25px !important;
+  overflow:visible !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-contact-method svg rect,
+body.services-page .services-options-heading.site-video-hero .services-contact-method svg path{
+  display:initial !important;
+  width:auto !important;
+  height:auto !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  max-width:none !important;
+  max-height:none !important;
+  fill:none !important;
+  stroke:currentColor !important;
+  stroke-width:1.8 !important;
+}
