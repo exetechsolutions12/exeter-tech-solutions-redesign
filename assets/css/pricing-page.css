@@ -1205,3 +1205,131 @@ body.pricing-page .pricing-websites > .website-horizontal-card:first-child{
     margin-top:8px !important;
   }
 }
+
+
+/* Corrected horizontal pricing rows: service and price left, copy centre, CTA right. */
+body.pricing-page main .pricing-fixed,
+body.pricing-page main .pricing-quoted{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:0 !important;
+  width:100% !important;
+}
+body.pricing-page main .pricing-fixed > .price-card,
+body.pricing-page main .pricing-quoted > .price-card{
+  display:grid !important;
+  grid-template-columns:minmax(190px,230px) minmax(0,1fr) max-content !important;
+  grid-template-rows:min-content min-content !important;
+  grid-auto-flow:row !important;
+  align-items:center !important;
+  justify-items:stretch !important;
+  column-gap:34px !important;
+  row-gap:7px !important;
+  width:100% !important;
+  min-height:0 !important;
+  height:auto !important;
+  margin:0 !important;
+  padding:28px 8px !important;
+  border:0 !important;
+  border-bottom:1px solid rgba(142,223,244,.65) !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+body.pricing-page main .pricing-fixed > .price-card:first-child,
+body.pricing-page main .pricing-quoted > .price-card:first-child{
+  border-top:1px solid rgba(142,223,244,.65) !important;
+}
+body.pricing-page main .pricing-fixed > .price-card > h2,
+body.pricing-page main .pricing-quoted > .price-card > h2{
+  grid-column:1 !important;
+  grid-row:1 !important;
+  align-self:end !important;
+  margin:0 !important;
+  padding:0 !important;
+  font-size:1.2rem !important;
+  line-height:1.35 !important;
+  text-align:left !important;
+}
+body.pricing-page main .pricing-fixed > .price-card > .price,
+body.pricing-page main .pricing-quoted > .price-card > .price{
+  grid-column:1 !important;
+  grid-row:2 !important;
+  align-self:start !important;
+  margin:0 !important;
+  padding:0 !important;
+  font-size:2rem !important;
+  line-height:1.2 !important;
+  text-align:left !important;
+  color:#8edff4 !important;
+}
+body.pricing-page main .pricing-fixed > .price-card > p,
+body.pricing-page main .pricing-quoted > .price-card > p{
+  grid-column:2 !important;
+  grid-row:auto !important;
+  align-self:start !important;
+  margin:0 !important;
+  padding:0 !important;
+  font-size:1rem !important;
+  line-height:1.65 !important;
+  text-align:left !important;
+}
+body.pricing-page main .pricing-fixed > .price-card > .button-row,
+body.pricing-page main .pricing-quoted > .price-card > .button-row{
+  grid-column:3 !important;
+  grid-row:1 / span 2 !important;
+  align-self:center !important;
+  justify-self:end !important;
+  width:max-content !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+body.pricing-page main .pricing-fixed > .price-card > .button-row .btn,
+body.pricing-page main .pricing-quoted > .price-card > .button-row .btn{
+  white-space:nowrap !important;
+}
+body.pricing-page main .pricing-fixed > .price-card:hover,
+body.pricing-page main .pricing-quoted > .price-card:hover{
+  background:rgba(142,223,244,.025) !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+@media(max-width:900px){
+  body.pricing-page main .pricing-fixed > .price-card,
+  body.pricing-page main .pricing-quoted > .price-card{
+    grid-template-columns:minmax(160px,190px) minmax(0,1fr) !important;
+    column-gap:24px !important;
+  }
+  body.pricing-page main .pricing-fixed > .price-card > .button-row,
+  body.pricing-page main .pricing-quoted > .price-card > .button-row{
+    grid-column:2 !important;
+    grid-row:auto !important;
+    justify-self:start !important;
+    margin-top:12px !important;
+  }
+}
+@media(max-width:620px){
+  body.pricing-page main .pricing-fixed > .price-card,
+  body.pricing-page main .pricing-quoted > .price-card{
+    grid-template-columns:minmax(0,1fr) !important;
+    grid-template-rows:auto !important;
+    row-gap:8px !important;
+    padding:22px 2px !important;
+  }
+  body.pricing-page main .pricing-fixed > .price-card > h2,
+  body.pricing-page main .pricing-quoted > .price-card > h2,
+  body.pricing-page main .pricing-fixed > .price-card > .price,
+  body.pricing-page main .pricing-quoted > .price-card > .price,
+  body.pricing-page main .pricing-fixed > .price-card > p,
+  body.pricing-page main .pricing-quoted > .price-card > p,
+  body.pricing-page main .pricing-fixed > .price-card > .button-row,
+  body.pricing-page main .pricing-quoted > .price-card > .button-row{
+    grid-column:1 !important;
+    grid-row:auto !important;
+  }
+  body.pricing-page main .pricing-fixed > .price-card > .button-row,
+  body.pricing-page main .pricing-quoted > .price-card > .button-row{
+    margin-top:8px !important;
+  }
+}
