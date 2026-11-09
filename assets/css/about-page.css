@@ -1606,3 +1606,13 @@
     padding: 22px !important;
   }
 }
+
+
+/* Cyan-blue card treatment from the approved Difference mock-up. */
+.about-page .about-service-card {
+  background: #0b4b63 !important;
+  border: 1px solid #8edff4 !important;
+}
+.about-page .about-final-cta-inner {
+  border-color: #8edff4 !important;
+}
