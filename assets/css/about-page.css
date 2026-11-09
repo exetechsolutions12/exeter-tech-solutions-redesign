@@ -1676,3 +1676,62 @@
 @media screen and (max-width: 760px) {
   body.about-page .about-background-timeline-svg { display: none !important; }
 }
+
+
+/* Structural timeline: milestone, connector, milestone, connector, milestone. */
+@media screen and (min-width: 761px) {
+  body.about-page .about-background {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  body.about-page .about-background-intro {
+    margin-bottom: 42px !important;
+  }
+  body.about-page .about-background-copy {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(40px, .5fr) minmax(0, 1fr) minmax(40px, .5fr) minmax(0, 1fr) !important;
+    align-items: start !important;
+    position: relative !important;
+    overflow: visible !important;
+  }
+  body.about-page .about-background-copy::before,
+  body.about-page .about-background-point::before,
+  body.about-page .about-background-point::after,
+  body.about-page .about-background-timeline-svg,
+  body.about-page .about-background-timeline-line {
+    content: none !important;
+    display: none !important;
+  }
+  body.about-page .about-background-point {
+    grid-row: 1 !important;
+    position: relative !important;
+    min-width: 0 !important;
+    padding: 34px 18px 0 !important;
+    text-align: center !important;
+  }
+  body.about-page .about-background-point:nth-of-type(1) { grid-column: 1 !important; }
+  body.about-page .about-background-point:nth-of-type(2) { grid-column: 3 !important; }
+  body.about-page .about-background-point:nth-of-type(3) { grid-column: 5 !important; }
+  body.about-page .about-background-connector {
+    display: block !important;
+    grid-row: 1 !important;
+    align-self: start !important;
+    height: 2px !important;
+    margin-top: 6px !important;
+    background: #8edff4 !important;
+    opacity: 1 !important;
+  }
+  body.about-page .about-background-connector:nth-of-type(1) { grid-column: 2 !important; }
+  body.about-page .about-background-connector:nth-of-type(2) { grid-column: 4 !important; }
+  body.about-page .about-background-label,
+  body.about-page .about-background-point p {
+    text-align: center !important;
+  }
+  body.about-page .about-background-point p {
+    max-width: 440px !important;
+    margin: 0 auto !important;
+  }
+}
+@media screen and (max-width: 760px) {
+  body.about-page .about-background-connector { display: none !important; }
+}
