@@ -7241,3 +7241,45 @@ body .site-video-hero .about-hero-grid {
   position: relative !important;
   z-index: 2 !important;
 }
+
+
+/* Services page: confine the moving footage to the introductory heading only. */
+.services-options-heading.site-video-hero {
+  position: relative !important;
+  isolation: isolate !important;
+  display: block !important;
+  width: 100% !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  margin: 0 0 30px !important;
+  padding: 76px 24px 52px !important;
+  overflow: hidden !important;
+  background: #05294a !important;
+}
+.services-options-heading.site-video-hero > .site-page-background-video,
+.services-options-heading.site-video-hero > .site-page-background-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.services-options-heading.site-video-hero > .site-page-background-video {
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+.services-options-heading.site-video-hero > :not(.site-page-background-video):not(.site-page-background-overlay) {
+  position: relative !important;
+  z-index: 2 !important;
+}
+.services-options-heading.site-video-hero .services-direct-contact,
+.services-options-heading.site-video-hero .services-direct-contact strong,
+.services-options-heading.site-video-hero .services-direct-contact a {
+  position: relative !important;
+  z-index: 2 !important;
+}
+@media (max-width: 760px) {
+  .services-options-heading.site-video-hero {
+    padding: 52px 18px 36px !important;
+    margin-bottom: 22px !important;
+  }
+}
