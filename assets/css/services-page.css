@@ -816,3 +816,55 @@ body.services-page .services-contact-guidance{
     font-size:.94rem !important;
   }
 }
+
+
+/* Hard-size contact icons to prevent inherited SVG rules enlarging them. */
+body.services-page .services-options-heading.site-video-hero .services-contact-method svg,
+body.services-page .services-options-heading.site-video-hero .services-contact-method svg *{
+  width:22px !important;
+  height:22px !important;
+  max-width:22px !important;
+  max-height:22px !important;
+  min-width:22px !important;
+  min-height:22px !important;
+  display:block !important;
+  flex:0 0 22px !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-contact-method svg *{
+  width:auto !important;
+  height:auto !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  max-width:none !important;
+  max-height:none !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-direct-contact{
+  width:min(100%,1000px) !important;
+  max-width:1000px !important;
+  padding:18px 24px !important;
+  box-sizing:border-box !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-contact-methods{
+  display:flex !important;
+  flex-direction:row !important;
+  flex-wrap:wrap !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:14px 34px !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-contact-method{
+  display:inline-flex !important;
+  flex-direction:row !important;
+  align-items:center !important;
+  gap:9px !important;
+  white-space:normal !important;
+}
+@media(max-width:760px){
+  body.services-page .services-options-heading.site-video-hero .services-contact-methods{
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    gap:12px !important;
+  }
+}
