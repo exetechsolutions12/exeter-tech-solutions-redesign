@@ -1566,3 +1566,24 @@
     z-index: 2 !important;
   }
 }
+
+
+/* Match the horizontal timeline precisely: each segment reaches the next marker. */
+@media (min-width: 761px) {
+  .about-page .about-background {
+    margin-top: -38px !important;
+    padding-top: 0 !important;
+  }
+  .about-page .about-background-intro {
+    margin-top: 0 !important;
+    margin-bottom: 42px !important;
+  }
+  .about-page .about-background-point:not(:last-child)::after {
+    left: calc(50% + 7px) !important;
+    width: calc(200% - 14px) !important;
+    height: 2px !important;
+    top: 6px !important;
+    background: #8edff4 !important;
+    opacity: 1 !important;
+  }
+}
