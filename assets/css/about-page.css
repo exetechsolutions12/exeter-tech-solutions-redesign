@@ -1478,3 +1478,43 @@
     z-index: 1 !important;
   }
 }
+
+
+/* Visible timeline track: a real element placed behind the three milestone markers. */
+.about-page .about-background {
+  padding-top: 24px !important;
+}
+.about-page .about-background-intro {
+  margin-bottom: 48px !important;
+}
+@media (min-width: 761px) {
+  .about-page .about-background-copy {
+    position: relative !important;
+  }
+  .about-page .about-background-timeline-line {
+    display: block !important;
+    position: absolute !important;
+    z-index: 0 !important;
+    top: 6px !important;
+    left: 16.6667% !important;
+    width: 66.6666% !important;
+    height: 2px !important;
+    background-color: #8edff4 !important;
+    opacity: 1 !important;
+    pointer-events: none !important;
+  }
+  .about-page .about-background-copy::before {
+    display: none !important;
+  }
+  .about-page .about-background-point {
+    z-index: 1 !important;
+  }
+}
+@media (max-width: 760px) {
+  .about-page .about-background {
+    padding-top: 32px !important;
+  }
+  .about-page .about-background-timeline-line {
+    display: none !important;
+  }
+}
