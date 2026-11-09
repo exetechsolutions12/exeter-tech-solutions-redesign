@@ -1445,3 +1445,17 @@
 .about-page .about-background-point p + p {
   margin-top: 18px !important;
 }
+
+
+/* Give the three timeline milestone headings a little more prominence. */
+.about-page .about-background-label {
+  font-size: .96rem !important;
+  line-height: 1.35 !important;
+  letter-spacing: .095em !important;
+  margin-bottom: 16px !important;
+}
+@media (max-width: 760px) {
+  .about-page .about-background-label {
+    font-size: .92rem !important;
+  }
+}
