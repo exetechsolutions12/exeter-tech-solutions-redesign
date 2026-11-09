@@ -1871,38 +1871,3 @@ body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-c
     width:100% !important;
   }
 }
-
-
-/* Reduce visual clutter: separate services with whitespace, not repeated rules. */
-body.pricing-page main .pricing-layout .pricing-category-heading{
-  border-bottom:0 !important;
-  padding-bottom:4px !important;
-}
-body.pricing-page main .pricing-layout .pricing-fixed > .price-card,
-body.pricing-page main .pricing-layout .pricing-quoted > .price-card,
-body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card{
-  border:0 !important;
-  border-bottom:0 !important;
-  padding-top:30px !important;
-  padding-bottom:30px !important;
-}
-body.pricing-page main .pricing-layout .pricing-category + .pricing-category{
-  margin-top:48px !important;
-  padding-top:8px !important;
-}
-/* A short aqua accent identifies each category without drawing a full-width line. */
-body.pricing-page main .pricing-layout .pricing-category-heading h3{
-  position:relative;
-  display:inline-block;
-  padding-bottom:9px;
-}
-body.pricing-page main .pricing-layout .pricing-category-heading h3::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:0;
-  width:42px;
-  height:3px;
-  border-radius:2px;
-  background:#8edff4;
-}
