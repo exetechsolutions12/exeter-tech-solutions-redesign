@@ -1853,3 +1853,70 @@
 .about-page .about-service-card h3 {
   color: #6bb5cf !important;
 }
+
+
+/* Remove editor-style text blocks and align the Difference cards consistently. */
+.about-page .about-difference,
+.about-page .about-difference-box,
+.about-page .about-difference-heading,
+.about-page .about-service-card,
+.about-page .about-service-card h3,
+.about-page .about-service-card p,
+.about-page .about-service-icon {
+  background-image: none !important;
+}
+.about-page .about-difference-box,
+.about-page .about-difference-heading,
+.about-page .about-service-card,
+.about-page .about-service-card h3,
+.about-page .about-service-card p {
+  background-color: transparent !important;
+}
+.about-page .about-difference-heading h2 {
+  font-size: clamp(2.1rem, 3.8vw, 3.35rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.12 !important;
+  letter-spacing: -.045em !important;
+}
+.about-page .about-service-grid {
+  align-items: stretch !important;
+}
+.about-page .about-service-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  min-height: 286px !important;
+  padding: 27px 30px 29px !important;
+  background: #143c5d !important;
+  border: 2px solid #579cb6 !important;
+}
+.about-page .about-service-icon {
+  width: 48px !important;
+  height: 48px !important;
+  margin: 0 0 24px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.about-page .about-service-icon svg {
+  width: 42px !important;
+  height: 42px !important;
+}
+.about-page .about-service-card h3 {
+  display: block !important;
+  margin: 0 0 12px !important;
+  padding: 0 !important;
+  color: #8edff4 !important;
+  font-size: 1.42rem !important;
+  line-height: 1.25 !important;
+}
+.about-page .about-service-card p {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #f0f7fb !important;
+  font-size: 1.08rem !important;
+  line-height: 1.62 !important;
+}
