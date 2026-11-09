@@ -2233,3 +2233,16 @@ body.services-page .services-followup-icon svg *{
   box-shadow:none !important;
   filter:none !important;
 }
+
+
+/* Blend the follow-up content into the page: remove the dark panel blocks. */
+body.services-page .services-followup-area{
+  background:transparent !important;
+}
+body.services-page .services-followup-cta,
+body.services-page .services-followup-safety{
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
