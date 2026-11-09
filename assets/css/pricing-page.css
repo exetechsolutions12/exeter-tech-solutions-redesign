@@ -2964,3 +2964,121 @@ body.pricing-page .pricing-layout .pricing-category:not(:last-child)::after {
     padding-bottom:28px !important;
   }
 }
+
+
+/* Hard override for the two pricing notice panels: same compact dimensions. */
+body.pricing-page #main .pricing-main-section .pricing-notices {
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  grid-template-rows:340px !important;
+  align-items:stretch !important;
+  gap:24px !important;
+  width:100% !important;
+  max-width:1000px !important;
+  margin:0 auto 44px !important;
+}
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice,
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice:first-child,
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice.payment-notice {
+  display:grid !important;
+  grid-template-columns:64px 1px minmax(0,1fr) !important;
+  grid-template-rows:minmax(0,1fr) !important;
+  align-items:center !important;
+  align-self:stretch !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  height:340px !important;
+  min-height:340px !important;
+  max-height:340px !important;
+  margin:0 !important;
+  padding:22px 24px !important;
+  overflow:hidden !important;
+  background:transparent !important;
+  background-color:transparent !important;
+  background-image:none !important;
+  box-shadow:none !important;
+  border:1px solid rgba(142,223,244,.42) !important;
+  border-radius:16px !important;
+  color:#f2f7ff !important;
+}
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice::after {
+  content:none !important;
+  display:none !important;
+}
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice::before {
+  content:"" !important;
+  display:block !important;
+  grid-column:2 !important;
+  grid-row:1 !important;
+  align-self:center !important;
+  justify-self:center !important;
+  width:1px !important;
+  height:64px !important;
+  min-height:64px !important;
+  margin:0 !important;
+  background:rgba(142,223,244,.55) !important;
+}
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice > .notice-icon {
+  grid-column:1 !important;
+  grid-row:1 !important;
+  align-self:center !important;
+  justify-self:center !important;
+  width:64px !important;
+  height:64px !important;
+  margin:0 !important;
+}
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice > .notice-copy {
+  grid-column:3 !important;
+  grid-row:1 !important;
+  align-self:center !important;
+  min-width:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+  background:transparent !important;
+  background-color:transparent !important;
+  box-shadow:none !important;
+}
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice > .notice-copy * {
+  background:transparent !important;
+  background-color:transparent !important;
+  background-image:none !important;
+  box-shadow:none !important;
+}
+body.pricing-page #main .pricing-main-section .pricing-notices .notice-kicker {
+  margin:0 0 8px !important;
+}
+body.pricing-page #main .pricing-main-section .pricing-notices .notice-copy h3 {
+  margin:0 0 8px !important;
+}
+body.pricing-page #main .pricing-main-section .pricing-notices .notice-copy p {
+  margin:0 !important;
+  line-height:1.5 !important;
+}
+@media(max-width:900px) {
+  body.pricing-page #main .pricing-main-section .pricing-notices {
+    grid-template-columns:minmax(0,1fr) !important;
+    grid-template-rows:none !important;
+    grid-auto-rows: minmax(260px,auto) !important;
+    max-width:680px !important;
+  }
+  body.pricing-page #main .pricing-main-section .pricing-notices > article.notice,
+  body.pricing-page #main .pricing-main-section .pricing-notices > article.notice:first-child,
+  body.pricing-page #main .pricing-main-section .pricing-notices > article.notice.payment-notice {
+    height:auto !important;
+    min-height:260px !important;
+    max-height:none !important;
+  }
+}
+@media(max-width:520px) {
+  body.pricing-page #main .pricing-main-section .pricing-notices > article.notice,
+  body.pricing-page #main .pricing-main-section .pricing-notices > article.notice:first-child,
+  body.pricing-page #main .pricing-main-section .pricing-notices > article.notice.payment-notice {
+    grid-template-columns:48px 1px minmax(0,1fr) !important;
+    min-height:0 !important;
+    padding:18px 14px !important;
+  }
+  body.pricing-page #main .pricing-main-section .pricing-notices > article.notice > .notice-icon {
+    width:48px !important;
+    height:48px !important;
+  }
+}
