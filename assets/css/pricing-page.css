@@ -1333,3 +1333,251 @@ body.pricing-page main .pricing-quoted > .price-card:hover{
     margin-top:8px !important;
   }
 }
+
+
+/* FINAL pricing layout: consistent open rows across every service category. */
+body.pricing-page main .pricing-layout .pricing-fixed,
+body.pricing-page main .pricing-layout .pricing-quoted,
+body.pricing-page main .pricing-layout .pricing-websites{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:0 !important;
+  width:100% !important;
+  align-items:stretch !important;
+}
+body.pricing-page main .pricing-layout .pricing-fixed > .price-card,
+body.pricing-page main .pricing-layout .pricing-quoted > .price-card{
+  display:grid !important;
+  grid-template-columns:230px minmax(0,1fr) max-content !important;
+  grid-template-rows:auto auto !important;
+  grid-auto-flow:row !important;
+  align-items:start !important;
+  justify-items:stretch !important;
+  column-gap:34px !important;
+  row-gap:8px !important;
+  width:100% !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  height:auto !important;
+  box-sizing:border-box !important;
+  margin:0 !important;
+  padding:28px 8px !important;
+  border:0 !important;
+  border-top:0 !important;
+  border-bottom:1px solid rgba(142,223,244,.58) !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+body.pricing-page main .pricing-layout .pricing-fixed > .price-card:first-child,
+body.pricing-page main .pricing-layout .pricing-quoted > .price-card:first-child,
+body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card:first-child{
+  border-top:1px solid rgba(142,223,244,.58) !important;
+}
+body.pricing-page main .pricing-layout .pricing-fixed > .price-card > h2,
+body.pricing-page main .pricing-layout .pricing-quoted > .price-card > h2{
+  grid-column:1 !important;
+  grid-row:1 !important;
+  align-self:end !important;
+  justify-self:start !important;
+  width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  text-align:left !important;
+  line-height:1.3 !important;
+  font-size:1.2rem !important;
+}
+body.pricing-page main .pricing-layout .pricing-fixed > .price-card > .price,
+body.pricing-page main .pricing-layout .pricing-quoted > .price-card > .price{
+  grid-column:1 !important;
+  grid-row:2 !important;
+  align-self:start !important;
+  justify-self:start !important;
+  width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  text-align:left !important;
+  color:#8edff4 !important;
+  font-size:2rem !important;
+  line-height:1.2 !important;
+}
+body.pricing-page main .pricing-layout .pricing-fixed > .price-card > p,
+body.pricing-page main .pricing-layout .pricing-quoted > .price-card > p{
+  grid-column:2 !important;
+  grid-row:auto !important;
+  align-self:start !important;
+  justify-self:stretch !important;
+  width:100% !important;
+  margin:0 0 7px !important;
+  padding:0 !important;
+  text-align:left !important;
+  font-size:1rem !important;
+  line-height:1.65 !important;
+}
+body.pricing-page main .pricing-layout .pricing-fixed > .price-card > p:last-of-type,
+body.pricing-page main .pricing-layout .pricing-quoted > .price-card > p:last-of-type{
+  margin-bottom:0 !important;
+}
+body.pricing-page main .pricing-layout .pricing-fixed > .price-card > .button-row,
+body.pricing-page main .pricing-layout .pricing-quoted > .price-card > .button-row{
+  grid-column:3 !important;
+  grid-row:1 / span 2 !important;
+  align-self:center !important;
+  justify-self:end !important;
+  width:max-content !important;
+  max-width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+body.pricing-page main .pricing-layout .pricing-fixed > .price-card > .button-row .btn,
+body.pricing-page main .pricing-layout .pricing-quoted > .price-card > .button-row .btn{
+  white-space:normal !important;
+  text-align:center !important;
+}
+
+/* Website and branding rows use the same three-column rhythm. */
+body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card{
+  display:grid !important;
+  grid-template-columns:230px minmax(0,1fr) max-content !important;
+  grid-template-rows:auto !important;
+  align-items:center !important;
+  column-gap:34px !important;
+  width:100% !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  box-sizing:border-box !important;
+  margin:0 !important;
+  padding:28px 8px !important;
+  border:0 !important;
+  border-bottom:1px solid rgba(142,223,244,.58) !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .website-card-content{
+  display:contents !important;
+}
+body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .website-card-price{
+  grid-column:1 !important;
+  grid-row:1 !important;
+  align-self:center !important;
+  min-width:0 !important;
+}
+body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .website-card-description{
+  grid-column:2 !important;
+  grid-row:1 !important;
+  min-width:0 !important;
+}
+body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .website-card-description p{
+  margin:0 0 8px !important;
+  line-height:1.65 !important;
+}
+body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .website-card-description p:last-child{
+  margin-bottom:0 !important;
+}
+body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card > .button-row{
+  grid-column:3 !important;
+  grid-row:1 !important;
+  align-self:center !important;
+  justify-self:end !important;
+  width:max-content !important;
+  max-width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .price{
+  color:#8edff4 !important;
+  font-size:2rem !important;
+  line-height:1.2 !important;
+  margin:4px 0 0 !important;
+}
+
+/* Consistent section spacing and heading alignment. */
+body.pricing-page main .pricing-layout .pricing-category{
+  margin:0 0 42px !important;
+}
+body.pricing-page main .pricing-layout .pricing-category-heading{
+  display:flex !important;
+  justify-content:space-between !important;
+  align-items:baseline !important;
+  gap:20px !important;
+  margin:0 0 16px !important;
+}
+body.pricing-page main .pricing-layout .pricing-category-heading h3,
+body.pricing-page main .pricing-layout .pricing-category-heading p{
+  margin:0 !important;
+}
+body.pricing-page main .pricing-layout .pricing-category-heading p{
+  text-align:right !important;
+}
+
+/* Remove hover panels: dividers, not cards, define each service. */
+body.pricing-page main .pricing-layout .price-card:hover,
+body.pricing-page main .pricing-layout .website-horizontal-card:hover{
+  background:transparent !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+
+@media(max-width:900px){
+  body.pricing-page main .pricing-layout .pricing-fixed > .price-card,
+  body.pricing-page main .pricing-layout .pricing-quoted > .price-card,
+  body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card{
+    grid-template-columns:190px minmax(0,1fr) !important;
+    column-gap:24px !important;
+  }
+  body.pricing-page main .pricing-layout .pricing-fixed > .price-card > .button-row,
+  body.pricing-page main .pricing-layout .pricing-quoted > .price-card > .button-row,
+  body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card > .button-row{
+    grid-column:2 !important;
+    grid-row:auto !important;
+    justify-self:start !important;
+    margin-top:10px !important;
+  }
+  body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .website-card-price{
+    grid-column:1 !important;
+    grid-row:1 / span 2 !important;
+  }
+  body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .website-card-description{
+    grid-column:2 !important;
+    grid-row:1 !important;
+  }
+}
+@media(max-width:620px){
+  body.pricing-page main .pricing-layout .pricing-category-heading{
+    display:block !important;
+  }
+  body.pricing-page main .pricing-layout .pricing-category-heading p{
+    margin-top:5px !important;
+    text-align:left !important;
+  }
+  body.pricing-page main .pricing-layout .pricing-fixed > .price-card,
+  body.pricing-page main .pricing-layout .pricing-quoted > .price-card,
+  body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card{
+    grid-template-columns:minmax(0,1fr) !important;
+    grid-template-rows:auto !important;
+    row-gap:9px !important;
+    padding:22px 2px !important;
+  }
+  body.pricing-page main .pricing-layout .pricing-fixed > .price-card > h2,
+  body.pricing-page main .pricing-layout .pricing-quoted > .price-card > h2,
+  body.pricing-page main .pricing-layout .pricing-fixed > .price-card > .price,
+  body.pricing-page main .pricing-layout .pricing-quoted > .price-card > .price,
+  body.pricing-page main .pricing-layout .pricing-fixed > .price-card > p,
+  body.pricing-page main .pricing-layout .pricing-quoted > .price-card > p,
+  body.pricing-page main .pricing-layout .pricing-fixed > .price-card > .button-row,
+  body.pricing-page main .pricing-layout .pricing-quoted > .price-card > .button-row,
+  body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .website-card-price,
+  body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .website-card-description,
+  body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card > .button-row{
+    grid-column:1 !important;
+    grid-row:auto !important;
+    justify-self:start !important;
+  }
+  body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .website-card-content{
+    display:contents !important;
+  }
+}
