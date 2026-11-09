@@ -1581,3 +1581,20 @@ body.pricing-page main .pricing-layout .website-horizontal-card:hover{
     display:contents !important;
   }
 }
+
+
+/* Larger, clearer service names in the left-hand pricing column. */
+body.pricing-page main .pricing-layout .pricing-fixed > .price-card > h2,
+body.pricing-page main .pricing-layout .pricing-quoted > .price-card > h2,
+body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .website-card-price h2{
+  font-size:1.5rem !important;
+  line-height:1.25 !important;
+  font-weight:700 !important;
+}
+@media(max-width:620px){
+  body.pricing-page main .pricing-layout .pricing-fixed > .price-card > h2,
+  body.pricing-page main .pricing-layout .pricing-quoted > .price-card > h2,
+  body.pricing-page main .pricing-layout .pricing-websites > .website-horizontal-card .website-card-price h2{
+    font-size:1.35rem !important;
+  }
+}
