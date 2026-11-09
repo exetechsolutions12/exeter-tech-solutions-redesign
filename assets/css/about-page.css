@@ -1616,3 +1616,226 @@
 .about-page .about-final-cta-inner {
   border-color: #8edff4 !important;
 }
+
+
+/* Match the approved Mock-up 1: wide editorial header, cyan cards and full-width CTA. */
+.about-page .about-difference {
+  padding: 56px 0 46px !important;
+  background: #082b4a !important;
+}
+.about-page .about-difference > .container {
+  width: min(1296px, 92%) !important;
+  max-width: 1296px !important;
+}
+.about-page .about-difference-box {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.about-page .about-difference-heading {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.25fr) minmax(340px, .75fr) !important;
+  column-gap: 64px !important;
+  align-items: center !important;
+  max-width: none !important;
+  margin: 0 0 42px !important;
+}
+.about-page .about-difference-heading > .eyebrow {
+  grid-column: 1 / -1 !important;
+  position: relative !important;
+  margin: 0 0 13px !important;
+  padding: 0 0 0 25px !important;
+  color: #ffffff !important;
+  background: transparent !important;
+  border: 0 !important;
+  font-size: 1rem !important;
+  line-height: 1.4 !important;
+  letter-spacing: .13em !important;
+}
+.about-page .about-difference-heading > .eyebrow::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 6px !important;
+  background: #8edff4 !important;
+}
+.about-page .about-difference-heading h2 {
+  margin: 0 !important;
+  max-width: 760px !important;
+  color: #ffffff !important;
+  font-size: clamp(2.5rem, 4.1vw, 3.6rem) !important;
+  line-height: 1.06 !important;
+  letter-spacing: -.04em !important;
+}
+.about-page .about-difference-heading p {
+  max-width: 500px !important;
+  margin: 0 !important;
+  padding: 5px 0 5px 48px !important;
+  border-left: 2px solid #8edff4 !important;
+  color: #e0eaf2 !important;
+  font-size: 1.18rem !important;
+  line-height: 1.65 !important;
+}
+.about-page .about-service-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+  align-items: stretch !important;
+}
+.about-page .about-service-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  min-width: 0 !important;
+  min-height: 286px !important;
+  padding: 27px 30px 29px !important;
+  border: 2px solid #8edff4 !important;
+  border-radius: 16px !important;
+  background: #0b4b63 !important;
+  box-shadow: none !important;
+  transition: none !important;
+}
+.about-page .about-service-card:hover {
+  transform: none !important;
+  background: #0b4b63 !important;
+}
+.about-page .about-service-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: 48px !important;
+  height: 48px !important;
+  margin: 0 0 20px !important;
+  padding: 0 !important;
+  color: #8edff4 !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+.about-page .about-service-icon svg {
+  width: 42px !important;
+  height: 42px !important;
+}
+.about-page .about-card-number {
+  margin: 0 0 12px !important;
+  color: #c3effa !important;
+  font-size: .78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: .12em !important;
+}
+.about-page .about-service-card h3 {
+  margin: 0 0 12px !important;
+  color: #ffffff !important;
+  font-size: 1.42rem !important;
+  line-height: 1.25 !important;
+  letter-spacing: -.02em !important;
+}
+.about-page .about-service-card p {
+  margin: 0 !important;
+  color: #f0f7fb !important;
+  font-size: 1.08rem !important;
+  line-height: 1.62 !important;
+}
+.about-page .about-final-cta {
+  padding: 0 0 38px !important;
+  background: #082b4a !important;
+}
+.about-page .about-final-cta > .container {
+  width: min(1296px, 92%) !important;
+  max-width: 1296px !important;
+}
+.about-page .about-final-cta-inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 36px !important;
+  padding: 30px 34px !important;
+  border: 2px solid #8edff4 !important;
+  border-radius: 16px !important;
+  background: #082b4a !important;
+  box-shadow: none !important;
+}
+.about-page .about-final-cta-inner > div {
+  min-width: 0 !important;
+  flex: 1 1 auto !important;
+  padding-left: 34px !important;
+  border-left: 6px solid #8edff4 !important;
+  background: transparent !important;
+}
+.about-page .about-final-cta .eyebrow {
+  margin: 0 0 8px !important;
+  color: #8edff4 !important;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  font-size: .9rem !important;
+}
+.about-page .about-final-cta h2 {
+  margin: 0 0 8px !important;
+  color: #ffffff !important;
+  font-size: clamp(2rem, 3vw, 2.65rem) !important;
+  line-height: 1.15 !important;
+}
+.about-page .about-final-cta p {
+  max-width: 900px !important;
+  margin: 0 !important;
+  color: #e0eaf2 !important;
+  font-size: 1.12rem !important;
+  line-height: 1.6 !important;
+}
+.about-page .about-final-cta .btn {
+  min-width: 208px !important;
+  min-height: 64px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 10px !important;
+  background: #8edff4 !important;
+  color: #082b4a !important;
+  font-size: 1.12rem !important;
+  font-weight: 800 !important;
+  box-shadow: none !important;
+}
+.about-page .about-trust-notice-section > .container {
+  width: min(1296px, 92%) !important;
+  max-width: 1296px !important;
+}
+.about-page .about-trust-notice-section .trust-notice {
+  border-left-color: #8edff4 !important;
+  color: #e0eaf2 !important;
+}
+@media (max-width: 900px) {
+  .about-page .about-difference-heading {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    margin-bottom: 30px !important;
+  }
+  .about-page .about-difference-heading > .eyebrow { grid-column: auto !important; }
+  .about-page .about-difference-heading p {
+    max-width: 680px !important;
+    padding-left: 22px !important;
+  }
+  .about-page .about-service-grid { gap: 16px !important; }
+  .about-page .about-service-card { padding: 23px 20px !important; }
+  .about-page .about-service-card h3 { font-size: 1.2rem !important; }
+  .about-page .about-service-card p { font-size: 1rem !important; }
+}
+@media (max-width: 760px) {
+  .about-page .about-difference { padding: 42px 0 30px !important; }
+  .about-page .about-service-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
+  .about-page .about-service-card { min-height: 0 !important; padding: 22px !important; }
+  .about-page .about-final-cta { padding-bottom: 28px !important; }
+  .about-page .about-final-cta-inner {
+    align-items: stretch !important;
+    flex-direction: column !important;
+    gap: 22px !important;
+    padding: 22px !important;
+  }
+  .about-page .about-final-cta .btn { width: 100% !important; }
+}
