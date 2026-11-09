@@ -497,3 +497,101 @@ body.services-page .services-options-section{
 body.services-page .services-options-heading.site-video-hero{
   margin-top:0 !important;
 }
+
+
+/* Services intro: clean, open typography over the video with no text panels or boxes. */
+body.services-page .services-options-heading.site-video-hero{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:18px !important;
+  padding:72px 24px 68px !important;
+  text-align:center !important;
+  background:transparent !important;
+}
+body.services-page .services-options-heading.site-video-hero .eyebrow,
+body.services-page .services-options-heading.site-video-hero h1,
+body.services-page .services-options-heading.site-video-hero h1 span,
+body.services-page .services-options-heading.site-video-hero > p,
+body.services-page .services-options-heading.site-video-hero .services-direct-contact,
+body.services-page .services-options-heading.site-video-hero .services-direct-contact strong{
+  background:transparent !important;
+  background-color:transparent !important;
+  background-image:none !important;
+  box-shadow:none !important;
+  border:0 !important;
+  border-radius:0 !important;
+}
+body.services-page .services-options-heading.site-video-hero .eyebrow{
+  display:block !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#dbeafe !important;
+  font-size:1rem !important;
+  font-weight:700 !important;
+  letter-spacing:.08em !important;
+  text-transform:uppercase !important;
+}
+body.services-page .services-options-heading.site-video-hero h1{
+  width:min(100%,1050px) !important;
+  max-width:1050px !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#fff !important;
+  font-size:clamp(2.6rem,5.4vw,4.7rem) !important;
+  font-weight:650 !important;
+  line-height:1.06 !important;
+  letter-spacing:-.035em !important;
+  text-wrap:balance !important;
+}
+body.services-page .services-options-heading.site-video-hero h1 span{
+  display:inline !important;
+  padding:0 !important;
+  color:inherit !important;
+}
+body.services-page .services-options-heading.site-video-hero > p:not(.services-direct-contact){
+  max-width:850px !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#fff !important;
+  font-size:clamp(1.05rem,1.65vw,1.35rem) !important;
+  line-height:1.55 !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-direct-contact{
+  max-width:900px !important;
+  margin:4px 0 0 !important;
+  padding:0 !important;
+  color:#fff !important;
+  font-size:1rem !important;
+  line-height:1.7 !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-direct-contact strong{
+  display:block !important;
+  margin:0 0 5px !important;
+  padding:0 !important;
+  color:#fff !important;
+  font-size:1.12rem !important;
+  font-weight:750 !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-direct-contact a{
+  color:#fff !important;
+  background:transparent !important;
+  padding:0 !important;
+  border:0 !important;
+  border-bottom:1px solid rgba(255,255,255,.75) !important;
+  text-decoration:none !important;
+  font-weight:700 !important;
+}
+@media(max-width:760px){
+  body.services-page .services-options-heading.site-video-hero{
+    gap:14px !important;
+    padding:52px 20px 44px !important;
+  }
+  body.services-page .services-options-heading.site-video-hero h1{
+    font-size:clamp(2.35rem,9vw,3.3rem) !important;
+  }
+  body.services-page .services-options-heading.site-video-hero .services-direct-contact{
+    font-size:.94rem !important;
+  }
+}
