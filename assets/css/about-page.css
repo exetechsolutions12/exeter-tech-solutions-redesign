@@ -1920,3 +1920,11 @@
   font-size: 1.08rem !important;
   line-height: 1.62 !important;
 }
+
+
+/* Make the icon tiles the same blue as their cards, removing the dark navy squares. */
+.about-page .about-service-icon,
+.about-page .about-service-icon svg {
+  background-color: #143c5d !important;
+  background: #143c5d !important;
+}
