@@ -1839,3 +1839,17 @@
   }
   .about-page .about-final-cta .btn { width: 100% !important; }
 }
+
+
+/* Match the service cards to the contact-board colours in the supplied reference. */
+.about-page .about-service-card {
+  background: #143c5d !important;
+  border: 2px solid #579cb6 !important;
+}
+.about-page .about-service-card:hover {
+  background: #143c5d !important;
+  border-color: #579cb6 !important;
+}
+.about-page .about-service-card h3 {
+  color: #6bb5cf !important;
+}
