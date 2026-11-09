@@ -825,3 +825,114 @@ body.pricing-page .pricing-notices .pricing-notice-card .text-link:hover{
     padding:23px 22px 24px !important;
   }
 }
+
+
+/* Refined pricing notices: icon-led horizontal information panels. */
+body.pricing-page .pricing-notices{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:24px !important;
+  align-items:stretch !important;
+  margin:0 0 48px !important;
+}
+body.pricing-page .pricing-notices .pricing-notice-card{
+  display:grid !important;
+  grid-template-columns:76px 1px minmax(0,1fr) !important;
+  align-items:center !important;
+  column-gap:24px !important;
+  box-sizing:border-box !important;
+  min-width:0 !important;
+  height:100% !important;
+  margin:0 !important;
+  padding:30px 28px !important;
+  border:1px solid rgba(142,223,244,.36) !important;
+  border-radius:18px !important;
+  background:rgba(13,53,84,.52) !important;
+  color:#edf7ff !important;
+  box-shadow:none !important;
+}
+body.pricing-page .pricing-notices .pricing-notice-card::before{
+  content:"" !important;
+  grid-column:2 !important;
+  grid-row:1 !important;
+  width:1px !important;
+  height:100% !important;
+  min-height:110px !important;
+  background:rgba(142,223,244,.55) !important;
+}
+body.pricing-page .pricing-notices .notice-icon{
+  grid-column:1 !important;
+  grid-row:1 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:76px !important;
+  height:76px !important;
+  border-radius:17px !important;
+  background:#8edff4 !important;
+  color:#082d4b !important;
+}
+body.pricing-page .pricing-notices .notice-icon svg{
+  display:block !important;
+  width:36px !important;
+  height:36px !important;
+}
+body.pricing-page .pricing-notices .notice-copy{
+  grid-column:3 !important;
+  grid-row:1 !important;
+  min-width:0 !important;
+}
+body.pricing-page .pricing-notices .notice-copy,
+body.pricing-page .pricing-notices .notice-copy *{
+  background:transparent !important;
+  background-color:transparent !important;
+  background-image:none !important;
+  box-shadow:none !important;
+}
+body.pricing-page .pricing-notices .notice-kicker{
+  display:inline-block !important;
+  margin:0 0 9px !important;
+  padding:0 !important;
+  color:#8edff4 !important;
+  font-family:'Barlow',Arial,sans-serif !important;
+  font-size:.78rem !important;
+  font-weight:700 !important;
+  letter-spacing:.13em !important;
+  line-height:1.3 !important;
+  text-transform:uppercase !important;
+}
+body.pricing-page .pricing-notices .pricing-notice-card h3{
+  margin:0 0 10px !important;
+  padding:0 !important;
+  color:#fff !important;
+  font-family:'Barlow',Arial,sans-serif !important;
+  font-size:clamp(1.3rem,1.7vw,1.6rem) !important;
+  font-weight:650 !important;
+  line-height:1.2 !important;
+}
+body.pricing-page .pricing-notices .pricing-notice-card p{
+  margin:0 !important;
+  padding:0 !important;
+  color:#e4f0fa !important;
+  font-size:1rem !important;
+  line-height:1.65 !important;
+}
+body.pricing-page .pricing-notices .pricing-notice-card .text-link{
+  color:#8edff4 !important;
+  font-weight:700 !important;
+  text-decoration:underline !important;
+  text-underline-offset:3px !important;
+}
+body.pricing-page .pricing-notices .pricing-notice-card .text-link:hover{color:#fff !important;}
+@media(max-width:900px){
+  body.pricing-page .pricing-notices{grid-template-columns:minmax(0,1fr) !important;gap:16px !important;}
+}
+@media(max-width:520px){
+  body.pricing-page .pricing-notices .pricing-notice-card{
+    grid-template-columns:54px 1px minmax(0,1fr) !important;
+    column-gap:15px !important;
+    padding:21px 17px !important;
+  }
+  body.pricing-page .pricing-notices .notice-icon{width:54px !important;height:54px !important;border-radius:13px !important;}
+  body.pricing-page .pricing-notices .notice-icon svg{width:28px !important;height:28px !important;}
+}
