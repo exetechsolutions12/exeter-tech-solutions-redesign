@@ -2710,3 +2710,97 @@ body.pricing-page .pricing-layout .pricing-category-content {
 body.pricing-page .pricing-layout .pricing-category-heading {
   align-self:center !important;
 }
+
+
+/* Final correction: transparent panels with identical desktop dimensions. */
+body.pricing-page .pricing-notices {
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  grid-auto-rows:320px !important;
+  align-items:stretch !important;
+  gap:22px !important;
+  max-width:1120px !important;
+  margin:0 auto 42px !important;
+}
+body.pricing-page .pricing-notices .pricing-notice-card {
+  display:grid !important;
+  grid-template-columns:64px 1px minmax(0,1fr) !important;
+  align-items:center !important;
+  align-self:stretch !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  height:320px !important;
+  min-height:320px !important;
+  max-height:320px !important;
+  margin:0 !important;
+  padding:22px !important;
+  overflow:visible !important;
+  background:none !important;
+  background-color:transparent !important;
+  background-image:none !important;
+  box-shadow:none !important;
+  border:1px solid rgba(142,223,244,.42) !important;
+  border-radius:16px !important;
+}
+body.pricing-page .pricing-notices .pricing-notice-card::after {
+  display:none !important;
+  content:none !important;
+}
+body.pricing-page .pricing-notices .pricing-notice-card::before {
+  grid-column:2 !important;
+  grid-row:1 !important;
+  align-self:center !important;
+  width:1px !important;
+  height:64px !important;
+  min-height:0 !important;
+  margin:0 !important;
+}
+body.pricing-page .pricing-notices .notice-icon {
+  grid-column:1 !important;
+  grid-row:1 !important;
+  align-self:center !important;
+  justify-self:center !important;
+  width:64px !important;
+  height:64px !important;
+  margin:0 !important;
+}
+body.pricing-page .pricing-notices .notice-copy {
+  grid-column:3 !important;
+  grid-row:1 !important;
+  align-self:center !important;
+  margin:0 !important;
+  min-width:0 !important;
+  background:transparent !important;
+}
+body.pricing-page .pricing-notices .notice-copy,
+body.pricing-page .pricing-notices .notice-copy * {
+  background:transparent !important;
+  background-color:transparent !important;
+  background-image:none !important;
+  box-shadow:none !important;
+}
+@media(max-width:900px) {
+  body.pricing-page .pricing-notices {
+    grid-template-columns:minmax(0,1fr) !important;
+    grid-auto-rows:auto !important;
+  }
+  body.pricing-page .pricing-notices .pricing-notice-card {
+    height:auto !important;
+    min-height:250px !important;
+    max-height:none !important;
+  }
+}
+@media(max-width:520px) {
+  body.pricing-page .pricing-notices .pricing-notice-card {
+    grid-template-columns:52px 1px minmax(0,1fr) !important;
+    min-height:0 !important;
+    padding:18px 15px !important;
+  }
+  body.pricing-page .pricing-notices .notice-icon {
+    width:52px !important;
+    height:52px !important;
+  }
+  body.pricing-page .pricing-notices .pricing-notice-card::before {
+    height:52px !important;
+  }
+}
