@@ -2467,3 +2467,9 @@ body.pricing-page .pricing-layout .pricing-row-price {
     column-gap: 14px !important;
   }
 }
+
+
+/* Restore the original pricing hero, including its site background video. */
+body.pricing-page .page-hero {
+  display:flex !important;
+}
