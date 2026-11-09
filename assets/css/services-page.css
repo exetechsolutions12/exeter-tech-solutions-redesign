@@ -595,3 +595,93 @@ body.services-page .services-options-heading.site-video-hero .services-direct-co
     font-size:.94rem !important;
   }
 }
+
+
+/* Match the Services heading typography to the About page's "Meet Cam" hero heading. */
+body.services-page .services-options-heading.site-video-hero h1{
+  font-family:'Barlow',Arial,sans-serif !important;
+  font-size:clamp(2.4rem,5.2vw,4.8rem) !important;
+  font-weight:500 !important;
+  line-height:.99 !important;
+  letter-spacing:-.055em !important;
+}
+
+/* Match the Support options label to the outlined MY BACKGROUND pill. */
+body.services-page .services-options-heading.site-video-hero > .eyebrow{
+  display:inline-flex !important;
+  align-items:center !important;
+  width:fit-content !important;
+  min-height:0 !important;
+  margin:0 0 16px !important;
+  padding:8px 16px !important;
+  border:1px solid #579cb6 !important;
+  border-radius:999px !important;
+  background:transparent !important;
+  color:#8edff4 !important;
+  box-shadow:none !important;
+  font-family:'Barlow',Arial,sans-serif !important;
+  font-size:.88rem !important;
+  font-weight:700 !important;
+  line-height:1.25 !important;
+  letter-spacing:.13em !important;
+  text-transform:uppercase !important;
+}
+
+/* Replace the old contact strip with a simple, open call-to-action beneath the intro. */
+body.services-page .services-options-heading.site-video-hero .services-direct-contact{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  gap:9px !important;
+  max-width:760px !important;
+  margin:12px 0 0 !important;
+  padding:0 !important;
+  color:#e7f4ff !important;
+  font-family:'Segoe UI',Arial,sans-serif !important;
+  font-size:1rem !important;
+  line-height:1.65 !important;
+  font-weight:400 !important;
+  text-align:center !important;
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-direct-contact strong{
+  display:block !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#8edff4 !important;
+  font-family:'Barlow',Arial,sans-serif !important;
+  font-size:1.35rem !important;
+  font-weight:600 !important;
+  line-height:1.2 !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-direct-contact a{
+  display:inline !important;
+  margin:0 3px !important;
+  padding:0 0 2px !important;
+  color:#fff !important;
+  background:transparent !important;
+  border:0 !important;
+  border-bottom:1px solid rgba(142,223,244,.8) !important;
+  border-radius:0 !important;
+  font-weight:650 !important;
+  text-decoration:none !important;
+}
+@media(max-width:760px){
+  body.services-page .services-options-heading.site-video-hero h1{
+    font-size:clamp(2.35rem,9vw,3.3rem) !important;
+  }
+  body.services-page .services-options-heading.site-video-hero > .eyebrow{
+    font-size:.82rem !important;
+    padding:8px 15px !important;
+  }
+  body.services-page .services-options-heading.site-video-hero .services-direct-contact{
+    gap:7px !important;
+    font-size:.94rem !important;
+  }
+  body.services-page .services-options-heading.site-video-hero .services-direct-contact strong{
+    font-size:1.18rem !important;
+  }
+}
