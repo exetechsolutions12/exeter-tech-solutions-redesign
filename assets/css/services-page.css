@@ -1159,3 +1159,93 @@ body.services-page .services-choice-card .services-card-cta:hover{
     font-size:.9rem !important;
   }
 }
+
+
+/* Final Services layout: six full-width horizontal rows, stacked vertically. */
+body.services-page .services-choice-grid{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) !important;
+  gap:30px !important;
+  width:100% !important;
+}
+body.services-page .services-choice-card,
+body.services-page .services-choice-card:nth-child(2){
+  display:grid !important;
+  grid-template-columns:84px 2px minmax(0,1fr) !important;
+  grid-column:1 / -1 !important;
+  width:100% !important;
+  gap:0 24px !important;
+  align-items:start !important;
+}
+body.services-page .services-card-icon{
+  width:84px !important;
+  height:84px !important;
+  min-width:84px !important;
+  border-radius:18px !important;
+}
+body.services-page .services-card-icon svg{
+  width:48px !important;
+  height:48px !important;
+  max-width:48px !important;
+  max-height:48px !important;
+}
+body.services-page .services-card-divider{
+  height:84px !important;
+}
+body.services-page .services-card-content{
+  display:block !important;
+  min-width:0 !important;
+  min-height:0 !important;
+}
+body.services-page .services-choice-card h2{
+  margin-bottom:8px !important;
+  font-size:1.4rem !important;
+}
+body.services-page .services-choice-card > .services-card-content > p{
+  max-width:none !important;
+  margin:0 0 10px !important;
+  font-size:.98rem !important;
+  line-height:1.55 !important;
+}
+body.services-page .services-feature-list{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  column-gap:24px !important;
+  row-gap:8px !important;
+  margin:10px 0 14px !important;
+}
+body.services-page .services-feature-list li{
+  flex:0 1 auto !important;
+  width:auto !important;
+  font-size:.88rem !important;
+}
+body.services-page .services-price-note{
+  max-width:720px !important;
+}
+body.services-page .services-choice-card .services-card-cta{
+  margin:4px 0 0 !important;
+}
+@media(max-width:680px){
+  body.services-page .services-choice-grid{gap:28px !important;}
+  body.services-page .services-choice-card,
+  body.services-page .services-choice-card:nth-child(2){
+    grid-template-columns:62px 2px minmax(0,1fr) !important;
+    gap:0 14px !important;
+  }
+  body.services-page .services-card-icon{
+    width:62px !important;
+    height:62px !important;
+    min-width:62px !important;
+    border-radius:14px !important;
+  }
+  body.services-page .services-card-icon svg{
+    width:36px !important;
+    height:36px !important;
+    max-width:36px !important;
+    max-height:36px !important;
+  }
+  body.services-page .services-card-divider{height:62px !important;}
+  body.services-page .services-choice-card h2{font-size:1.15rem !important;}
+  body.services-page .services-feature-list{display:grid !important;gap:7px !important;}
+  body.services-page .services-feature-list li{font-size:.82rem !important;}
+}
