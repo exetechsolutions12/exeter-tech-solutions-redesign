@@ -685,3 +685,52 @@ body.services-page .services-options-heading.site-video-hero .services-direct-co
     font-size:1.18rem !important;
   }
 }
+
+
+/* Services contact prompt: keep the message compact and conversational, not stacked. */
+body.services-page .services-options-heading.site-video-hero .services-direct-contact{
+  display:block !important;
+  width:fit-content !important;
+  max-width:min(900px,100%) !important;
+  margin:12px auto 0 !important;
+  padding:0 !important;
+  color:#e7f4ff !important;
+  font-family:'Segoe UI',Arial,sans-serif !important;
+  font-size:clamp(.98rem,1.35vw,1.1rem) !important;
+  font-weight:400 !important;
+  line-height:1.8 !important;
+  text-align:center !important;
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-direct-contact strong{
+  display:block !important;
+  margin:0 0 5px !important;
+  padding:0 !important;
+  color:#8edff4 !important;
+  font-family:'Barlow',Arial,sans-serif !important;
+  font-size:1.2rem !important;
+  font-weight:650 !important;
+  line-height:1.35 !important;
+}
+body.services-page .services-options-heading.site-video-hero .services-direct-contact a{
+  display:inline !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#fff !important;
+  background:transparent !important;
+  border:0 !important;
+  border-bottom:1px solid rgba(142,223,244,.8) !important;
+  border-radius:0 !important;
+  font-weight:650 !important;
+  text-decoration:none !important;
+}
+@media(max-width:760px){
+  body.services-page .services-options-heading.site-video-hero .services-direct-contact{
+    width:auto !important;
+    font-size:.96rem !important;
+    line-height:1.7 !important;
+  }
+}
