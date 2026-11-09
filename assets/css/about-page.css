@@ -1974,3 +1974,25 @@
   .about-page .about-service-card h3 { font-size: 1.35rem !important; }
   .about-page .about-service-card p { font-size: 1.05rem !important; }
 }
+
+
+/* Keep ABOUT ME and MY BACKGROUND labels identical in size to THE DIFFERENCE. */
+.about-page .about-hero-copy .eyebrow,
+.about-page .about-background-intro .eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  width: fit-content !important;
+  min-height: 0 !important;
+  margin: 0 0 16px !important;
+  padding: 8px 16px !important;
+  border: 1px solid #579cb6 !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: #8edff4 !important;
+  box-shadow: none !important;
+  font-size: .88rem !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  letter-spacing: .13em !important;
+  text-transform: uppercase !important;
+}
