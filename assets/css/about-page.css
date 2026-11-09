@@ -1440,3 +1440,8 @@
   .about-page .about-background-label { min-height: 0; margin-bottom: 12px; }
   .about-page .about-background-point p { max-width: none; }
 }
+
+/* Keep separate story paragraphs readable within each milestone. */
+.about-page .about-background-point p + p {
+  margin-top: 18px !important;
+}
