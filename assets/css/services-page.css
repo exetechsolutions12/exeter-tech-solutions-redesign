@@ -1573,3 +1573,24 @@ body.services-page .services-choice-card .services-card-cta:hover{
     font-size:.92rem !important;
   }
 }
+
+
+/* Keep separators between Services rows consistently visible (no hover fade or border transition). */
+body.services-page .services-choice-grid > .services-choice-card{
+  border:0 !important;
+  border-bottom:1px solid #426783 !important;
+  border-radius:0 !important;
+  transition:none !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+body.services-page .services-choice-grid > .services-choice-card:hover,
+body.services-page .services-choice-grid > .services-choice-card:focus-within{
+  border:0 !important;
+  border-bottom:1px solid #426783 !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+body.services-page .services-choice-grid > .services-choice-card:last-child{
+  border-bottom:0 !important;
+}
