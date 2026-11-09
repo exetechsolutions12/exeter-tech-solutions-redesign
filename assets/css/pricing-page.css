@@ -642,3 +642,115 @@
     height: auto;
   }
 }
+
+
+/* Pricing hero: mirror the centred, full-width Services introduction. */
+body.pricing-page main{
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+body.pricing-page .page-hero{
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:100% !important;
+  min-height:390px !important;
+  box-sizing:border-box !important;
+  margin:0 !important;
+  padding:72px 24px 68px !important;
+  overflow:hidden !important;
+  isolation:isolate !important;
+  text-align:center !important;
+  color:#fff !important;
+  background:transparent !important;
+}
+body.pricing-page .page-hero > .container{
+  position:relative !important;
+  z-index:2 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:min(100%,1120px) !important;
+  max-width:1120px !important;
+  margin:0 auto !important;
+  padding:0 !important;
+  text-align:center !important;
+}
+body.pricing-page .page-hero .eyebrow{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:fit-content !important;
+  min-height:0 !important;
+  margin:0 0 16px !important;
+  padding:8px 16px !important;
+  border:1px solid #579cb6 !important;
+  border-radius:999px !important;
+  background:transparent !important;
+  color:#8edff4 !important;
+  box-shadow:none !important;
+  font-family:'Barlow',Arial,sans-serif !important;
+  font-size:.88rem !important;
+  font-weight:700 !important;
+  line-height:1.25 !important;
+  letter-spacing:.13em !important;
+  text-transform:uppercase !important;
+}
+body.pricing-page .page-hero h1{
+  width:min(100%,1050px) !important;
+  max-width:1050px !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#fff !important;
+  font-family:'Barlow',Arial,sans-serif !important;
+  font-size:clamp(2.4rem,5.2vw,4.8rem) !important;
+  font-weight:500 !important;
+  line-height:.99 !important;
+  letter-spacing:-.055em !important;
+  text-wrap:balance !important;
+}
+body.pricing-page .page-hero p{
+  max-width:850px !important;
+  margin:18px auto 0 !important;
+  padding:0 !important;
+  color:#fff !important;
+  font-family:'Segoe UI',Arial,sans-serif !important;
+  font-size:clamp(1.05rem,1.65vw,1.35rem) !important;
+  line-height:1.55 !important;
+  text-align:center !important;
+}
+body.pricing-page .page-hero > .site-page-background-video,
+body.pricing-page .page-hero > .site-page-background-overlay{
+  position:absolute !important;
+  inset:0 !important;
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+}
+body.pricing-page .page-hero > .site-page-background-video{
+  object-fit:cover !important;
+  object-position:center center !important;
+}
+body.pricing-page .page-hero > .site-page-background-overlay{
+  z-index:1 !important;
+}
+@media(max-width:760px){
+  body.pricing-page .page-hero{
+    min-height:320px !important;
+    padding:52px 20px 44px !important;
+  }
+  body.pricing-page .page-hero h1{
+    font-size:clamp(2.35rem,9vw,3.3rem) !important;
+  }
+  body.pricing-page .page-hero .eyebrow{
+    font-size:.82rem !important;
+    padding:8px 15px !important;
+  }
+  body.pricing-page .page-hero p{
+    margin-top:14px !important;
+    font-size:1rem !important;
+  }
+}
