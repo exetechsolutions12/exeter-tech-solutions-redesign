@@ -1969,3 +1969,96 @@ body.services-page .services-followup-safety-copy > p:last-child{
   body.services-page .services-followup-cta h2,
   body.services-page .services-followup-safety h2{font-size:1.5rem !important;}
 }
+
+
+/* Final alignment for the Services guidance and security panels. */
+body.services-page .services-followup-cta{
+  grid-template-columns:78px minmax(0,1fr) !important;
+  grid-template-rows:auto auto auto !important;
+  column-gap:22px !important;
+  row-gap:0 !important;
+}
+body.services-page .services-followup-cta > .eyebrow{
+  grid-column:1 / -1 !important;
+  grid-row:1 !important;
+  justify-self:start !important;
+  margin:0 0 18px !important;
+}
+body.services-page .services-followup-cta > .services-followup-icon{
+  grid-column:1 !important;
+  grid-row:2 !important;
+  justify-self:start !important;
+  align-self:start !important;
+  margin:2px 0 0 !important;
+}
+body.services-page .services-followup-cta > div{
+  grid-column:2 !important;
+  grid-row:2 !important;
+  align-self:start !important;
+  flex:initial !important;
+  width:100% !important;
+  min-width:0 !important;
+}
+body.services-page .services-followup-cta > .btn{
+  grid-column:2 !important;
+  grid-row:3 !important;
+  justify-self:start !important;
+  align-self:start !important;
+  display:inline-flex !important;
+  width:auto !important;
+  min-width:max-content !important;
+  max-width:100% !important;
+  min-height:48px !important;
+  margin:18px 0 0 !important;
+  padding:12px 22px !important;
+  white-space:nowrap !important;
+  text-align:center !important;
+  line-height:1.25 !important;
+}
+body.services-page .services-followup-safety{
+  grid-template-columns:78px minmax(0,1fr) !important;
+  column-gap:22px !important;
+}
+body.services-page .services-followup-safety > .services-followup-icon{
+  grid-column:1 !important;
+  grid-row:1 !important;
+}
+body.services-page .services-followup-safety > .services-followup-safety-copy{
+  grid-column:2 !important;
+  grid-row:1 !important;
+  align-self:start !important;
+}
+body.services-page .services-followup-safety-copy > p:last-child .btn{
+  display:inline-flex !important;
+  width:auto !important;
+  min-width:max-content !important;
+  max-width:100% !important;
+  min-height:48px !important;
+  padding:12px 22px !important;
+  white-space:nowrap !important;
+}
+@media(max-width:760px){
+  body.services-page .services-followup-cta,
+  body.services-page .services-followup-safety{
+    grid-template-columns:58px minmax(0,1fr) !important;
+    column-gap:16px !important;
+  }
+  body.services-page .services-followup-cta > .eyebrow{
+    grid-column:1 / -1 !important;
+    grid-row:1 !important;
+  }
+  body.services-page .services-followup-cta > .services-followup-icon{
+    grid-column:1 !important;
+    grid-row:2 !important;
+  }
+  body.services-page .services-followup-cta > div{
+    grid-column:2 !important;
+    grid-row:2 !important;
+  }
+  body.services-page .services-followup-cta > .btn{
+    grid-column:2 !important;
+    grid-row:3 !important;
+    white-space:normal !important;
+    min-width:0 !important;
+  }
+}
