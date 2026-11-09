@@ -2062,3 +2062,118 @@ body.services-page .services-followup-safety-copy > p:last-child .btn{
     min-width:0 !important;
   }
 }
+
+
+/* Correct final alignment: uppercase eyebrow above the guidance icon, with full-width CTA labels. */
+body.services-page .services-followup-cta{
+  display:grid !important;
+  grid-template-columns:78px minmax(0,1fr) !important;
+  grid-template-rows:auto auto auto !important;
+  column-gap:22px !important;
+  row-gap:0 !important;
+  align-items:start !important;
+}
+body.services-page .services-followup-cta > .eyebrow{
+  grid-column:1 / -1 !important;
+  grid-row:1 !important;
+  justify-self:start !important;
+  display:inline-flex !important;
+  width:max-content !important;
+  margin:0 0 20px !important;
+  text-transform:uppercase !important;
+  letter-spacing:.12em !important;
+  font-size:.88rem !important;
+  font-weight:800 !important;
+}
+body.services-page .services-followup-cta > .services-followup-icon{
+  grid-column:1 !important;
+  grid-row:2 !important;
+  align-self:start !important;
+  justify-self:start !important;
+  margin:2px 0 0 !important;
+}
+body.services-page .services-followup-cta > div{
+  grid-column:2 !important;
+  grid-row:2 !important;
+  align-self:start !important;
+  justify-self:stretch !important;
+  width:100% !important;
+  min-width:0 !important;
+  margin:0 !important;
+}
+body.services-page .services-followup-cta > div h2{
+  margin:0 0 14px !important;
+  line-height:1.2 !important;
+}
+body.services-page .services-followup-cta > div p{
+  margin:0 !important;
+  line-height:1.7 !important;
+}
+body.services-page .services-followup-cta > .btn{
+  grid-column:2 !important;
+  grid-row:3 !important;
+  justify-self:start !important;
+  align-self:start !important;
+  display:inline-flex !important;
+  width:max-content !important;
+  min-width:210px !important;
+  max-width:100% !important;
+  min-height:50px !important;
+  margin:20px 0 0 !important;
+  padding:13px 24px !important;
+  align-items:center !important;
+  justify-content:center !important;
+  white-space:nowrap !important;
+  text-align:center !important;
+  line-height:1.25 !important;
+  flex:none !important;
+}
+body.services-page .services-followup-safety{
+  align-items:start !important;
+}
+body.services-page .services-followup-safety > .services-followup-icon{
+  align-self:start !important;
+  margin:2px 0 0 !important;
+}
+body.services-page .services-followup-safety-copy{
+  align-items:flex-start !important;
+  text-align:left !important;
+}
+body.services-page .services-followup-safety-copy h2,
+body.services-page .services-followup-safety-copy p{
+  width:100% !important;
+  text-align:left !important;
+}
+body.services-page .services-followup-safety-copy > p:last-child .btn{
+  display:inline-flex !important;
+  width:max-content !important;
+  min-width:160px !important;
+  min-height:50px !important;
+  padding:13px 24px !important;
+  align-items:center !important;
+  justify-content:center !important;
+  white-space:nowrap !important;
+  text-align:center !important;
+  line-height:1.25 !important;
+}
+@media(max-width:760px){
+  body.services-page .services-followup-cta{
+    grid-template-columns:58px minmax(0,1fr) !important;
+    column-gap:16px !important;
+  }
+  body.services-page .services-followup-cta > .eyebrow{
+    grid-column:1 / -1 !important;
+    grid-row:1 !important;
+    margin-bottom:16px !important;
+    font-size:.8rem !important;
+  }
+  body.services-page .services-followup-cta > .services-followup-icon{grid-column:1 !important;grid-row:2 !important;}
+  body.services-page .services-followup-cta > div{grid-column:2 !important;grid-row:2 !important;}
+  body.services-page .services-followup-cta > .btn{
+    grid-column:2 !important;
+    grid-row:3 !important;
+    width:max-content !important;
+    min-width:190px !important;
+    white-space:nowrap !important;
+  }
+}
