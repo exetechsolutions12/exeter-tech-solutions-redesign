@@ -1075,3 +1075,133 @@ body.pricing-page .pricing-websites{
     gap:18px !important;
   }
 }
+
+
+/* Pricing services as full-width horizontal rows, stacked vertically with clear dividers. */
+body.pricing-page .pricing-fixed,
+body.pricing-page .pricing-quoted,
+body.pricing-page .pricing-websites{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) !important;
+  gap:0 !important;
+  align-items:stretch !important;
+}
+body.pricing-page .pricing-fixed > .price-card,
+body.pricing-page .pricing-quoted > .price-card{
+  display:grid !important;
+  grid-template-columns:minmax(190px,.72fr) minmax(0,2fr) auto !important;
+  grid-template-rows:auto auto !important;
+  grid-auto-flow:row !important;
+  align-items:center !important;
+  column-gap:34px !important;
+  row-gap:5px !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  padding:28px 8px !important;
+  margin:0 !important;
+  border:0 !important;
+  border-bottom:1px solid rgba(142,223,244,.55) !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+body.pricing-page .pricing-fixed > .price-card:first-child,
+body.pricing-page .pricing-quoted > .price-card:first-child{
+  border-top:1px solid rgba(142,223,244,.55) !important;
+}
+body.pricing-page .pricing-fixed > .price-card h2,
+body.pricing-page .pricing-quoted > .price-card h2{
+  grid-column:1 !important;
+  grid-row:1 !important;
+  align-self:end !important;
+  margin:0 !important;
+  color:#fff !important;
+  font-size:1.3rem !important;
+}
+body.pricing-page .pricing-fixed > .price-card .price,
+body.pricing-page .pricing-quoted > .price-card .price{
+  grid-column:1 !important;
+  grid-row:2 !important;
+  align-self:start !important;
+  margin:3px 0 0 !important;
+  color:#8edff4 !important;
+  font-size:clamp(2rem,2.7vw,2.5rem) !important;
+  line-height:1.12 !important;
+}
+body.pricing-page .pricing-fixed > .price-card > p,
+body.pricing-page .pricing-quoted > .price-card > p{
+  grid-column:2 !important;
+  margin:0 0 7px !important;
+  color:#e4f0fa !important;
+  font-size:1rem !important;
+  line-height:1.7 !important;
+}
+body.pricing-page .pricing-fixed > .price-card > p:last-of-type,
+body.pricing-page .pricing-quoted > .price-card > p:last-of-type{
+  margin-bottom:0 !important;
+}
+body.pricing-page .pricing-fixed > .price-card > .button-row,
+body.pricing-page .pricing-quoted > .price-card > .button-row{
+  grid-column:3 !important;
+  grid-row:1 / span 2 !important;
+  align-self:center !important;
+  width:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+body.pricing-page .pricing-fixed > .price-card:hover,
+body.pricing-page .pricing-quoted > .price-card:hover{
+  background:rgba(142,223,244,.035) !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+body.pricing-page .pricing-websites > .website-horizontal-card{
+  border:0 !important;
+  border-bottom:1px solid rgba(142,223,244,.55) !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+body.pricing-page .pricing-websites > .website-horizontal-card:first-child{
+  border-top:1px solid rgba(142,223,244,.55) !important;
+}
+@media(max-width:900px){
+  body.pricing-page .pricing-fixed > .price-card,
+  body.pricing-page .pricing-quoted > .price-card{
+    grid-template-columns:minmax(155px,.65fr) minmax(0,1.6fr) !important;
+    column-gap:24px !important;
+  }
+  body.pricing-page .pricing-fixed > .price-card > .button-row,
+  body.pricing-page .pricing-quoted > .price-card > .button-row{
+    grid-column:2 !important;
+    grid-row:auto !important;
+    justify-self:start !important;
+    margin-top:12px !important;
+  }
+}
+@media(max-width:640px){
+  body.pricing-page .pricing-fixed > .price-card,
+  body.pricing-page .pricing-quoted > .price-card{
+    grid-template-columns:minmax(0,1fr) !important;
+    grid-template-rows:auto !important;
+    row-gap:8px !important;
+    padding:22px 2px !important;
+  }
+  body.pricing-page .pricing-fixed > .price-card h2,
+  body.pricing-page .pricing-quoted > .price-card h2,
+  body.pricing-page .pricing-fixed > .price-card .price,
+  body.pricing-page .pricing-quoted > .price-card .price,
+  body.pricing-page .pricing-fixed > .price-card > p,
+  body.pricing-page .pricing-quoted > .price-card > p,
+  body.pricing-page .pricing-fixed > .price-card > .button-row,
+  body.pricing-page .pricing-quoted > .price-card > .button-row{
+    grid-column:1 !important;
+    grid-row:auto !important;
+  }
+  body.pricing-page .pricing-fixed > .price-card > .button-row,
+  body.pricing-page .pricing-quoted > .price-card > .button-row{
+    margin-top:8px !important;
+  }
+}
