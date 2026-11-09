@@ -2694,3 +2694,19 @@ body.pricing-page .pricing-layout .pricing-category-underline {
     width:124px !important;
   }
 }
+
+
+/* Balance the space above and below each category's content. */
+body.pricing-page .pricing-layout .pricing-category {
+  padding-top:24px !important;
+  padding-bottom:24px !important;
+}
+body.pricing-page .pricing-layout .pricing-category:first-child {
+  padding-top:0 !important;
+}
+body.pricing-page .pricing-layout .pricing-category-content {
+  justify-content:flex-start !important;
+}
+body.pricing-page .pricing-layout .pricing-category-heading {
+  align-self:center !important;
+}
