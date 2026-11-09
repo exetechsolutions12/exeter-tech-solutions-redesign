@@ -483,3 +483,17 @@ body.services-page .nav::after{
   background:none !important;
   box-shadow:none !important;
 }
+
+
+/* Align the Services hero video flush with the bottom edge of the navigation. */
+body.services-page main{
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+body.services-page .services-options-section{
+  padding-top:0 !important;
+  margin-top:0 !important;
+}
+body.services-page .services-options-heading.site-video-hero{
+  margin-top:0 !important;
+}
