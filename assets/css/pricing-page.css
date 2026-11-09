@@ -3331,3 +3331,85 @@ body.pricing-page .page-hero > .container > .pricing-notices > article.notice {
     max-height:none !important;
   }
 }
+
+
+/* FINAL HERO LAYOUT: intro copy first, two wider cards directly underneath. */
+body.pricing-page .page-hero > .container {
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  width:min(100% - 48px,1280px) !important;
+  max-width:1280px !important;
+  margin-inline:auto !important;
+}
+body.pricing-page .page-hero > .container > .eyebrow {
+  display:inline-flex !important;
+  width:auto !important;
+  max-width:max-content !important;
+  align-self:center !important;
+  margin:0 auto 18px !important;
+}
+body.pricing-page .page-hero > .container > h1 {
+  width:100% !important;
+  max-width:none !important;
+  margin:0 auto 12px !important;
+  text-align:center !important;
+}
+body.pricing-page .page-hero > .container > p {
+  width:100% !important;
+  max-width:1000px !important;
+  margin:0 auto !important;
+  text-align:center !important;
+}
+body.pricing-page .page-hero > .container > .pricing-notices {
+  position:static !important;
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  align-items:stretch !important;
+  gap:22px !important;
+  width:100% !important;
+  max-width:1280px !important;
+  margin:30px auto 0 !important;
+  padding:0 !important;
+  transform:none !important;
+  float:none !important;
+}
+body.pricing-page .page-hero > .container > .pricing-notices > article.notice,
+body.pricing-page .page-hero > .container > .pricing-notices > article.notice:first-child,
+body.pricing-page .page-hero > .container > .pricing-notices > article.notice.payment-notice {
+  box-sizing:border-box !important;
+  width:100% !important;
+  height:238px !important;
+  min-height:238px !important;
+  max-height:238px !important;
+  margin:0 !important;
+  align-self:stretch !important;
+  overflow:hidden !important;
+}
+@media(max-width:900px) {
+  body.pricing-page .page-hero > .container > .pricing-notices {
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:16px !important;
+  }
+  body.pricing-page .page-hero > .container > .pricing-notices > article.notice,
+  body.pricing-page .page-hero > .container > .pricing-notices > article.notice:first-child,
+  body.pricing-page .page-hero > .container > .pricing-notices > article.notice.payment-notice {
+    height:238px !important;
+    min-height:238px !important;
+    max-height:238px !important;
+  }
+}
+@media(max-width:640px) {
+  body.pricing-page .page-hero > .container > .pricing-notices {
+    grid-template-columns:minmax(0,1fr) !important;
+    max-width:560px !important;
+  }
+  body.pricing-page .page-hero > .container > .pricing-notices > article.notice,
+  body.pricing-page .page-hero > .container > .pricing-notices > article.notice:first-child,
+  body.pricing-page .page-hero > .container > .pricing-notices > article.notice.payment-notice {
+    height:auto !important;
+    min-height:210px !important;
+    max-height:none !important;
+  }
+}
