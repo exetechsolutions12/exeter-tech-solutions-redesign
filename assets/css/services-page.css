@@ -1676,3 +1676,30 @@ body.services-page .services-price-note .icon{
     font-size:1rem !important;
   }
 }
+
+
+/* Pricing notes: remove the callout box and use the same cyan as the guidance heading. */
+body.services-page .services-price-note{
+  display:block !important;
+  width:fit-content !important;
+  max-width:100% !important;
+  margin:12px 0 14px !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  color:#8de4fb !important;
+  font-size:1.08rem !important;
+  font-weight:600 !important;
+  line-height:1.6 !important;
+}
+body.services-page .services-price-note *,
+body.services-page .services-price-note strong,
+body.services-page .services-price-note b{
+  color:#8de4fb !important;
+}
+body.services-page .services-price-note svg,
+body.services-page .services-price-note .icon{
+  display:none !important;
+}
