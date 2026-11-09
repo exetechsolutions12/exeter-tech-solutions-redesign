@@ -3422,3 +3422,17 @@ body.pricing-page .pricing-main-section {
 body.pricing-page .pricing-main-section > .container {
   padding-top:0 !important;
 }
+
+
+/* Tighten the gap below the hero panels so the pricing categories sit higher. */
+body.pricing-page .page-hero {
+  padding-bottom:12px !important;
+}
+body.pricing-page .pricing-main-section {
+  padding-top:0 !important;
+  margin-top:0 !important;
+}
+body.pricing-page .pricing-main-section > .container {
+  padding-top:0 !important;
+  margin-top:0 !important;
+}
