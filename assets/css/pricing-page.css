@@ -2473,3 +2473,29 @@ body.pricing-page .pricing-layout .pricing-row-price {
 body.pricing-page .page-hero {
   display:flex !important;
 }
+
+
+/* Subtle cyan gradient separators between the pricing categories. */
+body.pricing-page .pricing-layout .pricing-category {
+  position:relative !important;
+  border-bottom:0 !important;
+}
+body.pricing-page .pricing-layout .pricing-category:not(:last-child)::after {
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:0;
+  width:100%;
+  height:3px;
+  transform:translateX(-50%);
+  background:linear-gradient(
+    90deg,
+    rgba(76,228,236,0) 0%,
+    rgba(76,228,236,.28) 12%,
+    rgba(126,232,255,.88) 50%,
+    rgba(76,228,236,.28) 88%,
+    rgba(76,228,236,0) 100%
+  );
+  box-shadow:0 0 7px rgba(76,228,236,.2);
+  border-radius:99px;
+}
