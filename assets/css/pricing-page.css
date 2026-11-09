@@ -995,3 +995,83 @@ body.pricing-page .pricing-notices .pricing-notice-card::before{
     height:54px !important;
   }
 }
+
+
+/* Unboxed pricing layout: open editorial columns instead of individual cards. */
+body.pricing-page .pricing .price-card,
+body.pricing-page .pricing .price-card.featured,
+body.pricing-page .pricing-websites .price-card,
+body.pricing-page .pricing-websites .website-horizontal-card{
+  position:relative !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  align-self:stretch !important;
+  height:100% !important;
+  min-width:0 !important;
+  box-sizing:border-box !important;
+  padding:26px 28px 24px !important;
+  border:0 !important;
+  border-radius:0 !important;
+  border-top:1px solid rgba(142,223,244,.48) !important;
+  border-bottom:1px solid rgba(142,223,244,.22) !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  transform:none !important;
+  transition:none !important;
+}
+body.pricing-page .pricing .price-card:hover,
+body.pricing-page .pricing .price-card.featured:hover,
+body.pricing-page .pricing-websites .price-card:hover{
+  border-color:rgba(142,223,244,.48) !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+body.pricing-page .pricing .price-card h2,
+body.pricing-page .pricing-websites .price-card h2{
+  color:#fff !important;
+  font-size:1.3rem !important;
+  margin:0 0 8px !important;
+}
+body.pricing-page .pricing .price-card h2 a,
+body.pricing-page .pricing-websites .price-card h2 a{
+  color:#fff !important;
+}
+body.pricing-page .pricing .price,
+body.pricing-page .pricing-websites .price{
+  color:#8edff4 !important;
+  font-size:clamp(2rem,2.7vw,2.5rem) !important;
+  font-weight:750 !important;
+  margin:2px 0 16px !important;
+}
+body.pricing-page .pricing .price-card p,
+body.pricing-page .pricing-websites .price-card p{
+  color:#e4f0fa !important;
+  font-size:1rem !important;
+  line-height:1.7 !important;
+}
+body.pricing-page .pricing .price-card .button-row,
+body.pricing-page .pricing-websites .price-card .button-row{
+  margin-top:auto !important;
+  padding-top:22px !important;
+}
+body.pricing-page .pricing-fixed,
+body.pricing-page .pricing-quoted,
+body.pricing-page .pricing-websites{
+  gap:24px 42px !important;
+  align-items:stretch !important;
+}
+@media(max-width:760px){
+  body.pricing-page .pricing .price-card,
+  body.pricing-page .pricing .price-card.featured,
+  body.pricing-page .pricing-websites .price-card{
+    padding:22px 4px !important;
+    height:auto !important;
+  }
+  body.pricing-page .pricing-fixed,
+  body.pricing-page .pricing-quoted,
+  body.pricing-page .pricing-websites{
+    gap:18px !important;
+  }
+}
