@@ -457,3 +457,11 @@
     margin-bottom:24px !important;
   }
 }
+
+
+/* Remove the oversized decorative corner shapes from the Services page. */
+.services-page .services-options-section::before,
+.services-page .services-options-section::after{
+  display:none !important;
+  content:none !important;
+}
