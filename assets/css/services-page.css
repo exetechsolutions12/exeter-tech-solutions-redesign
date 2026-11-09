@@ -1703,3 +1703,130 @@ body.services-page .services-price-note svg,
 body.services-page .services-price-note .icon{
   display:none !important;
 }
+
+
+/* Redesigned Services follow-up: two balanced, modern panels on the navy page. */
+body.services-page .services-followup-area{
+  padding:76px 0 84px !important;
+  background:#082b49 !important;
+}
+body.services-page .services-followup-grid{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  align-items:stretch !important;
+  gap:26px !important;
+  max-width:1240px !important;
+}
+body.services-page .services-followup-cta,
+body.services-page .services-followup-safety{
+  position:relative !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  justify-content:flex-start !important;
+  gap:22px !important;
+  width:100% !important;
+  max-width:none !important;
+  min-width:0 !important;
+  height:100% !important;
+  box-sizing:border-box !important;
+  margin:0 !important;
+  padding:36px 38px !important;
+  overflow:hidden !important;
+  color:#f5f9ff !important;
+  background:linear-gradient(145deg,#103858 0%,#0b2f50 100%) !important;
+  border:1px solid rgba(141,228,251,.25) !important;
+  border-top:3px solid #8de4fb !important;
+  border-left:1px solid rgba(141,228,251,.25) !important;
+  border-radius:18px !important;
+  box-shadow:0 14px 34px rgba(0,0,0,.13) !important;
+}
+body.services-page .services-followup-cta > div{
+  flex:1 1 auto !important;
+  width:100% !important;
+}
+body.services-page .services-followup-cta .eyebrow{
+  display:inline-flex !important;
+  align-items:center !important;
+  margin:0 0 22px !important;
+  padding:9px 16px !important;
+  color:#8de4fb !important;
+  background:rgba(141,228,251,.1) !important;
+  border:1px solid rgba(141,228,251,.55) !important;
+  border-radius:999px !important;
+  font-size:.95rem !important;
+  font-weight:750 !important;
+  line-height:1.3 !important;
+  letter-spacing:.04em !important;
+}
+body.services-page .services-followup-cta h2,
+body.services-page .services-followup-safety h2{
+  margin:0 0 14px !important;
+  color:#fff !important;
+  font-size:clamp(1.65rem,2.2vw,2.15rem) !important;
+  font-weight:700 !important;
+  line-height:1.2 !important;
+  letter-spacing:-.025em !important;
+}
+body.services-page .services-followup-cta p,
+body.services-page .services-followup-safety p{
+  margin:0 0 14px !important;
+  color:#dceaf7 !important;
+  font-size:1.04rem !important;
+  line-height:1.72 !important;
+}
+body.services-page .services-followup-cta > .btn,
+body.services-page .services-followup-safety > p:last-child .btn{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  align-self:flex-start !important;
+  min-height:50px !important;
+  margin:0 !important;
+  padding:13px 22px !important;
+  color:#062b49 !important;
+  background:#8de4fb !important;
+  border:1px solid #8de4fb !important;
+  border-radius:9px !important;
+  box-shadow:none !important;
+  font-size:1rem !important;
+  font-weight:750 !important;
+  line-height:1.3 !important;
+  text-decoration:none !important;
+  transition:background-color .18s ease,transform .18s ease !important;
+}
+body.services-page .services-followup-cta > .btn:hover,
+body.services-page .services-followup-safety > p:last-child .btn:hover{
+  color:#05294a !important;
+  background:#b4efff !important;
+  border-color:#b4efff !important;
+  transform:translateY(-2px) !important;
+}
+body.services-page .services-followup-safety > p:last-child{
+  margin:auto 0 0 !important;
+  padding:8px 0 0 !important;
+}
+@media(max-width:760px){
+  body.services-page .services-followup-area{
+    padding:48px 0 56px !important;
+  }
+  body.services-page .services-followup-grid{
+    grid-template-columns:minmax(0,1fr) !important;
+    gap:18px !important;
+  }
+  body.services-page .services-followup-cta,
+  body.services-page .services-followup-safety{
+    height:auto !important;
+    padding:27px 24px !important;
+    gap:16px !important;
+  }
+  body.services-page .services-followup-cta h2,
+  body.services-page .services-followup-safety h2{
+    font-size:1.55rem !important;
+  }
+  body.services-page .services-followup-cta p,
+  body.services-page .services-followup-safety p{
+    font-size:1rem !important;
+    line-height:1.65 !important;
+  }
+}
