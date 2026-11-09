@@ -1236,7 +1236,7 @@
 
 /* About story: editorial split layout with clear hierarchy and no generic card treatment. */
 .about-page .about-background {
-  padding: clamp(54px, 7vw, 92px) 0 !important;
+  padding: clamp(20px, 2vw, 28px) 0 clamp(54px, 7vw, 92px) !important;
   background: transparent !important;
 }
 .about-page .about-background .container {
