@@ -3082,3 +3082,39 @@ body.pricing-page #main .pricing-main-section .pricing-notices .notice-copy p {
     height:48px !important;
   }
 }
+
+
+/* Compact equal-height pricing notice boxes; shared top alignment. */
+body.pricing-page #main .pricing-main-section .pricing-notices {
+  grid-template-rows:260px !important;
+  grid-auto-rows:260px !important;
+}
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice,
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice:first-child,
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice.payment-notice {
+  height:260px !important;
+  min-height:260px !important;
+  max-height:260px !important;
+  padding:22px 24px !important;
+  align-items:start !important;
+}
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice > .notice-copy {
+  align-self:start !important;
+  margin-top:0 !important;
+}
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice > .notice-icon {
+  align-self:center !important;
+}
+@media(max-width:900px) {
+  body.pricing-page #main .pricing-main-section .pricing-notices {
+    grid-template-rows:none !important;
+    grid-auto-rows:260px !important;
+  }
+  body.pricing-page #main .pricing-main-section .pricing-notices > article.notice,
+  body.pricing-page #main .pricing-main-section .pricing-notices > article.notice:first-child,
+  body.pricing-page #main .pricing-main-section .pricing-notices > article.notice.payment-notice {
+    height:260px !important;
+    min-height:260px !important;
+    max-height:260px !important;
+  }
+}
