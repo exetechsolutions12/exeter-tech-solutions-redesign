@@ -2391,3 +2391,9 @@ body.pricing-page .pricing-row-button:hover {
     font-size:.92rem !important;
   }
 }
+
+
+/* Match the Optional Website Care label to the cyan service prices. */
+body.pricing-page .pricing-row-copy p strong {
+  color: #4ce4ec !important;
+}
