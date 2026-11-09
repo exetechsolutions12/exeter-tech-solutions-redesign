@@ -465,3 +465,21 @@
   display:none !important;
   content:none !important;
 }
+
+
+/* Remove residual edge ornaments around the Services hero (including inherited pseudo-elements). */
+body.services-page main::before,
+body.services-page main::after,
+body.services-page main > .services-options-section::before,
+body.services-page main > .services-options-section::after,
+body.services-page .services-options-section > .container::before,
+body.services-page .services-options-section > .container::after,
+body.services-page .services-options-heading::before,
+body.services-page .services-options-heading::after,
+body.services-page .nav::before,
+body.services-page .nav::after{
+  content:none !important;
+  display:none !important;
+  background:none !important;
+  box-shadow:none !important;
+}
