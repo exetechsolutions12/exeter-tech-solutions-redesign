@@ -1646,3 +1646,33 @@ body.services-page .services-choice-card .services-card-cta:focus-visible::after
     font-size:.94rem !important;
   }
 }
+
+
+/* Highlight pricing/information callouts without decorative rules or icons. */
+body.services-page .services-price-note{
+  display:block !important;
+  width:fit-content !important;
+  max-width:850px !important;
+  margin:14px 0 16px !important;
+  padding:16px 22px !important;
+  border:0 !important;
+  border-left:4px solid #8de4fb !important;
+  border-radius:9px !important;
+  background:rgba(141,228,251,.13) !important;
+  color:#f4f9ff !important;
+  font-size:1.08rem !important;
+  font-weight:500 !important;
+  line-height:1.6 !important;
+  box-shadow:0 5px 18px rgba(0,0,0,.12) !important;
+}
+body.services-page .services-price-note svg,
+body.services-page .services-price-note .icon{
+  display:none !important;
+}
+@media(max-width:680px){
+  body.services-page .services-price-note{
+    width:100% !important;
+    padding:13px 16px !important;
+    font-size:1rem !important;
+  }
+}
