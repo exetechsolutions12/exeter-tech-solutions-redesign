@@ -975,3 +975,10 @@ body.pricing-page .pricing-notices .notice-icon svg *{
     height:28px !important;
   }
 }
+
+
+/* Align the two pricing notice text columns to the same top baseline. */
+body.pricing-page .pricing-notices .notice-copy{
+  align-self:start !important;
+  margin-top:20px !important;
+}
