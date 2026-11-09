@@ -1249,3 +1249,99 @@ body.services-page .services-choice-card .services-card-cta{
   body.services-page .services-feature-list{display:grid !important;gap:7px !important;}
   body.services-page .services-feature-list li{font-size:.82rem !important;}
 }
+
+
+/* Alignment pass: consistent icon, divider, headings, feature columns and links across every row. */
+body.services-page .services-choice-grid{
+  align-items:stretch !important;
+  gap:34px !important;
+}
+body.services-page .services-choice-card,
+body.services-page .services-choice-card:nth-child(2){
+  grid-template-columns:84px 2px minmax(0,1fr) !important;
+  align-items:stretch !important;
+  gap:0 24px !important;
+}
+body.services-page .services-card-icon{
+  align-self:start !important;
+  justify-self:start !important;
+  margin:0 !important;
+}
+body.services-page .services-card-divider{
+  align-self:stretch !important;
+  justify-self:center !important;
+  width:2px !important;
+  height:auto !important;
+  min-height:84px !important;
+  margin:0 !important;
+}
+body.services-page .services-card-content{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  justify-content:flex-start !important;
+  width:100% !important;
+  min-width:0 !important;
+  gap:0 !important;
+}
+body.services-page .services-choice-card h2{
+  width:100% !important;
+  min-height:1.25em !important;
+  margin:0 0 9px !important;
+  line-height:1.25 !important;
+}
+body.services-page .services-choice-card > .services-card-content > p{
+  width:100% !important;
+  margin:0 0 10px !important;
+  line-height:1.5 !important;
+}
+body.services-page .services-feature-list{
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  align-items:start !important;
+  width:100% !important;
+  gap:9px 22px !important;
+  margin:9px 0 15px !important;
+}
+body.services-page .services-feature-list li{
+  display:grid !important;
+  grid-template-columns:15px minmax(0,1fr) !important;
+  align-items:start !important;
+  min-width:0 !important;
+  width:auto !important;
+  line-height:1.45 !important;
+}
+body.services-page .services-feature-list li::before{
+  align-self:start !important;
+  margin-top:2px !important;
+}
+body.services-page .services-price-note{
+  width:min(100%,760px) !important;
+  margin:0 0 14px !important;
+}
+body.services-page .services-choice-card .services-card-cta{
+  margin:0 !important;
+  margin-top:auto !important;
+  padding-top:2px !important;
+}
+@media(max-width:900px){
+  body.services-page .services-feature-list{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:8px 16px !important;
+  }
+}
+@media(max-width:680px){
+  body.services-page .services-choice-card,
+  body.services-page .services-choice-card:nth-child(2){
+    grid-template-columns:62px 2px minmax(0,1fr) !important;
+    align-items:stretch !important;
+    gap:0 14px !important;
+  }
+  body.services-page .services-card-divider{
+    min-height:62px !important;
+  }
+  body.services-page .services-feature-list{
+    grid-template-columns:minmax(0,1fr) !important;
+    gap:7px !important;
+  }
+}
