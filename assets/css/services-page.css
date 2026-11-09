@@ -2208,3 +2208,28 @@ body.services-page .services-followup-icon svg path{
     padding-top:26px !important;
   }
 }
+
+
+/* Remove decorative arrows from every Services service-link button. */
+body.services-page .services-choice-card .services-card-cta::after{
+  content:none !important;
+  display:none !important;
+}
+
+/* Match the follow-up icons to the Services icons: cyan tile, navy outline artwork. */
+body.services-page .services-followup-icon{
+  background:#8de4fb !important;
+  color:#05294a !important;
+  border:0 !important;
+  border-radius:15px !important;
+  box-shadow:none !important;
+}
+body.services-page .services-followup-icon svg,
+body.services-page .services-followup-icon svg *{
+  background:transparent !important;
+  fill:none !important;
+  stroke:#05294a !important;
+  color:#05294a !important;
+  box-shadow:none !important;
+  filter:none !important;
+}
