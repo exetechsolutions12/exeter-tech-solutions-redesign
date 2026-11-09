@@ -3118,3 +3118,17 @@ body.pricing-page #main .pricing-main-section .pricing-notices > article.notice 
     max-height:260px !important;
   }
 }
+
+
+/* Remove the dark pricing-section/card fills completely. */
+body.pricing-page #main .pricing-main-section,
+body.pricing-page #main .pricing-main-section > .container,
+body.pricing-page #main .pricing-main-section .pricing-notices,
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice,
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice::before,
+body.pricing-page #main .pricing-main-section .pricing-notices > article.notice::after {
+  background:transparent !important;
+  background-color:transparent !important;
+  background-image:none !important;
+  box-shadow:none !important;
+}
