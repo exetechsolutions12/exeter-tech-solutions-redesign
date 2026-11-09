@@ -2279,3 +2279,14 @@ body.services-page .services-followup-area::before{
     width:calc(100% - 36px) !important;
   }
 }
+
+
+/* Bring the next-steps/security section closer to the service list. */
+body.services-page .services-followup-area{
+  padding-top:56px !important;
+}
+@media(max-width:760px){
+  body.services-page .services-followup-area{
+    padding-top:38px !important;
+  }
+}
