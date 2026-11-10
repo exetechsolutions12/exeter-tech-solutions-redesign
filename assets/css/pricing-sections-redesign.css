@@ -310,3 +310,170 @@ body.pricing-page #main .pricing-community-category .pricing-category-content {
     font-size: .9rem !important;
   }
 }
+
+
+/* Pricing rows: consistent alignment, clearer service hierarchy and compact rhythm.
+   This applies below the hero only. */
+body.pricing-page #main .pricing-category-content {
+  justify-content: flex-start !important;
+  padding: 0 26px !important;
+}
+
+body.pricing-page #main .pricing-category-content > .pricing-row {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 170px !important;
+  grid-template-rows: auto auto !important;
+  grid-template-areas:
+    "copy price"
+    "copy button" !important;
+  align-items: start !important;
+  column-gap: 26px !important;
+  row-gap: 10px !important;
+  padding: 17px 0 !important;
+  border-bottom: 1px solid rgba(139, 213, 235, .72) !important;
+  box-sizing: border-box !important;
+}
+
+body.pricing-page #main .pricing-category-content > .pricing-row:last-child {
+  border-bottom: 0 !important;
+}
+
+body.pricing-page #main .pricing-row-copy {
+  grid-area: copy !important;
+  align-self: start !important;
+  padding: 0 !important;
+  min-width: 0 !important;
+}
+
+body.pricing-page #main .pricing-row-copy h3 {
+  margin: 0 0 6px !important;
+  font-size: clamp(1.32rem, 1.55vw, 1.55rem) !important;
+  line-height: 1.22 !important;
+  font-weight: 700 !important;
+  letter-spacing: -.025em !important;
+}
+
+body.pricing-page #main .pricing-row-copy p {
+  margin: 0 !important;
+  font-size: .93rem !important;
+  line-height: 1.48 !important;
+}
+
+body.pricing-page #main .pricing-row-copy p + p {
+  margin-top: 7px !important;
+}
+
+body.pricing-page #main .pricing-row-price {
+  grid-area: price !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: end !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 3px 0 0 !important;
+  border: 0 !important;
+  font-size: clamp(1.8rem, 2.15vw, 2.15rem) !important;
+  line-height: 1.12 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+body.pricing-page #main .pricing-row-button,
+body.pricing-page #main .pricing-row > .btn {
+  grid-area: button !important;
+  justify-self: center !important;
+  align-self: start !important;
+  width: 126px !important;
+  min-width: 126px !important;
+  min-height: 42px !important;
+  margin: 0 !important;
+  padding: 10px 15px !important;
+  border-radius: 10px !important;
+  font-size: .9rem !important;
+  line-height: 1.15 !important;
+}
+
+body.pricing-page #main .pricing-category-heading {
+  justify-content: flex-start !important;
+  padding-top: 25px !important;
+}
+
+body.pricing-page #main .pricing-category-heading h2 {
+  font-size: clamp(1.55rem, 1.9vw, 1.9rem) !important;
+  line-height: 1.13 !important;
+}
+
+/* Keep each category's left divider and service separators crisp and continuous. */
+body.pricing-page #main .pricing-category-heading {
+  border-right: 1px solid rgba(139, 213, 235, .78) !important;
+}
+body.pricing-page #main .pricing-category-content > .pricing-row {
+  border-bottom-color: rgba(139, 213, 235, .72) !important;
+}
+
+/* Tablet and mobile: price and Enquire remain grouped underneath the description. */
+@media (max-width: 1000px) {
+  body.pricing-page #main .pricing-category-content {
+    padding: 0 20px !important;
+  }
+  body.pricing-page #main .pricing-category-content > .pricing-row {
+    grid-template-columns: minmax(0, 1fr) 145px !important;
+    column-gap: 18px !important;
+    padding: 15px 0 !important;
+  }
+  body.pricing-page #main .pricing-row-price {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media (max-width: 700px) {
+  body.pricing-page #main .pricing-category-content {
+    padding: 0 18px !important;
+  }
+  body.pricing-page #main .pricing-category-content > .pricing-row {
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    grid-template-areas:
+      "copy copy"
+      "price button" !important;
+    align-items: center !important;
+    column-gap: 14px !important;
+    row-gap: 9px !important;
+    padding: 15px 0 !important;
+  }
+  body.pricing-page #main .pricing-row-price {
+    justify-content: flex-start !important;
+    align-self: center !important;
+    width: auto !important;
+    font-size: 1.7rem !important;
+    text-align: left !important;
+  }
+  body.pricing-page #main .pricing-row-button,
+  body.pricing-page #main .pricing-row > .btn {
+    justify-self: end !important;
+    width: 116px !important;
+    min-width: 116px !important;
+  }
+  body.pricing-page #main .pricing-row-copy h3 {
+    font-size: 1.28rem !important;
+  }
+}
+
+@media (max-width: 420px) {
+  body.pricing-page #main .pricing-category-content {
+    padding: 0 14px !important;
+  }
+  body.pricing-page #main .pricing-category-content > .pricing-row {
+    column-gap: 9px !important;
+  }
+  body.pricing-page #main .pricing-row-price {
+    font-size: 1.5rem !important;
+  }
+  body.pricing-page #main .pricing-row-button,
+  body.pricing-page #main .pricing-row > .btn {
+    width: 104px !important;
+    min-width: 104px !important;
+    min-height: 40px !important;
+  }
+}
