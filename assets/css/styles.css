@@ -7330,3 +7330,77 @@ body.faq-page main > .page-hero.compact p {
     font-size:clamp(2.35rem,9vw,3.3rem) !important;
   }
 }
+
+
+/* Match Community, Website, News and Contact hero dimensions to the Services/FAQ intro. */
+body.community-page main > .page-hero,
+body.website-services-page main > .page-hero,
+body.news-page main > .page-hero,
+body.contact-page main > .page-hero {
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  min-height:0 !important;
+  height:auto !important;
+  margin:0 !important;
+  padding:76px 24px 52px !important;
+  overflow:hidden !important;
+}
+body.community-page main > .page-hero > .container,
+body.website-services-page main > .page-hero > .container,
+body.news-page main > .page-hero > .container,
+body.contact-page main > .page-hero > .container {
+  width:min(100%,1120px) !important;
+  max-width:1120px !important;
+  margin:0 auto !important;
+  padding:0 !important;
+}
+body.community-page main > .page-hero .eyebrow,
+body.website-services-page main > .page-hero .eyebrow,
+body.news-page main > .page-hero .eyebrow,
+body.contact-page main > .page-hero .eyebrow {
+  margin-bottom:16px !important;
+}
+body.community-page main > .page-hero h1,
+body.website-services-page main > .page-hero h1,
+body.news-page main > .page-hero h1,
+body.contact-page main > .page-hero h1 {
+  max-width:1050px !important;
+  margin:0 !important;
+  font-family:'Barlow',Arial,sans-serif !important;
+  font-size:clamp(2.4rem,5.2vw,4.8rem) !important;
+  font-weight:500 !important;
+  line-height:.99 !important;
+  letter-spacing:-.055em !important;
+}
+body.community-page main > .page-hero p,
+body.website-services-page main > .page-hero p,
+body.news-page main > .page-hero p,
+body.contact-page main > .page-hero p {
+  max-width:850px !important;
+  margin:18px 0 0 !important;
+  font-size:clamp(1.05rem,1.65vw,1.35rem) !important;
+  line-height:1.55 !important;
+}
+body.community-page main > .page-hero .button-row,
+body.website-services-page main > .page-hero .button-row,
+body.news-page main > .page-hero .button-row,
+body.contact-page main > .page-hero .button-row {
+  margin-top:22px !important;
+}
+@media(max-width:760px) {
+  body.community-page main > .page-hero,
+  body.website-services-page main > .page-hero,
+  body.news-page main > .page-hero,
+  body.contact-page main > .page-hero {
+    padding:52px 20px 44px !important;
+  }
+  body.community-page main > .page-hero h1,
+  body.website-services-page main > .page-hero h1,
+  body.news-page main > .page-hero h1,
+  body.contact-page main > .page-hero h1 {
+    font-size:clamp(2.35rem,9vw,3.3rem) !important;
+  }
+}
