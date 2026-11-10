@@ -477,3 +477,180 @@ body.pricing-page #main .pricing-category-content > .pricing-row {
     min-height: 40px !important;
   }
 }
+
+
+/* Alignment correction: equal service rows, continuous category dividers,
+   and one consistent copy / price / enquiry grid. */
+body.pricing-page #main .pricing-layout > .pricing-category {
+  align-items: stretch !important;
+}
+
+body.pricing-page #main .pricing-category-content {
+  display: grid !important;
+  grid-auto-flow: row !important;
+  grid-auto-rows: 1fr !important;
+  align-content: stretch !important;
+  justify-content: stretch !important;
+  min-height: 0 !important;
+  padding: 0 26px !important;
+}
+
+body.pricing-page #main .pricing-category-content > .pricing-row {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 170px !important;
+  grid-template-rows: minmax(0, 1fr) auto !important;
+  grid-template-areas:
+    "copy price"
+    "copy button" !important;
+  align-items: center !important;
+  align-content: center !important;
+  column-gap: 26px !important;
+  row-gap: 9px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 20px 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Each separator crosses the category heading divider, so the line reads
+   as one continuous rule across the full width of the category panel. */
+body.pricing-page #main .pricing-category-content > .pricing-row:not(:last-child)::after {
+  content: "" !important;
+  position: absolute !important;
+  z-index: 1 !important;
+  left: -239px !important;
+  right: -27px !important;
+  bottom: 0 !important;
+  height: 1px !important;
+  background: rgba(139, 213, 235, .72) !important;
+  pointer-events: none !important;
+}
+
+body.pricing-page #main .pricing-row-copy {
+  grid-area: copy !important;
+  align-self: center !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+
+body.pricing-page #main .pricing-row-copy h3 {
+  margin: 0 0 7px !important;
+  font-size: clamp(1.32rem, 1.55vw, 1.55rem) !important;
+  line-height: 1.22 !important;
+}
+
+body.pricing-page #main .pricing-row-copy p {
+  margin: 0 !important;
+  font-size: .93rem !important;
+  line-height: 1.48 !important;
+}
+
+body.pricing-page #main .pricing-row-copy p + p {
+  margin-top: 7px !important;
+}
+
+body.pricing-page #main .pricing-row-price {
+  grid-area: price !important;
+  align-self: end !important;
+  justify-content: center !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: clamp(1.8rem, 2.05vw, 2.1rem) !important;
+  line-height: 1.1 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+body.pricing-page #main .pricing-row-button,
+body.pricing-page #main .pricing-row > .btn {
+  grid-area: button !important;
+  justify-self: center !important;
+  align-self: start !important;
+  width: 126px !important;
+  min-width: 126px !important;
+  min-height: 42px !important;
+  margin: 0 !important;
+}
+
+/* Keep the same alignment on narrower screens without allowing the
+   full-width separator to protrude beyond the stacked category panel. */
+@media (max-width: 1000px) and (min-width: 701px) {
+  body.pricing-page #main .pricing-category-content {
+    padding: 0 20px !important;
+  }
+  body.pricing-page #main .pricing-category-content > .pricing-row {
+    grid-template-columns: minmax(0, 1fr) 145px !important;
+    column-gap: 18px !important;
+    padding: 18px 0 !important;
+  }
+  body.pricing-page #main .pricing-category-content > .pricing-row:not(:last-child)::after {
+    left: -199px !important;
+    right: -21px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  body.pricing-page #main .pricing-category-content {
+    display: grid !important;
+    grid-auto-rows: auto !important;
+    padding: 0 18px !important;
+  }
+  body.pricing-page #main .pricing-category-content > .pricing-row {
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    grid-template-rows: auto auto !important;
+    grid-template-areas:
+      "copy copy"
+      "price button" !important;
+    align-items: center !important;
+    column-gap: 14px !important;
+    row-gap: 9px !important;
+    height: auto !important;
+    padding: 17px 0 !important;
+  }
+  body.pricing-page #main .pricing-category-content > .pricing-row:not(:last-child)::after {
+    left: 0 !important;
+    right: 0 !important;
+  }
+  body.pricing-page #main .pricing-row-copy {
+    align-self: start !important;
+  }
+  body.pricing-page #main .pricing-row-price {
+    justify-content: flex-start !important;
+    align-self: center !important;
+    width: auto !important;
+    font-size: 1.7rem !important;
+    text-align: left !important;
+  }
+  body.pricing-page #main .pricing-row-button,
+  body.pricing-page #main .pricing-row > .btn {
+    justify-self: end !important;
+    width: 116px !important;
+    min-width: 116px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  body.pricing-page #main .pricing-category-content {
+    padding: 0 14px !important;
+  }
+  body.pricing-page #main .pricing-category-content > .pricing-row {
+    column-gap: 9px !important;
+  }
+  body.pricing-page #main .pricing-row-price {
+    font-size: 1.5rem !important;
+  }
+  body.pricing-page #main .pricing-row-button,
+  body.pricing-page #main .pricing-row > .btn {
+    width: 104px !important;
+    min-width: 104px !important;
+  }
+}
