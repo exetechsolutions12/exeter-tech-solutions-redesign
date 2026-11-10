@@ -7506,3 +7506,98 @@ body.contact-page main > .page-hero .button-row {
     padding: 52px 20px 44px !important;
   }
 }
+
+
+/* Match the actual Pricing hero sizing rules (not a fixed-height substitute).
+   Pricing uses a 390px minimum, 72px/68px vertical padding and lets content
+   determine the final height. */
+body.community-page main > .page-hero,
+body.website-services-page main > .page-hero,
+body.news-page main > .page-hero,
+body.contact-page main > .page-hero {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 390px !important;
+  margin: 0 !important;
+  padding: 72px 24px 68px !important;
+  overflow: hidden !important;
+  text-align: center !important;
+}
+body.community-page main > .page-hero > .container,
+body.website-services-page main > .page-hero > .container,
+body.news-page main > .page-hero > .container,
+body.contact-page main > .page-hero > .container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: min(100%, 1120px) !important;
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+body.community-page main > .page-hero .eyebrow,
+body.website-services-page main > .page-hero .eyebrow,
+body.news-page main > .page-hero .eyebrow,
+body.contact-page main > .page-hero .eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: fit-content !important;
+  margin: 0 0 16px !important;
+  padding: 8px 16px !important;
+  font-family: 'Barlow', Arial, sans-serif !important;
+  font-size: .88rem !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  letter-spacing: .13em !important;
+  text-transform: uppercase !important;
+}
+body.community-page main > .page-hero h1,
+body.website-services-page main > .page-hero h1,
+body.news-page main > .page-hero h1,
+body.contact-page main > .page-hero h1 {
+  width: min(100%, 1050px) !important;
+  max-width: 1050px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Barlow', Arial, sans-serif !important;
+  font-size: clamp(2.4rem, 5.2vw, 4.8rem) !important;
+  font-weight: 500 !important;
+  line-height: .99 !important;
+  letter-spacing: -.055em !important;
+  text-wrap: balance !important;
+}
+body.community-page main > .page-hero p,
+body.website-services-page main > .page-hero p,
+body.news-page main > .page-hero p,
+body.contact-page main > .page-hero p {
+  max-width: 850px !important;
+  margin: 18px auto 0 !important;
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  font-size: clamp(1.05rem, 1.65vw, 1.35rem) !important;
+  line-height: 1.55 !important;
+  text-align: center !important;
+}
+body.community-page main > .page-hero .button-row,
+body.website-services-page main > .page-hero .button-row,
+body.news-page main > .page-hero .button-row,
+body.contact-page main > .page-hero .button-row {
+  justify-content: center !important;
+  margin-top: 22px !important;
+}
+@media (max-width: 760px) {
+  body.community-page main > .page-hero,
+  body.website-services-page main > .page-hero,
+  body.news-page main > .page-hero,
+  body.contact-page main > .page-hero {
+    min-height: 320px !important;
+    height: auto !important;
+    padding: 52px 20px 44px !important;
+  }
+}
