@@ -654,3 +654,35 @@ body.pricing-page #main .pricing-row > .btn {
     min-width: 104px !important;
   }
 }
+
+
+/* USER REQUEST: remove every decorative line from the pricing sections.
+   Preserve the layout, copy, prices, buttons and spacing; remove borders,
+   divider rules, underlines and pseudo-element separator strokes. */
+body.pricing-page #main .pricing-layout > .pricing-category,
+body.pricing-page #main .pricing-category-heading,
+body.pricing-page #main .pricing-category-content,
+body.pricing-page #main .pricing-category-content > .pricing-row,
+body.pricing-page #main .pricing-row-price,
+body.pricing-page #main .pricing-category-heading .pricing-category-underline {
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+body.pricing-page #main .pricing-category-content > .pricing-row::before,
+body.pricing-page #main .pricing-category-content > .pricing-row::after,
+body.pricing-page #main .pricing-category-heading::before,
+body.pricing-page #main .pricing-category-heading::after,
+body.pricing-page #main .pricing-layout > .pricing-category::before,
+body.pricing-page #main .pricing-layout > .pricing-category::after {
+  content: none !important;
+  display: none !important;
+  border: 0 !important;
+  background: none !important;
+}
+body.pricing-page #main .pricing-category-heading .pricing-category-underline {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: none !important;
+}
