@@ -7438,3 +7438,71 @@ body.contact-page main > .page-hero > .container {
     padding: 52px 20px 44px !important;
   }
 }
+
+
+/* Align the Community, Websites, News and Contact intros with the centred
+   Pricing hero. The earlier 360px override was too short and clipped content. */
+body.community-page main > .page-hero,
+body.website-services-page main > .page-hero,
+body.news-page main > .page-hero,
+body.contact-page main > .page-hero {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 474px !important;
+  min-height: 474px !important;
+  padding: 52px 24px !important;
+  text-align: center !important;
+}
+body.community-page main > .page-hero > .container,
+body.website-services-page main > .page-hero > .container,
+body.news-page main > .page-hero > .container,
+body.contact-page main > .page-hero > .container {
+  width: min(100%, 1120px) !important;
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+body.community-page main > .page-hero h1,
+body.website-services-page main > .page-hero h1,
+body.news-page main > .page-hero h1,
+body.contact-page main > .page-hero h1 {
+  max-width: 1050px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+body.community-page main > .page-hero p,
+body.website-services-page main > .page-hero p,
+body.news-page main > .page-hero p,
+body.contact-page main > .page-hero p {
+  max-width: 850px !important;
+  margin: 18px auto 0 !important;
+  text-align: center !important;
+}
+body.community-page main > .page-hero .eyebrow,
+body.website-services-page main > .page-hero .eyebrow,
+body.news-page main > .page-hero .eyebrow,
+body.contact-page main > .page-hero .eyebrow {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body.community-page main > .page-hero .button-row,
+body.website-services-page main > .page-hero .button-row,
+body.news-page main > .page-hero .button-row,
+body.contact-page main > .page-hero .button-row {
+  justify-content: center !important;
+  margin-top: 22px !important;
+}
+@media (max-width: 760px) {
+  body.community-page main > .page-hero,
+  body.website-services-page main > .page-hero,
+  body.news-page main > .page-hero,
+  body.contact-page main > .page-hero {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 52px 20px 44px !important;
+  }
+}
