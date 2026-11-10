@@ -3556,3 +3556,42 @@ body.pricing-page main > .section:last-of-type .cta > a.btn:hover {
     grid-column:1 !important;
   }
 }
+
+
+/* Match the approved CTA mock-up: luminous cyan frame, flowing blue accent and arrow button. */
+body.pricing-page main > .section:last-of-type .cta {
+  border:2px solid rgba(112,225,255,.82) !important;
+  border-left:2px solid rgba(112,225,255,.82) !important;
+  border-radius:20px !important;
+  background-color:rgba(7,43,72,.48) !important;
+  background-image:
+    radial-gradient(ellipse at 82% 50%, rgba(25,139,190,.17) 0%, rgba(25,139,190,0) 42%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 300' preserveAspectRatio='none'%3E%3Cpath d='M150 300 C360 295 430 250 535 135 C615 47 660 20 800 0 L800 300Z' fill='%231b8fc0' opacity='.10'/%3E%3Cpath d='M210 300 C410 288 465 230 575 105 C635 38 690 14 800 0' fill='none' stroke='%2335a9d1' stroke-width='22' opacity='.13'/%3E%3Cpath d='M280 300 C465 285 510 230 620 105 C675 43 725 17 800 9' fill='none' stroke='%2376dff5' stroke-width='5' opacity='.12'/%3E%3C/svg%3E") !important;
+  background-repeat:no-repeat !important;
+  background-position:center,right center !important;
+  background-size:100% 100%, 44% 100% !important;
+  box-shadow:0 0 12px rgba(92,218,255,.12), 0 12px 34px rgba(0,18,38,.12) !important;
+  overflow:hidden !important;
+}
+body.pricing-page main > .section:last-of-type .cta > a.btn {
+  border-radius:999px !important;
+  min-width:190px !important;
+  padding:16px 28px !important;
+  gap:14px !important;
+}
+body.pricing-page main > .section:last-of-type .cta > a.btn::after {
+  content:"→" !important;
+  display:inline-block !important;
+  font-size:1.35em !important;
+  line-height:1 !important;
+  font-weight:500 !important;
+  transition:transform .2s ease !important;
+}
+body.pricing-page main > .section:last-of-type .cta > a.btn:hover::after {
+  transform:translateX(4px) !important;
+}
+@media(max-width:760px) {
+  body.pricing-page main > .section:last-of-type .cta {
+    background-size:100% 100%, 70% 100% !important;
+  }
+}
