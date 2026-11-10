@@ -7404,3 +7404,37 @@ body.contact-page main > .page-hero .button-row {
     font-size:clamp(2.35rem,9vw,3.3rem) !important;
   }
 }
+
+
+/* Fixed desktop hero height: keep these four pages at the same overall height,
+   rather than only matching their padding. */
+body.community-page main > .page-hero,
+body.website-services-page main > .page-hero,
+body.news-page main > .page-hero,
+body.contact-page main > .page-hero {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  min-height: 360px !important;
+  height: 360px !important;
+  padding: 60px 24px !important;
+}
+body.community-page main > .page-hero > .container,
+body.website-services-page main > .page-hero > .container,
+body.news-page main > .page-hero > .container,
+body.contact-page main > .page-hero > .container {
+  width: min(100%, 1120px) !important;
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+@media (max-width: 760px) {
+  body.community-page main > .page-hero,
+  body.website-services-page main > .page-hero,
+  body.news-page main > .page-hero,
+  body.contact-page main > .page-hero {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 52px 20px 44px !important;
+  }
+}
