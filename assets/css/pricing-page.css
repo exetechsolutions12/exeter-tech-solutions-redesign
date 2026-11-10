@@ -3595,3 +3595,11 @@ body.pricing-page main > .section:last-of-type .cta > a.btn:hover::after {
     background-size:100% 100%, 70% 100% !important;
   }
 }
+
+
+/* Remove the darker panel behind the right side of the closing contact CTA. */
+body.pricing-page main > .section:last-of-type .cta {
+  background-color:transparent !important;
+  background-image:none !important;
+  box-shadow:none !important;
+}
