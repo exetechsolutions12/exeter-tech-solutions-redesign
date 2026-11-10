@@ -1,0 +1,312 @@
+/* Approved pricing sections redesign.
+   Deliberately scoped to the pricing content below the hero: the hero is untouched. */
+
+body.pricing-page #main .pricing-main-section {
+  padding: 18px 0 56px !important;
+  background: transparent !important;
+}
+
+body.pricing-page #main .pricing-main-section > .container {
+  max-width: 1320px !important;
+}
+
+body.pricing-page #main .pricing-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 22px !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+body.pricing-page #main .pricing-layout > .pricing-category {
+  display: grid !important;
+  grid-template-columns: 212px minmax(0, 1fr) !important;
+  align-items: stretch !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(104, 190, 219, .62) !important;
+  border-radius: 17px !important;
+  background: rgba(5, 39, 67, .30) !important;
+  box-shadow: 0 8px 24px rgba(0, 15, 32, .08) !important;
+}
+
+body.pricing-page #main .pricing-category-heading {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  gap: 13px !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 28px 26px 28px 30px !important;
+  border-right: 1px solid rgba(120, 205, 229, .68) !important;
+}
+
+body.pricing-page #main .pricing-category-heading .pricing-category-icon {
+  display: block !important;
+  width: 68px !important;
+  height: 68px !important;
+  box-sizing: border-box !important;
+  padding: 13px !important;
+  border-radius: 15px !important;
+  background: #8bdff1 !important;
+  color: #073451 !important;
+  stroke: #073451 !important;
+}
+
+body.pricing-page #main .pricing-category-heading h2 {
+  margin: 0 !important;
+  color: #fff !important;
+  font-family: 'Barlow', Arial, sans-serif !important;
+  font-size: clamp(1.45rem, 2vw, 1.9rem) !important;
+  font-weight: 650 !important;
+  line-height: 1.12 !important;
+  letter-spacing: -.035em !important;
+}
+
+body.pricing-page #main .pricing-category-heading .pricing-category-underline {
+  display: block !important;
+  width: 54px !important;
+  height: 4px !important;
+  margin-top: 2px !important;
+  border-radius: 5px !important;
+  background: #39d7e4 !important;
+}
+
+body.pricing-page #main .pricing-category-content {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 8px 28px !important;
+}
+
+body.pricing-page #main .pricing-category-content > .pricing-row {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 142px 112px !important;
+  align-items: center !important;
+  column-gap: 22px !important;
+  row-gap: 12px !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 19px 0 !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(112, 190, 217, .58) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.pricing-page #main .pricing-category-content > .pricing-row:last-child {
+  border-bottom: 0 !important;
+}
+
+body.pricing-page #main .pricing-row-copy {
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+
+body.pricing-page #main .pricing-row-copy h3 {
+  margin: 0 0 7px !important;
+  color: #fff !important;
+  font-family: 'Barlow', Arial, sans-serif !important;
+  font-size: 1.18rem !important;
+  font-weight: 650 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -.018em !important;
+}
+
+body.pricing-page #main .pricing-row-copy h3 a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+body.pricing-page #main .pricing-row-copy h3 a:hover {
+  color: #8bdff1 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+}
+
+body.pricing-page #main .pricing-row-copy p {
+  margin: 0 !important;
+  color: rgba(240, 248, 255, .91) !important;
+  font-size: .94rem !important;
+  line-height: 1.58 !important;
+}
+
+body.pricing-page #main .pricing-row-copy p + p {
+  margin-top: 9px !important;
+}
+
+body.pricing-page #main .pricing-row-copy p strong {
+  color: #42dce7 !important;
+  font-weight: 750 !important;
+}
+
+body.pricing-page #main .pricing-row-price {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: stretch !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 8px 12px !important;
+  border-left: 1px solid rgba(120, 205, 229, .55) !important;
+  color: #39dbe6 !important;
+  font-family: 'Barlow', Arial, sans-serif !important;
+  font-size: clamp(1.45rem, 2vw, 1.85rem) !important;
+  font-weight: 750 !important;
+  line-height: 1.12 !important;
+  letter-spacing: -.035em !important;
+  text-align: center !important;
+  white-space: normal !important;
+}
+
+body.pricing-page #main .pricing-row-button,
+body.pricing-page #main .pricing-row > .btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  justify-self: end !important;
+  width: 112px !important;
+  min-width: 112px !important;
+  min-height: 46px !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 11px 14px !important;
+  border: 0 !important;
+  border-radius: 11px !important;
+  background: #147fbd !important;
+  color: #fff !important;
+  font-size: .9rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  box-shadow: 0 5px 14px rgba(0, 75, 125, .18) !important;
+  transition: background .2s ease, transform .2s ease !important;
+}
+
+body.pricing-page #main .pricing-row-button:hover,
+body.pricing-page #main .pricing-row > .btn:hover {
+  background: #2098d4 !important;
+  color: #fff !important;
+  transform: translateY(-2px) !important;
+}
+
+/* The logo/branding category and longer descriptions use the same row grid;
+   content is allowed to grow naturally without stretching the category heading. */
+body.pricing-page #main .pricing-branding-category .pricing-category-content,
+body.pricing-page #main .pricing-websites-category .pricing-category-content,
+body.pricing-page #main .pricing-home-category .pricing-category-content,
+body.pricing-page #main .pricing-community-category .pricing-category-content {
+  align-self: stretch !important;
+}
+
+/* Tablet: retain the category panel, but give copy the available width. */
+@media (max-width: 1000px) {
+  body.pricing-page #main .pricing-layout > .pricing-category {
+    grid-template-columns: 178px minmax(0, 1fr) !important;
+  }
+  body.pricing-page #main .pricing-category-heading {
+    padding: 24px 20px !important;
+  }
+  body.pricing-page #main .pricing-category-content {
+    padding: 7px 20px !important;
+  }
+  body.pricing-page #main .pricing-category-content > .pricing-row {
+    grid-template-columns: minmax(0, 1fr) 120px 104px !important;
+    column-gap: 14px !important;
+  }
+  body.pricing-page #main .pricing-row-button,
+  body.pricing-page #main .pricing-row > .btn {
+    width: 104px !important;
+    min-width: 104px !important;
+  }
+}
+
+/* Smaller tablets and phones: stack each category heading above its services. */
+@media (max-width: 700px) {
+  body.pricing-page #main .pricing-layout {
+    gap: 16px !important;
+  }
+  body.pricing-page #main .pricing-layout > .pricing-category {
+    grid-template-columns: minmax(0, 1fr) !important;
+    border-radius: 15px !important;
+  }
+  body.pricing-page #main .pricing-category-heading {
+    display: grid !important;
+    grid-template-columns: 58px minmax(0, 1fr) !important;
+    align-items: center !important;
+    column-gap: 15px !important;
+    row-gap: 0 !important;
+    padding: 19px 20px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(120, 205, 229, .55) !important;
+  }
+  body.pricing-page #main .pricing-category-heading .pricing-category-icon {
+    grid-column: 1 !important;
+    grid-row: 1 / span 2 !important;
+    width: 56px !important;
+    height: 56px !important;
+    padding: 11px !important;
+  }
+  body.pricing-page #main .pricing-category-heading h2 {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    font-size: 1.45rem !important;
+  }
+  body.pricing-page #main .pricing-category-heading .pricing-category-underline {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    width: 42px !important;
+    height: 3px !important;
+    margin-top: 7px !important;
+  }
+  body.pricing-page #main .pricing-category-content {
+    padding: 4px 20px !important;
+  }
+  body.pricing-page #main .pricing-category-content > .pricing-row {
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    column-gap: 14px !important;
+    padding: 17px 0 !important;
+  }
+  body.pricing-page #main .pricing-row-copy {
+    grid-column: 1 / -1 !important;
+    grid-row: 1 !important;
+  }
+  body.pricing-page #main .pricing-row-price {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    justify-content: flex-start !important;
+    align-self: center !important;
+    padding: 0 !important;
+    border-left: 0 !important;
+    font-size: 1.5rem !important;
+    text-align: left !important;
+  }
+  body.pricing-page #main .pricing-row-button,
+  body.pricing-page #main .pricing-row > .btn {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    justify-self: end !important;
+  }
+}
+
+@media (max-width: 420px) {
+  body.pricing-page #main .pricing-category-heading {
+    padding: 16px !important;
+  }
+  body.pricing-page #main .pricing-category-content {
+    padding: 3px 16px !important;
+  }
+  body.pricing-page #main .pricing-row-copy p {
+    font-size: .9rem !important;
+  }
+}
