@@ -7601,3 +7601,147 @@ body.contact-page main > .page-hero .button-row {
     padding: 52px 20px 44px !important;
   }
 }
+
+
+/* Community page: open editorial layout for the idea and session topics.
+   No cards, panel fills or individual topic boxes. */
+body.community-page .community-idea-section {
+  padding: clamp(48px, 6vw, 78px) 0 !important;
+  background: transparent !important;
+}
+
+body.community-page .community-idea-section .community-idea-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr) !important;
+  align-items: start !important;
+  column-gap: clamp(48px, 6vw, 100px) !important;
+  row-gap: 42px !important;
+}
+
+body.community-page .community-idea-copy,
+body.community-page .community-topics-panel {
+  min-width: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.community-page .community-idea-copy > .eyebrow {
+  display: inline-flex !important;
+  margin: 0 0 25px !important;
+  padding: 9px 20px !important;
+  border: 1px solid rgba(190, 220, 248, .9) !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: #fff !important;
+  font-size: .95rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .02em !important;
+}
+
+body.community-page .community-idea-copy h2 {
+  max-width: 760px !important;
+  margin: 0 0 24px !important;
+  color: #fff !important;
+  font-size: clamp(2rem, 3vw, 3.15rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.12 !important;
+  letter-spacing: -.04em !important;
+}
+
+body.community-page .community-idea-copy p {
+  max-width: 780px !important;
+  margin: 0 0 18px !important;
+  color: rgba(245, 250, 255, .94) !important;
+  font-size: clamp(1rem, 1.25vw, 1.22rem) !important;
+  line-height: 1.7 !important;
+}
+
+body.community-page .community-idea-copy p:last-child {
+  margin-bottom: 0 !important;
+}
+
+body.community-page .community-topics-panel h2 {
+  margin: 0 0 25px !important;
+  color: #fff !important;
+  font-size: clamp(1.55rem, 2.2vw, 2.15rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -.025em !important;
+}
+
+body.community-page .community-topic-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 28px !important;
+  row-gap: 22px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+body.community-page .community-topic-list li {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: rgba(245, 250, 255, .96) !important;
+  font-size: clamp(.94rem, 1.08vw, 1.08rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+}
+
+body.community-page .community-topic-list li::before {
+  flex: 0 0 23px !important;
+  width: 23px !important;
+  height: 23px !important;
+  margin-top: 1px !important;
+  border-radius: 50% !important;
+  background: #c9f8e7 !important;
+  color: #08765e !important;
+  font-size: .8rem !important;
+}
+
+@media (max-width: 900px) {
+  body.community-page .community-idea-section .community-idea-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 42px !important;
+  }
+  body.community-page .community-idea-copy h2 {
+    max-width: 720px !important;
+  }
+  body.community-page .community-topics-panel {
+    padding-top: 30px !important;
+    border-top: 1px solid rgba(150, 205, 230, .4) !important;
+  }
+}
+
+@media (max-width: 620px) {
+  body.community-page .community-idea-section {
+    padding: 38px 0 !important;
+  }
+  body.community-page .community-idea-copy > .eyebrow {
+    margin-bottom: 18px !important;
+  }
+  body.community-page .community-idea-copy h2 {
+    margin-bottom: 18px !important;
+    font-size: 2rem !important;
+  }
+  body.community-page .community-idea-copy p {
+    font-size: .98rem !important;
+    line-height: 1.65 !important;
+  }
+  body.community-page .community-topic-list {
+    grid-template-columns: minmax(0, 1fr) !important;
+    row-gap: 17px !important;
+  }
+  body.community-page .community-topics-panel h2 {
+    margin-bottom: 20px !important;
+  }
+}
