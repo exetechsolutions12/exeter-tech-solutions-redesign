@@ -1,5 +1,4 @@
-/* Community page — stacked editorial layout for the idea and session topics.
-   Preserves all existing wording and brand colours; no enclosing cards or boxes. */
+/* Community page — rounded feature panel for the idea, followed by larger open session topics. */
 
 body.community-page .community-idea-section {
   position: relative !important;
@@ -20,12 +19,11 @@ body.community-page .community-idea-copy {
   min-width: 0 !important;
   max-width: 100% !important;
   margin: 0 !important;
-  padding: 0 0 30px !important;
-  border: 0 !important;
-  border-bottom: 1px solid rgba(139,223,241,.42) !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
+  padding: 34px 38px 32px !important;
+  border: 1px solid rgba(139,223,241,.62) !important;
+  border-radius: 28px !important;
+  background: rgba(10,48,78,.42) !important;
+  box-shadow: 0 10px 28px rgba(0,0,0,.10) !important;
 }
 
 body.community-page .community-idea-copy > .eyebrow {
@@ -50,7 +48,7 @@ body.community-page .community-idea-copy h2 {
   margin: 0 0 16px !important;
   color: #fff !important;
   font-family: 'Barlow', Arial, sans-serif !important;
-  font-size: clamp(2rem, 3vw, 2.8rem) !important;
+  font-size: clamp(2.25rem, 3.2vw, 3rem) !important;
   font-weight: 600 !important;
   line-height: 1.1 !important;
   letter-spacing: -.04em !important;
@@ -84,20 +82,15 @@ body.community-page .community-topics-panel h2 {
   margin: 0 0 14px !important;
   color: #fff !important;
   font-family: 'Barlow', Arial, sans-serif !important;
-  font-size: clamp(1.55rem, 2vw, 1.9rem) !important;
+  font-size: clamp(2.25rem, 3.2vw, 3rem) !important;
   font-weight: 600 !important;
   line-height: 1.2 !important;
   letter-spacing: -.025em !important;
 }
 
 body.community-page .community-topics-panel h2::after {
-  content: "" !important;
-  display: block !important;
-  width: 46px !important;
-  height: 3px !important;
-  margin-top: 10px !important;
-  border-radius: 4px !important;
-  background: #39d7e4 !important;
+  content: none !important;
+  display: none !important;
 }
 
 body.community-page .community-topic-list {
@@ -108,48 +101,35 @@ body.community-page .community-topic-list {
   margin: 0 !important;
   padding: 0 !important;
   list-style: none !important;
-  counter-reset: topic !important;
+  counter-reset: none !important;
 }
 
 body.community-page .community-topic-list li {
   display: grid !important;
-  grid-template-columns: 34px minmax(0,1fr) !important;
+  grid-template-columns: minmax(0,1fr) !important;
   align-items: start !important;
-  column-gap: 10px !important;
+  column-gap: 0 !important;
   min-width: 0 !important;
-  min-height: 64px !important;
+  min-height: 0 !important;
   margin: 0 !important;
-  padding: 14px 0 13px !important;
+  padding: 12px 0 !important;
   border: 0 !important;
-  border-bottom: 1px solid rgba(139,190,216,.32) !important;
+  border-bottom: 0 !important;
   border-radius: 0 !important;
   background: transparent !important;
   color: rgba(245,250,255,.97) !important;
   font-family: 'Segoe UI', Arial, sans-serif !important;
-  font-size: clamp(.94rem, 1.02vw, 1.03rem) !important;
+  font-size: clamp(1.08rem, 1.22vw, 1.2rem) !important;
   font-weight: 600 !important;
   line-height: 1.42 !important;
-  counter-increment: topic !important;
+  counter-increment: none !important;
 }
 
 body.community-page .community-topic-list li::before {
-  content: counter(topic, decimal-leading-zero) !important;
-  display: block !important;
-  margin: 1px 0 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  color: #8bdff1 !important;
-  font-family: 'Barlow', Arial, sans-serif !important;
-  font-size: .98rem !important;
-  font-weight: 700 !important;
-  line-height: 1.3 !important;
+  content: none !important;
+  display: none !important;
 }
 
-body.community-page .community-topic-list li:nth-last-child(-n+3) {
-  border-bottom: 0 !important;
-}
 
 @media (max-width: 900px) {
   body.community-page .community-idea-section {
@@ -178,7 +158,7 @@ body.community-page .community-topic-list li:nth-last-child(-n+3) {
     gap: 26px !important;
   }
   body.community-page .community-idea-copy {
-    padding-bottom: 24px !important;
+    padding: 26px 24px 24px !important;
   }
   body.community-page .community-idea-copy h2 {
     margin-bottom: 14px !important;
@@ -191,7 +171,7 @@ body.community-page .community-topic-list li:nth-last-child(-n+3) {
   }
   body.community-page .community-topics-panel h2 {
     margin-bottom: 10px !important;
-    font-size: 1.55rem !important;
+    font-size: 2rem !important;
   }
   body.community-page .community-topic-list {
     grid-template-columns: minmax(0,1fr) !important;
@@ -200,10 +180,7 @@ body.community-page .community-topic-list li:nth-last-child(-n+3) {
   body.community-page .community-topic-list li:nth-last-child(-n+2),
   body.community-page .community-topic-list li:nth-last-child(-n+3) {
     min-height: 0 !important;
-    padding: 12px 0 !important;
-    border-bottom: 1px solid rgba(139,190,216,.32) !important;
-  }
-  body.community-page .community-topic-list li:last-child {
+    padding: 10px 0 !important;
     border-bottom: 0 !important;
   }
 }
