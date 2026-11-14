@@ -934,3 +934,37 @@ body.community-page .community-format-card + .community-format-card {
     letter-spacing: .055em !important;
   }
 }
+
+
+/* Global Poppins typography must also win over this page's earlier component rules. */
+body.community-page h1,
+body.community-page h2,
+body.community-page h1 *,
+body.community-page h2 * {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+body.community-page h3,
+body.community-page h3 * {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+body.community-page .eyebrow,
+body.community-page .eyebrow *,
+body.community-page [class~="eyebrow"] {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+body.community-page button,
+body.community-page input[type="button"],
+body.community-page input[type="submit"],
+body.community-page input[type="reset"],
+body.community-page .btn,
+body.community-page a.btn,
+body.community-page [role="button"] {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+}
