@@ -681,3 +681,136 @@ body.community-page .community-feature-pair .community-individual-card > .eyebro
   letter-spacing: .055em !important;
   line-height: 1.2 !important;
 }
+
+
+/* Flexible formats — open editorial layout instead of a ruled three-column table. */
+body.community-page .community-formats-section {
+  padding: 72px 0 78px !important;
+  background: transparent !important;
+}
+
+body.community-page .community-formats-section .section-title {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, .8fr) !important;
+  align-items: end !important;
+  column-gap: 64px !important;
+  row-gap: 14px !important;
+  max-width: 1240px !important;
+  margin: 0 auto 52px !important;
+  text-align: left !important;
+}
+
+body.community-page .community-formats-section .section-title > .eyebrow {
+  grid-column: 1 / -1 !important;
+  justify-self: start !important;
+  margin: 0 0 4px !important;
+}
+
+body.community-page .community-formats-section .section-title h2 {
+  margin: 0 !important;
+  max-width: 760px !important;
+  color: #fff !important;
+  font-size: clamp(2.25rem, 3.5vw, 3.2rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.035em !important;
+  text-align: left !important;
+}
+
+body.community-page .community-formats-section .section-title p {
+  max-width: 470px !important;
+  margin: 0 0 5px !important;
+  color: rgba(231, 242, 252, .82) !important;
+  font-size: 1.12rem !important;
+  line-height: 1.7 !important;
+  text-align: left !important;
+}
+
+body.community-page .community-formats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 48px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+body.community-page .community-format-card {
+  position: relative !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 28px 0 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.community-page .community-format-card::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 54px !important;
+  height: 3px !important;
+  border-radius: 3px !important;
+  background: #69c6e2 !important;
+}
+
+body.community-page .community-format-card h3 {
+  margin: 0 0 13px !important;
+  color: #fff !important;
+  font-size: clamp(1.25rem, 1.6vw, 1.55rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.28 !important;
+}
+
+body.community-page .community-format-card p {
+  max-width: 390px !important;
+  margin: 0 !important;
+  color: rgba(231, 242, 252, .82) !important;
+  font-size: 1.06rem !important;
+  line-height: 1.72 !important;
+}
+
+@media (max-width: 900px) {
+  body.community-page .community-formats-section .section-title {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    margin-bottom: 38px !important;
+  }
+
+  body.community-page .community-formats-section .section-title > .eyebrow {
+    grid-column: auto !important;
+  }
+
+  body.community-page .community-formats-section .section-title p {
+    max-width: 650px !important;
+  }
+
+  body.community-page .community-formats-grid {
+    gap: 30px !important;
+  }
+}
+
+@media (max-width: 620px) {
+  body.community-page .community-formats-section {
+    padding: 48px 0 54px !important;
+  }
+
+  body.community-page .community-formats-section .section-title h2 {
+    font-size: 2.15rem !important;
+  }
+
+  body.community-page .community-formats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  body.community-page .community-format-card {
+    padding-top: 21px !important;
+  }
+
+  body.community-page .community-format-card h3 {
+    font-size: 1.3rem !important;
+  }
+}
