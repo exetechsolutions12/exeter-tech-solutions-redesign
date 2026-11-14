@@ -251,3 +251,22 @@ body.community-page .page-hero .eyebrow {
   border-color: rgba(105, 198, 226, .82) !important;
   background: transparent !important;
 }
+
+
+/* Match the Community hero pill's scale to the larger reference label. */
+body.community-page .page-hero .eyebrow {
+  padding: 13px 30px !important;
+  font-size: 1.45rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: .12em !important;
+  font-weight: 700 !important;
+  border-width: 2px !important;
+}
+
+@media (max-width: 620px) {
+  body.community-page .page-hero .eyebrow {
+    padding: 10px 20px !important;
+    font-size: 1rem !important;
+    letter-spacing: .09em !important;
+  }
+}
