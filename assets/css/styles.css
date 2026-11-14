@@ -7993,3 +7993,145 @@ a.btn,
     min-width: 0 !important;
   }
 }
+
+
+/* Website Services pricing: remove divider lines and prevent section overlap. */
+.website-services-page .website-pricing-section .pricing.website-pricing-open {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: start !important;
+  gap: clamp(36px, 5vw, 72px) !important;
+  width: 100% !important;
+  margin: 42px 0 0 !important;
+}
+
+.website-services-page .website-pricing-open > .website-price-option {
+  display: block !important;
+  position: relative !important;
+  min-width: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-bottom: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+  overflow: visible !important;
+}
+
+.website-services-page .website-pricing-open > .website-price-option h2 {
+  margin: 0 0 14px !important;
+  line-height: 1.25 !important;
+}
+
+.website-services-page .website-pricing-open > .website-price-option .price {
+  margin: 0 0 16px !important;
+  line-height: 1.15 !important;
+}
+
+.website-services-page .website-pricing-open > .website-price-option p {
+  margin: 0 !important;
+  max-width: 100% !important;
+  line-height: 1.7 !important;
+}
+
+/* Website Care is a separate full-width section below both pricing columns. */
+.website-services-page .website-pricing-section > .container > .website-care-section {
+  display: block !important;
+  position: relative !important;
+  clear: both !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 58px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+.website-services-page .website-care-section-copy {
+  display: block !important;
+  position: static !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.website-services-page .website-care-section .eyebrow {
+  margin: 0 0 14px !important;
+}
+
+.website-services-page .website-care-section h2 {
+  margin: 0 0 10px !important;
+  line-height: 1.2 !important;
+}
+
+.website-services-page .website-care-section-price {
+  margin: 0 0 16px !important;
+}
+
+.website-services-page .website-care-section p {
+  width: 100% !important;
+  max-width: 900px !important;
+  margin: 0 !important;
+  line-height: 1.7 !important;
+}
+
+.website-services-page .website-care-section .website-care-larger-changes {
+  margin: 22px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.website-services-page .website-care-section .website-care-larger-changes h3 {
+  margin: 0 0 8px !important;
+}
+
+.website-services-page .website-care-section > .btn {
+  display: inline-flex !important;
+  position: static !important;
+  width: auto !important;
+  min-width: 220px !important;
+  max-width: 100% !important;
+  margin: 24px 0 0 !important;
+}
+
+.website-services-page .website-included-section {
+  margin-top: 64px !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+/* Remove residual divider styling from the previous pricing treatment. */
+.website-services-page .website-pricing-open .price-card,
+.website-services-page .website-pricing-open .price-card::before,
+.website-services-page .website-care-section::before,
+.website-services-page .website-care-section::after,
+.website-services-page .website-care-larger-changes {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 760px) {
+  .website-services-page .website-pricing-section .pricing.website-pricing-open {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 32px !important;
+  }
+
+  .website-services-page .website-pricing-section > .container > .website-care-section {
+    margin-top: 42px !important;
+  }
+
+  .website-services-page .website-care-section > .btn {
+    width: 100% !important;
+  }
+}
