@@ -23,26 +23,20 @@ body.community-page .community-idea-copy {
   padding: 38px 44px 36px !important;
   border: 1px solid rgba(105, 198, 226, .55) !important;
   border-radius: 24px !important;
-  background: linear-gradient(115deg, rgba(14, 55, 88, .88), rgba(8, 39, 68, .72)) !important;
-  box-shadow: 0 16px 38px rgba(0, 0, 0, .12) !important;
+  background: transparent !important;
+  box-shadow: none !important;
   overflow: hidden !important;
 }
 
 body.community-page .community-idea-copy::after {
-  content: "" !important;
-  position: absolute !important;
-  right: -90px !important;
-  bottom: -170px !important;
-  width: 330px !important;
-  height: 240px !important;
-  border-radius: 50% !important;
-  background: rgba(39, 132, 190, .13) !important;
-  pointer-events: none !important;
+  content: none !important;
+  display: none !important;
 }
 
 body.community-page .community-idea-copy > * {
   position: relative !important;
   z-index: 1 !important;
+  background: transparent !important;
 }
 
 body.community-page .community-idea-copy > .eyebrow {
@@ -76,6 +70,7 @@ body.community-page .community-idea-copy h2 {
 body.community-page .community-idea-copy p {
   max-width: 1060px !important;
   margin: 0 0 13px !important;
+  padding: 0 !important;
   color: rgba(245, 250, 255, .93) !important;
   font-size: clamp(.98rem, 1.08vw, 1.06rem) !important;
   line-height: 1.65 !important;
