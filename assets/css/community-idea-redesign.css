@@ -270,3 +270,149 @@ body.community-page .page-hero .eyebrow {
     letter-spacing: .09em !important;
   }
 }
+
+
+/* Community formats and updates — open layout with fewer boxed elements. */
+body.community-page .community-formats-section {
+  background: transparent !important;
+  padding-top: 54px !important;
+  padding-bottom: 62px !important;
+}
+
+body.community-page .community-formats-section .section-title {
+  max-width: 850px !important;
+  margin: 0 auto 38px !important;
+}
+
+body.community-page .community-formats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 0 !important;
+  align-items: stretch !important;
+  border-top: 1px solid rgba(105, 198, 226, .42) !important;
+  border-bottom: 1px solid rgba(105, 198, 226, .42) !important;
+}
+
+body.community-page .community-format-card {
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 30px 32px 32px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.community-page .community-format-card + .community-format-card {
+  border-left: 1px solid rgba(105, 198, 226, .35) !important;
+}
+
+body.community-page .community-format-card h3 {
+  margin: 0 0 11px !important;
+  color: #fff !important;
+  font-size: 1.28rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+}
+
+body.community-page .community-format-card p {
+  margin: 0 !important;
+  color: rgba(235, 245, 253, .86) !important;
+  font-size: 1.04rem !important;
+  line-height: 1.7 !important;
+}
+
+body.community-page .community-coming-section {
+  padding-top: 28px !important;
+  padding-bottom: 54px !important;
+}
+
+body.community-page .community-coming-panel {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  align-items: center !important;
+  gap: 48px !important;
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+  padding: 38px 0 !important;
+  border: 0 !important;
+  border-top: 1px solid rgba(105, 198, 226, .48) !important;
+  border-bottom: 1px solid rgba(105, 198, 226, .48) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.community-page .community-coming-copy {
+  min-width: 0 !important;
+}
+
+body.community-page .community-coming-copy h2 {
+  max-width: 780px !important;
+  margin: 0 0 14px !important;
+  color: #fff !important;
+  font-size: clamp(1.9rem, 2.7vw, 2.45rem) !important;
+  line-height: 1.16 !important;
+}
+
+body.community-page .community-coming-copy p {
+  max-width: 800px !important;
+  margin: 0 0 12px !important;
+  color: rgba(235, 245, 253, .88) !important;
+  font-size: 1.02rem !important;
+  line-height: 1.7 !important;
+}
+
+body.community-page .community-coming-copy p:last-child {
+  margin-bottom: 0 !important;
+}
+
+body.community-page .community-coming-actions {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 12px !important;
+  min-width: 210px !important;
+  margin: 0 !important;
+}
+
+body.community-page .community-coming-actions .btn {
+  min-width: 210px !important;
+  text-align: center !important;
+}
+
+@media (max-width: 800px) {
+  body.community-page .community-formats-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.community-page .community-format-card {
+    padding: 23px 4px !important;
+  }
+
+  body.community-page .community-format-card + .community-format-card {
+    border-left: 0 !important;
+    border-top: 1px solid rgba(105, 198, 226, .3) !important;
+  }
+
+  body.community-page .community-coming-panel {
+    grid-template-columns: 1fr !important;
+    gap: 25px !important;
+    padding: 30px 0 !important;
+  }
+
+  body.community-page .community-coming-actions {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+}
+
+@media (max-width: 520px) {
+  body.community-page .community-coming-actions {
+    flex-direction: column !important;
+  }
+
+  body.community-page .community-coming-actions .btn {
+    width: 100% !important;
+  }
+}
