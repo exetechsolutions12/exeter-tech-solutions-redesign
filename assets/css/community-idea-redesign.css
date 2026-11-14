@@ -814,3 +814,83 @@ body.community-page .community-format-card p {
     font-size: 1.3rem !important;
   }
 }
+
+
+/* Flexible formats: stack the supporting sentence beneath the heading. */
+body.community-page .community-formats-section .section-title {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
+  text-align: left !important;
+  margin-bottom: 42px !important;
+}
+
+body.community-page .community-formats-section .section-title > .eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  align-self: flex-start !important;
+  margin: 0 0 24px !important;
+  padding: 13px 30px !important;
+  border: 2px solid rgba(105, 198, 226, .82) !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: #a0ddf1 !important;
+  font-size: 1.45rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  letter-spacing: .12em !important;
+}
+
+body.community-page .community-formats-section .section-title h2 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 0 14px !important;
+  text-align: left !important;
+}
+
+body.community-page .community-formats-section .section-title p {
+  width: 100% !important;
+  max-width: 900px !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+/* Remove decorative rules and hover lift from the three format descriptions. */
+body.community-page .community-formats-grid {
+  border: 0 !important;
+  gap: 42px !important;
+}
+
+body.community-page .community-format-card {
+  border: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+body.community-page .community-format-card::before {
+  content: none !important;
+  display: none !important;
+}
+
+body.community-page .community-format-card:hover,
+body.community-page .community-format-card:focus-within {
+  transform: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+@media (max-width: 620px) {
+  body.community-page .community-formats-section .section-title > .eyebrow {
+    padding: 10px 20px !important;
+    font-size: 1rem !important;
+    letter-spacing: .09em !important;
+  }
+
+  body.community-page .community-formats-grid {
+    gap: 28px !important;
+  }
+}
