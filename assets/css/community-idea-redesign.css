@@ -664,3 +664,20 @@ body.community-page .community-feature-pair .community-coming-actions .btn {
     width: 100% !important;
   }
 }
+
+
+/* Make the Individual support pill identical to the Coming soon pill. */
+body.community-page .community-feature-pair .community-individual-card > .eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 0 0 20px !important;
+  padding: 10px 19px !important;
+  border: 1.5px solid rgba(139, 223, 241, .78) !important;
+  border-radius: 999px !important;
+  background: rgba(43, 143, 169, .08) !important;
+  color: #a0ddf1 !important;
+  font-size: .98rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .055em !important;
+  line-height: 1.2 !important;
+}
