@@ -244,3 +244,10 @@ body.community-page .community-topic-list li::before {
     height: 36px !important;
   }
 }
+
+/* Match the Community hero label to the cyan outlined label used elsewhere. */
+body.community-page .page-hero .eyebrow {
+  color: #a0ddf1 !important;
+  border-color: rgba(105, 198, 226, .82) !important;
+  background: transparent !important;
+}
