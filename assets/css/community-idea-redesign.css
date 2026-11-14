@@ -894,3 +894,43 @@ body.community-page .community-format-card:focus-within {
     gap: 28px !important;
   }
 }
+
+
+/* Final tidy-up: match the smaller section-label pill and remove all format dividers. */
+body.community-page .community-formats-section .section-title > .eyebrow {
+  margin: 0 0 20px !important;
+  padding: 10px 19px !important;
+  border: 1.5px solid rgba(139, 223, 241, .78) !important;
+  border-radius: 999px !important;
+  background: rgba(43, 143, 169, .08) !important;
+  color: #a0ddf1 !important;
+  font-size: .98rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  letter-spacing: .055em !important;
+}
+
+body.community-page .community-formats-grid,
+body.community-page .community-format-card,
+body.community-page .community-format-card + .community-format-card {
+  border: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 800px) {
+  body.community-page .community-format-card + .community-format-card {
+    border-top: 0 !important;
+  }
+}
+
+@media (max-width: 620px) {
+  body.community-page .community-formats-section .section-title > .eyebrow {
+    padding: 10px 19px !important;
+    font-size: .98rem !important;
+    letter-spacing: .055em !important;
+  }
+}
