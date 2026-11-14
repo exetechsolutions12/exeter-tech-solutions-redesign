@@ -8135,3 +8135,112 @@ a.btn,
     width: 100% !important;
   }
 }
+
+
+/* Place Website Care alongside the included-services information. */
+.website-services-page .website-care-included-layout {
+  display: grid !important;
+  grid-template-columns: minmax(260px, .85fr) minmax(0, 1.65fr) !important;
+  align-items: start !important;
+  gap: clamp(32px, 4vw, 58px) !important;
+  width: 100% !important;
+  margin: 58px 0 0 !important;
+}
+
+.website-services-page .website-care-included-layout > .website-care-section {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 0 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.website-services-page .website-care-included-layout .website-care-section-copy {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+}
+
+.website-services-page .website-care-included-layout .website-care-section p {
+  max-width: none !important;
+  overflow-wrap: anywhere !important;
+}
+
+.website-services-page .website-care-included-layout .website-care-section > .btn {
+  width: auto !important;
+  min-width: 0 !important;
+  margin-top: 24px !important;
+  white-space: normal !important;
+}
+
+.website-services-page .website-care-included-layout > .website-included-section {
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.website-services-page .website-care-included-layout .website-included-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr) !important;
+  align-items: start !important;
+  gap: clamp(20px, 2.4vw, 34px) !important;
+  width: 100% !important;
+}
+
+.website-services-page .website-care-included-layout .website-included-content,
+.website-services-page .website-care-included-layout .website-control-panel {
+  min-width: 0 !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.website-services-page .website-care-included-layout .website-included-content h2 {
+  max-width: 100% !important;
+  line-height: 1.25 !important;
+}
+
+.website-services-page .website-care-included-layout .check-list {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  gap: 14px 18px !important;
+}
+
+.website-services-page .website-care-included-layout .check-list li {
+  min-width: 0 !important;
+  overflow-wrap: anywhere !important;
+}
+
+.website-services-page .website-care-included-layout .website-control-panel h2 {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 1050px) {
+  .website-services-page .website-care-included-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 42px !important;
+  }
+
+  .website-services-page .website-care-included-layout .website-included-grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr) !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .website-services-page .website-care-included-layout .website-included-grid,
+  .website-services-page .website-care-included-layout .check-list {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
