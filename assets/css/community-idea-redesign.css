@@ -577,3 +577,90 @@ body.community-page .community-individual-card .community-individual-note {
     font-size: .92rem !important;
   }
 }
+
+
+/* Refine the community events column: remove rules and strengthen hierarchy. */
+body.community-page .community-feature-pair .community-coming-panel {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  padding: 26px 0 !important;
+  gap: 26px !important;
+}
+
+body.community-page .community-feature-pair .community-coming-copy > .eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 0 0 20px !important;
+  padding: 10px 19px !important;
+  border: 1.5px solid rgba(139, 223, 241, .78) !important;
+  border-radius: 999px !important;
+  background: rgba(43, 143, 169, .08) !important;
+  color: #a0ddf1 !important;
+  font-size: .98rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .055em !important;
+}
+
+body.community-page .community-feature-pair .community-coming-copy h2 {
+  max-width: 680px !important;
+  margin: 0 0 22px !important;
+  color: #fff !important;
+  font-size: clamp(2.15rem, 3vw, 2.75rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.12 !important;
+  letter-spacing: -.025em !important;
+}
+
+body.community-page .community-feature-pair .community-coming-copy p {
+  max-width: 700px !important;
+  margin: 0 0 17px !important;
+  color: rgba(239, 247, 255, .9) !important;
+  font-size: 1.08rem !important;
+  line-height: 1.75 !important;
+}
+
+body.community-page .community-feature-pair .community-coming-copy p:last-child {
+  margin-bottom: 0 !important;
+}
+
+body.community-page .community-feature-pair .community-coming-actions {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 14px !important;
+  width: 100% !important;
+  margin-top: 2px !important;
+}
+
+body.community-page .community-feature-pair .community-coming-actions .btn {
+  min-width: 190px !important;
+  width: auto !important;
+  padding: 15px 22px !important;
+  font-size: 1rem !important;
+  text-align: center !important;
+}
+
+@media (max-width: 620px) {
+  body.community-page .community-feature-pair .community-coming-panel {
+    padding: 10px 0 !important;
+    gap: 22px !important;
+  }
+
+  body.community-page .community-feature-pair .community-coming-copy h2 {
+    font-size: 2rem !important;
+  }
+
+  body.community-page .community-feature-pair .community-coming-copy p {
+    font-size: 1rem !important;
+  }
+
+  body.community-page .community-feature-pair .community-coming-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  body.community-page .community-feature-pair .community-coming-actions .btn {
+    width: 100% !important;
+  }
+}
