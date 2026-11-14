@@ -7911,3 +7911,85 @@ a.btn,
     gap: 20px !important;
   }
 }
+
+
+/* Separate Website Care section beneath the two website design options. */
+.website-services-page .website-care-section {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: clamp(32px, 5vw, 72px) !important;
+  margin: 54px 0 0 !important;
+  padding: 38px 0 42px !important;
+  border-top: 1px solid rgba(131, 217, 238, .48) !important;
+  border-bottom: 1px solid rgba(131, 217, 238, .48) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.website-services-page .website-care-section-copy {
+  max-width: 850px !important;
+}
+
+.website-services-page .website-care-section .eyebrow {
+  display: inline-block !important;
+  margin: 0 0 12px !important;
+}
+
+.website-services-page .website-care-section h2 {
+  margin: 0 0 10px !important;
+  color: #fff !important;
+  font-size: clamp(1.8rem, 2.7vw, 2.4rem) !important;
+}
+
+.website-services-page .website-care-section-price {
+  margin: 0 0 14px !important;
+  color: #83d9ee !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.65rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+}
+
+.website-services-page .website-care-section p {
+  max-width: 820px !important;
+  margin: 0 !important;
+  color: rgba(239, 246, 255, .9) !important;
+  font-size: 1.02rem !important;
+  line-height: 1.75 !important;
+}
+
+.website-services-page .website-care-section .website-care-larger-changes {
+  margin-top: 18px !important;
+  padding-top: 14px !important;
+  border-top: 1px solid rgba(131, 217, 238, .25) !important;
+}
+
+.website-services-page .website-care-section .website-care-larger-changes h3 {
+  margin: 0 0 7px !important;
+  color: #fff !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+}
+
+.website-services-page .website-care-section > .btn {
+  flex: 0 0 auto !important;
+  min-width: 230px !important;
+}
+
+@media (max-width: 760px) {
+  .website-services-page .website-care-section {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 22px !important;
+    margin-top: 38px !important;
+    padding: 30px 0 !important;
+  }
+
+  .website-services-page .website-care-section > .btn {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
