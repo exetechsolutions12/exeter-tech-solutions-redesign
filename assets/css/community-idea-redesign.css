@@ -1087,3 +1087,59 @@ body.community-page .community-idea-cta > a.btn:hover {
     min-height: 64px !important;
   }
 }
+
+
+/* Slightly reduce the closing community CTA while keeping the same layout. */
+body.community-page .community-idea-cta {
+  gap: clamp(24px, 3.2vw, 48px) !important;
+  padding: clamp(24px, 2.6vw, 38px) clamp(28px, 3.5vw, 54px) !important;
+  border-radius: 22px !important;
+}
+
+body.community-page .community-idea-cta .community-idea-cta-copy {
+  padding-left: clamp(24px, 2.5vw, 40px) !important;
+  border-left-width: 7px !important;
+}
+
+body.community-page .community-idea-cta .eyebrow {
+  margin-bottom: 16px !important;
+  font-size: .9rem !important;
+}
+
+body.community-page .community-idea-cta h2 {
+  max-width: 780px !important;
+  font-size: clamp(1.8rem, 2.7vw, 2.5rem) !important;
+  line-height: 1.16 !important;
+}
+
+body.community-page .community-idea-cta p {
+  max-width: 820px !important;
+  font-size: clamp(.95rem, 1.15vw, 1.1rem) !important;
+  line-height: 1.65 !important;
+}
+
+body.community-page .community-idea-cta > .btn,
+body.community-page .community-idea-cta > a.btn {
+  width: 270px !important;
+  min-height: 82px !important;
+  padding: 18px 24px !important;
+  border-radius: 14px !important;
+  font-size: 1rem !important;
+}
+
+@media (max-width: 760px) {
+  body.community-page .community-idea-cta {
+    gap: 24px !important;
+    padding: 24px 20px !important;
+  }
+
+  body.community-page .community-idea-cta h2 {
+    font-size: clamp(1.6rem, 6vw, 2rem) !important;
+  }
+
+  body.community-page .community-idea-cta > .btn,
+  body.community-page .community-idea-cta > a.btn {
+    width: 100% !important;
+    min-height: 60px !important;
+  }
+}
