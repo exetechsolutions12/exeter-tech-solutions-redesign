@@ -8482,3 +8482,18 @@ a.btn,
   text-transform: uppercase !important;
   box-shadow: none !important;
 }
+
+
+/* Left-align the Website Services pricing section heading and introduction. */
+.website-services-page .website-pricing-section > .container > .section-title {
+  text-align: left !important;
+  align-items: flex-start !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+.website-services-page .website-pricing-section > .container > .section-title h2,
+.website-services-page .website-pricing-section > .container > .section-title p {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
