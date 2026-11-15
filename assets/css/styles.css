@@ -8826,3 +8826,16 @@ body.faq-page .faq-questions details[open] > summary::after {
     padding: 46px 20px 40px !important;
   }
 }
+
+
+/* FAQ: remove redundant outer divider rules while retaining subtle separators between questions. */
+body.faq-page .faq-questions {
+  border-top: 0 !important;
+}
+body.faq-page .faq-questions details:last-child {
+  border-bottom: 0 !important;
+}
+body.faq-page .faq-actions {
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
