@@ -9293,3 +9293,10 @@ body.contact-page .contact-summary .contact-method :where(h2, p, a, strong, span
 .nav-links .nav-social svg path {
   fill: #FFFFFF !important;
 }
+
+
+/* Slightly enlarge the Facebook mark without changing its navigation hit area. */
+.nav-links .nav-social svg {
+  width: 25px !important;
+  height: 25px !important;
+}
