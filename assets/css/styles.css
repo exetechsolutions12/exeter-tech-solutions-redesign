@@ -8244,3 +8244,92 @@ a.btn,
     grid-template-columns: minmax(0, 1fr) !important;
   }
 }
+
+
+/* Refine the Website Care + included features area into a clear two-column flow. */
+.website-services-page .website-care-included-layout {
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.6fr) !important;
+  align-items: start !important;
+  gap: clamp(40px, 5vw, 76px) !important;
+  margin-top: 64px !important;
+}
+
+.website-services-page .website-care-included-layout > .website-care-section {
+  padding-top: 4px !important;
+}
+
+.website-services-page .website-care-included-layout .website-included-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 34px !important;
+}
+
+.website-services-page .website-care-included-layout .website-included-content {
+  width: 100% !important;
+}
+
+.website-services-page .website-care-included-layout .website-included-content h2 {
+  max-width: 620px !important;
+  margin: 14px 0 22px !important;
+  font-size: clamp(1.5rem, 2.1vw, 1.9rem) !important;
+  line-height: 1.28 !important;
+}
+
+.website-services-page .website-care-included-layout .check-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 18px 26px !important;
+  margin: 0 !important;
+}
+
+.website-services-page .website-care-included-layout .check-list li {
+  align-items: flex-start !important;
+  line-height: 1.5 !important;
+}
+
+.website-services-page .website-care-included-layout .website-control-panel {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 24px 0 0 !important;
+  border: 0 !important;
+  border-top: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.website-services-page .website-care-included-layout .website-control-panel h2 {
+  margin: 0 0 10px !important;
+  font-size: 1.3rem !important;
+}
+
+.website-services-page .website-care-included-layout .website-control-panel p {
+  max-width: 780px !important;
+  margin: 0 0 10px !important;
+  line-height: 1.65 !important;
+}
+
+.website-services-page .website-care-included-layout .website-care-section h2 {
+  font-size: clamp(1.8rem, 2.5vw, 2.25rem) !important;
+}
+
+.website-services-page .website-care-included-layout .website-care-section > .btn {
+  margin-top: 26px !important;
+}
+
+@media (max-width: 1050px) {
+  .website-services-page .website-care-included-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 44px !important;
+  }
+
+  .website-services-page .website-care-included-layout .website-included-grid {
+    gap: 26px !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .website-services-page .website-care-included-layout .check-list {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 14px !important;
+  }
+}
