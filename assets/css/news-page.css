@@ -457,3 +457,26 @@
     width: 100%;
   }
 }
+
+
+/* Centre the News page introduction while keeping article content left-aligned. */
+.news-page .page-hero.compact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.news-page .page-hero.compact h1,
+.news-page .page-hero.compact p {
+  margin-left: auto;
+  margin-right: auto;
+}
+.news-page .page-hero.compact h1 {
+  max-width: 900px;
+}
+.news-page .page-hero.compact p {
+  max-width: 760px;
+}
+.news-page .page-hero.compact .button-row {
+  justify-content: center;
+}
