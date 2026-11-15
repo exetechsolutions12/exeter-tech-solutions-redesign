@@ -8333,3 +8333,25 @@ a.btn,
     gap: 14px !important;
   }
 }
+
+
+/* Subtle vertical divider between Website Care and the included-features column. */
+.website-services-page .website-care-included-layout {
+  column-gap: 0 !important;
+}
+.website-services-page .website-care-included-layout > .website-care-section {
+  padding-right: clamp(28px, 3.5vw, 52px) !important;
+  border-right: 1px solid rgba(131, 217, 238, .38) !important;
+}
+.website-services-page .website-care-included-layout > .website-included-section {
+  padding-left: clamp(28px, 3.5vw, 52px) !important;
+}
+@media (max-width: 1050px) {
+  .website-services-page .website-care-included-layout > .website-care-section {
+    padding-right: 0 !important;
+    border-right: 0 !important;
+  }
+  .website-services-page .website-care-included-layout > .website-included-section {
+    padding-left: 0 !important;
+  }
+}
