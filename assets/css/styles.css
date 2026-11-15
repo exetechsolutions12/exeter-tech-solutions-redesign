@@ -9153,3 +9153,23 @@ body.contact-page {
 .contact-page .site-form .safety-note {
   background: rgba(131,217,238,.07) !important;
 }
+
+
+/* Contact form cleanup: remove inherited editor/highlight backgrounds from text and field wrappers. */
+body.contact-page .site-form .field,
+body.contact-page .site-form .field > label,
+body.contact-page .site-form .field > small,
+body.contact-page .site-form legend,
+body.contact-page .site-form .choice-row label,
+body.contact-page .site-form .consent,
+body.contact-page .site-form .consent span,
+body.contact-page .site-form h2,
+body.contact-page .site-form p,
+body.contact-page .site-form strong,
+body.contact-page .contact-summary .contact-method,
+body.contact-page .contact-summary .contact-method :where(h2, p, a, strong, span) {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
