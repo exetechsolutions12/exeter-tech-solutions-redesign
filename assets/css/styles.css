@@ -8462,3 +8462,23 @@ a.btn,
     min-height: 60px !important;
   }
 }
+
+
+/* Match the Small-business websites eyebrow pill to the cyan outlined ETS pills. */
+.website-services-page .page-hero > .container > .eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 12px 28px !important;
+  border: 2px solid #56b4ce !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: #83d9ee !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: clamp(1rem, 1.35vw, 1.25rem) !important;
+  font-weight: 600 !important;
+  letter-spacing: .12em !important;
+  line-height: 1.25 !important;
+  text-transform: uppercase !important;
+  box-shadow: none !important;
+}
