@@ -8866,3 +8866,11 @@ body.faq-page .faq-sidebar-help .btn {
     font-size: .9rem !important;
   }
 }
+
+
+/* Make the FAQ sidebar "Browse by topic" label more prominent. */
+body.faq-page .faq-sidebar-label {
+  font-size: 1rem !important;
+  line-height: 1.4 !important;
+  margin-bottom: 18px !important;
+}
