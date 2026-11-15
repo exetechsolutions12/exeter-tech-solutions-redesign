@@ -8874,3 +8874,20 @@ body.faq-page .faq-sidebar-label {
   line-height: 1.4 !important;
   margin-bottom: 18px !important;
 }
+
+
+/* FAQ page introduction: centred like the News page. */
+.faq-hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.faq-hero h1,
+.faq-hero p {
+  margin-left: auto;
+  margin-right: auto;
+}
+.faq-hero p {
+  max-width: 760px;
+}
