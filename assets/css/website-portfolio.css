@@ -745,3 +745,343 @@
   font-size: .82rem;
   line-height: 1.5;
 }
+
+
+/* -------------------------------------------------------------------------
+   Website services page layout reset
+   Keep the page in a clear sequence: introduction, pricing, care/inclusions,
+   portfolio, then one closing enquiry prompt.
+   ------------------------------------------------------------------------- */
+.website-services-page main > .page-hero {
+  text-align: left !important;
+}
+.website-services-page main > .page-hero > .container {
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+.website-services-page main > .page-hero h1,
+.website-services-page main > .page-hero p {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  text-align: left !important;
+}
+.website-services-page main > .page-hero .eyebrow {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+.website-services-page main > .page-hero .button-row {
+  justify-content: flex-start !important;
+}
+
+/* Pricing: two balanced text columns, not three columns with an empty slot. */
+.website-services-page .website-pricing-section {
+  padding: clamp(52px, 6vw, 76px) 0 !important;
+}
+.website-services-page .website-pricing-section > .container {
+  width: min(1160px, 92%) !important;
+}
+.website-services-page .website-pricing-section > .container > .section-title {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 0 34px !important;
+  text-align: left !important;
+}
+.website-services-page .website-pricing-section .pricing.website-pricing-open {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: clamp(34px, 6vw, 76px) !important;
+  align-items: start !important;
+  width: 100% !important;
+}
+.website-services-page .website-pricing-section .website-price-option {
+  display: block !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-top: 1px solid rgba(131,217,238,.38) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+.website-services-page .website-pricing-section .website-price-option:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+.website-services-page .website-pricing-section .website-price-option h2 {
+  min-height: 0 !important;
+  margin: 22px 0 0 !important;
+  color: #fff !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: clamp(1.3rem, 2vw, 1.65rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+}
+.website-services-page .website-pricing-section .website-price-option .price {
+  margin: 14px 0 16px !important;
+  color: #83d9ee !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: clamp(2rem, 3vw, 2.5rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+}
+.website-services-page .website-pricing-section .website-price-option p {
+  max-width: 560px !important;
+  color: rgba(239,246,255,.86) !important;
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+}
+
+/* Website Care and setup details: two clear columns with no nested three-way layout. */
+.website-services-page .website-care-included-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.45fr) !important;
+  align-items: start !important;
+  gap: clamp(34px, 5vw, 68px) !important;
+  margin: clamp(54px, 6vw, 76px) 0 0 !important;
+  padding-top: 38px !important;
+  border-top: 1px solid rgba(131,217,238,.38) !important;
+}
+.website-services-page .website-care-included-layout > .website-care-section {
+  min-width: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+.website-services-page .website-care-section > .eyebrow {
+  margin: 0 0 14px !important;
+}
+.website-services-page .website-care-section h2 {
+  margin: 0 0 10px !important;
+  color: #fff !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: clamp(1.8rem, 2.7vw, 2.25rem) !important;
+  line-height: 1.2 !important;
+}
+.website-services-page .website-care-section .website-care-section-price {
+  margin: 0 0 16px !important;
+  color: #83d9ee !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+}
+.website-services-page .website-care-section > p,
+.website-services-page .website-care-larger-changes p {
+  color: rgba(239,246,255,.86) !important;
+  font-size: .98rem !important;
+  line-height: 1.7 !important;
+}
+.website-services-page .website-care-larger-changes {
+  margin-top: 22px !important;
+  padding-top: 18px !important;
+  border-top: 1px solid rgba(131,217,238,.28) !important;
+}
+.website-services-page .website-care-larger-changes h3 {
+  color: #fff !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+.website-services-page .website-care-section > .btn {
+  margin-top: 22px !important;
+}
+.website-services-page .website-care-included-layout > .website-included-section {
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+.website-services-page .website-care-included-layout .website-included-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr) !important;
+  align-items: start !important;
+  gap: clamp(24px, 3vw, 40px) !important;
+}
+.website-services-page .website-care-included-layout .website-included-content,
+.website-services-page .website-care-included-layout .website-control-panel {
+  min-width: 0 !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.website-services-page .website-included-content .eyebrow {
+  margin: 0 0 14px !important;
+}
+.website-services-page .website-included-content h2 {
+  margin: 0 0 20px !important;
+  color: #fff !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: clamp(1.45rem, 2vw, 1.8rem) !important;
+  line-height: 1.25 !important;
+}
+.website-services-page .website-included-content .check-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px 20px !important;
+  margin: 0 !important;
+}
+.website-services-page .website-included-content .check-list li {
+  min-width: 0 !important;
+  color: rgba(239,246,255,.9) !important;
+  font-size: .9rem !important;
+  line-height: 1.5 !important;
+}
+.website-services-page .website-control-panel {
+  padding-left: clamp(22px, 2.6vw, 34px) !important;
+  border-left: 1px solid rgba(131,217,238,.32) !important;
+}
+.website-services-page .website-control-panel h2 {
+  margin: 0 0 12px !important;
+  color: #fff !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: clamp(1.25rem, 1.8vw, 1.5rem) !important;
+  line-height: 1.25 !important;
+}
+.website-services-page .website-control-panel p {
+  margin: 0 0 12px !important;
+  color: rgba(239,246,255,.84) !important;
+  font-size: .9rem !important;
+  line-height: 1.65 !important;
+}
+.website-services-page .website-control-panel strong {
+  color: #fff !important;
+}
+@media (max-width: 1000px) {
+  .website-services-page .website-care-included-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 38px !important;
+  }
+  .website-services-page .website-care-included-layout .website-included-grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr) !important;
+  }
+}
+@media (max-width: 700px) {
+  .website-services-page .website-pricing-section .pricing.website-pricing-open,
+  .website-services-page .website-care-included-layout .website-included-grid,
+  .website-services-page .website-care-included-layout .check-list {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .website-services-page .website-pricing-section .pricing.website-pricing-open {
+    gap: 30px !important;
+  }
+  .website-services-page .website-control-panel {
+    padding: 22px 0 0 !important;
+    border-left: 0 !important;
+    border-top: 1px solid rgba(131,217,238,.32) !important;
+  }
+}
+
+/* Portfolio: keep the two projects aligned and the feature previews consistent. */
+.website-services-page .website-portfolio-section {
+  padding: clamp(58px, 6vw, 82px) 0 !important;
+}
+.website-services-page .website-portfolio-section > .container {
+  width: min(1160px, 92%) !important;
+}
+.website-services-page .website-portfolio-section .section-title {
+  max-width: 100% !important;
+  margin: 0 0 32px !important;
+  text-align: left !important;
+}
+.website-services-page .website-portfolio-section .section-title p {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+.website-services-page .website-portfolio-grid {
+  display: grid !important;
+  width: 100% !important;
+  margin: 0 !important;
+  transform: none !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+  align-items: start !important;
+}
+.website-services-page .website-portfolio-card {
+  min-width: 0 !important;
+  height: auto !important;
+  border: 1px solid #d7e5f5 !important;
+  border-radius: 16px !important;
+  background: #fff !important;
+  box-shadow: 0 8px 24px rgba(16,32,51,.06) !important;
+  transform: none !important;
+}
+.website-services-page .website-portfolio-card > img {
+  display: block !important;
+  width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: cover !important;
+}
+.website-services-page .website-portfolio-card-content {
+  padding: 20px 22px 14px !important;
+}
+.website-services-page .website-portfolio-card h3 {
+  margin: 0 !important;
+  color: #102033 !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.25rem !important;
+}
+.website-services-page .website-portfolio-card p,
+.website-services-page .website-portfolio-feature p,
+.website-services-page .website-portfolio-homepage-feature p,
+.website-services-page .website-portfolio-swish-feature-content p {
+  color: #526276 !important;
+}
+.website-services-page .website-portfolio-case-study {
+  padding: 0 22px 22px !important;
+}
+.website-services-page .website-portfolio-swish-extra-features {
+  padding: 0 22px 22px !important;
+}
+.website-services-page .website-portfolio-feature-grid,
+.website-services-page .website-portfolio-swish-extra-features {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+}
+.website-services-page .website-portfolio-feature,
+.website-services-page .website-portfolio-swish-feature {
+  min-width: 0 !important;
+  border: 1px solid #d7e5f5 !important;
+  border-radius: 10px !important;
+  background: #f8fbff !important;
+}
+.website-services-page .website-portfolio-feature img,
+.website-services-page .website-portfolio-swish-feature img {
+  width: 100% !important;
+  aspect-ratio: 16 / 10 !important;
+  object-fit: cover !important;
+}
+.website-services-page .website-portfolio-feature-content,
+.website-services-page .website-portfolio-swish-feature-content {
+  padding: 12px !important;
+}
+.website-services-page .website-portfolio-number {
+  background: #286da8 !important;
+}
+@media (max-width: 800px) {
+  .website-services-page .website-portfolio-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    max-width: 620px !important;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 560px) {
+  .website-services-page .website-portfolio-feature-grid,
+  .website-services-page .website-portfolio-swish-extra-features {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .website-services-page .website-portfolio-case-study,
+  .website-services-page .website-portfolio-swish-extra-features {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+}
+
+/* Keep the final enquiry banner in line with the rest of the content width. */
+.website-services-page main > .section:last-of-type > .container {
+  width: min(1160px, 92%) !important;
+}
