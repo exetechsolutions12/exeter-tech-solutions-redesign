@@ -8839,3 +8839,30 @@ body.faq-page .faq-actions {
   border-top: 0 !important;
   padding-top: 0 !important;
 }
+
+
+/* Slightly increase FAQ sidebar navigation and contact prompt readability. */
+body.faq-page .faq-sidebar-label {
+  font-size: .84rem !important;
+}
+body.faq-page .faq-category-nav a {
+  font-size: 1rem !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+}
+body.faq-page .faq-sidebar-help h2 {
+  font-size: 1.48rem !important;
+}
+body.faq-page .faq-sidebar-help p {
+  font-size: .98rem !important;
+  line-height: 1.7 !important;
+}
+body.faq-page .faq-sidebar-help .btn {
+  font-size: 1rem !important;
+  padding: 14px 22px !important;
+}
+@media (max-width: 850px) {
+  body.faq-page .faq-category-nav a {
+    font-size: .9rem !important;
+  }
+}
