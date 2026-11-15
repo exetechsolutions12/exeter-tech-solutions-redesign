@@ -9134,3 +9134,22 @@ body.contact-page {
     width: 100% !important;
   }
 }
+
+
+/* Contact page: remove the unwanted dark rectangular backing behind text. */
+.contact-page .contact-summary .contact-method h2,
+.contact-page .contact-summary .contact-method p,
+.contact-page .contact-summary .contact-method a,
+.contact-page .site-form > h2,
+.contact-page .site-form .field > label,
+.contact-page .site-form legend,
+.contact-page .site-form .form-notice strong,
+.contact-page .site-form .safety-note strong {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.contact-page .site-form .form-notice,
+.contact-page .site-form .safety-note {
+  background: rgba(131,217,238,.07) !important;
+}
