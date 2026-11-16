@@ -9839,3 +9839,18 @@ body.home-support-page .home-support-final .home-support-cta > .btn span {
     width: 100% !important;
   }
 }
+
+
+/* Ensure the home-support contact banner itself is visibly lighter than the page,
+   with no inherited dark CTA panel showing through. */
+body.home-support-page .home-support-final .cta.home-support-cta,
+body.home-support-page .home-support-final .cta.home-support-cta::before,
+body.home-support-page .home-support-final .cta.home-support-cta::after {
+  background: #164b6d !important;
+  background-image: none !important;
+}
+body.home-support-page .home-support-final .home-support-cta-copy,
+body.home-support-page .home-support-final .home-support-cta-copy h2,
+body.home-support-page .home-support-final .home-support-cta-copy p {
+  background: transparent !important;
+}
