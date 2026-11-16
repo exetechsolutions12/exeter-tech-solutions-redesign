@@ -9931,3 +9931,18 @@ body.home-support-page main > .page-hero.site-video-hero > .container > .eyebrow
   margin-right: auto !important;
   white-space: nowrap !important;
 }
+
+
+/* Improve readability of the Home IT Support checklist points. */
+body.home-support-page .home-support-common-list li,
+body.home-support-page .home-support-safe-grid p {
+  font-size: clamp(1.12rem, 1.25vw, 1.22rem) !important;
+  line-height: 1.7 !important;
+}
+@media (max-width: 620px) {
+  body.home-support-page .home-support-common-list li,
+  body.home-support-page .home-support-safe-grid p {
+    font-size: 1.1rem !important;
+    line-height: 1.65 !important;
+  }
+}
