@@ -10010,3 +10010,32 @@ body.home-support-page .home-support-pricing > .btn {
     font-size: 1.05rem !important;
   }
 }
+
+
+/* Robust checklist alignment: place each dot in normal flex layout beside its text. */
+body.home-support-page .home-support-list li,
+body.home-support-page .home-support-safe-grid p {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 14px !important;
+  padding-left: 0 !important;
+}
+body.home-support-page .home-support-list li::before,
+body.home-support-page .home-support-safe-grid p::before {
+  position: static !important;
+  display: block !important;
+  flex: 0 0 9px !important;
+  width: 9px !important;
+  height: 9px !important;
+  min-width: 9px !important;
+  margin: calc((1.7em - 9px) / 2) 0 0 0 !important;
+  border-radius: 50% !important;
+  content: "" !important;
+  background: #2298d2 !important;
+}
+@media (max-width: 620px) {
+  body.home-support-page .home-support-list li::before,
+  body.home-support-page .home-support-safe-grid p::before {
+    margin-top: calc((1.65em - 9px) / 2) !important;
+  }
+}
