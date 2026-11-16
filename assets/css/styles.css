@@ -9946,3 +9946,20 @@ body.home-support-page .home-support-safe-grid p {
     line-height: 1.65 !important;
   }
 }
+
+
+/* Replace checklist ticks with subtle brand-coloured dot markers. */
+body.home-support-page .home-support-list li::before,
+body.home-support-page .home-support-safe-grid p::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 2px !important;
+  top: .72em !important;
+  width: 9px !important;
+  height: 9px !important;
+  border-radius: 50% !important;
+  background: #2298d2 !important;
+  color: transparent !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
