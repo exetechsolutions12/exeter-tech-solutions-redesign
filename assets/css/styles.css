@@ -9891,3 +9891,30 @@ body.home-support-page main > .page-hero.site-video-hero > .container {
     padding: 58px 0 64px !important;
   }
 }
+
+/* Centre the Home IT Support hero introduction within its video backdrop. */
+body.home-support-page main > .page-hero.site-video-hero > .container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+body.home-support-page main > .page-hero.site-video-hero > .container > .eyebrow,
+body.home-support-page main > .page-hero.site-video-hero > .container > h1,
+body.home-support-page main > .page-hero.site-video-hero > .container > p {
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+body.home-support-page main > .page-hero.site-video-hero > .container > p {
+  max-width: 850px !important;
+}
+body.home-support-page main > .page-hero.site-video-hero .button-row {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+}
