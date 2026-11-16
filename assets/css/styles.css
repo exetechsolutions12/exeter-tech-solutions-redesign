@@ -9854,3 +9854,19 @@ body.home-support-page .home-support-final .home-support-cta-copy h2,
 body.home-support-page .home-support-final .home-support-cta-copy p {
   background: transparent !important;
 }
+
+
+/* Remove the unwanted dark square directly behind the speech-bubble artwork. */
+body.home-support-page .home-support-final .home-support-cta-icon svg {
+  display: block !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: #082b49 !important;
+}
+body.home-support-page .home-support-final .home-support-cta-icon svg path {
+  stroke: #082b49 !important;
+}
+body.home-support-page .home-support-final .home-support-cta-icon svg circle {
+  fill: #082b49 !important;
+}
