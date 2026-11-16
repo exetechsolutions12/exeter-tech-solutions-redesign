@@ -9870,3 +9870,24 @@ body.home-support-page .home-support-final .home-support-cta-icon svg path {
 body.home-support-page .home-support-final .home-support-cta-icon svg circle {
   fill: #082b49 !important;
 }
+
+/* Home IT Support hero: give the shared background video the same generous
+   full-width hero canvas as the Pricing page. */
+body.home-support-page main > .page-hero.site-video-hero {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 580px !important;
+  box-sizing: border-box !important;
+  padding: 76px 0 82px !important;
+}
+body.home-support-page main > .page-hero.site-video-hero > .container {
+  width: min(100% - 48px, 1280px) !important;
+  max-width: 1280px !important;
+  margin-inline: auto !important;
+}
+@media (max-width: 760px) {
+  body.home-support-page main > .page-hero.site-video-hero {
+    min-height: 440px !important;
+    padding: 58px 0 64px !important;
+  }
+}
