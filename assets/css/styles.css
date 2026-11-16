@@ -9963,3 +9963,16 @@ body.home-support-page .home-support-safe-grid p::before {
   font-size: 0 !important;
   line-height: 0 !important;
 }
+
+
+/* Vertically centre the blue markers against the first line of each checklist item. */
+body.home-support-page .home-support-list li::before,
+body.home-support-page .home-support-safe-grid p::before {
+  top: calc((1.7em - 9px) / 2) !important;
+}
+@media (max-width: 620px) {
+  body.home-support-page .home-support-list li::before,
+  body.home-support-page .home-support-safe-grid p::before {
+    top: calc((1.65em - 9px) / 2) !important;
+  }
+}
