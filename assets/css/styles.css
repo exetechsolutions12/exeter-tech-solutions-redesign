@@ -9756,3 +9756,86 @@ body.home-support-page .home-support-final .home-support-cta > .btn:hover {
     white-space: normal !important;
   }
 }
+
+
+/* Compact Home IT Support enquiry banner: restore visual depth and reduce scale. */
+body.home-support-page .home-support-final .cta.home-support-cta {
+  max-width: 1180px !important;
+  min-height: 0 !important;
+  margin: 0 auto !important;
+  padding: 26px 34px !important;
+  grid-template-columns: 76px minmax(0, 1fr) auto !important;
+  gap: 26px !important;
+  border: 2px solid #58c3df !important;
+  border-radius: 24px !important;
+  background: linear-gradient(115deg, #103b5b 0%, #0d3453 58%, #102f4e 100%) !important;
+  box-shadow: 0 12px 32px rgba(0, 10, 24, .16) !important;
+}
+body.home-support-page .home-support-final .home-support-cta-icon {
+  width: 68px !important;
+  height: 68px !important;
+  border-radius: 17px !important;
+}
+body.home-support-page .home-support-final .home-support-cta-icon svg {
+  width: 38px !important;
+  height: 38px !important;
+}
+body.home-support-page .home-support-final .home-support-cta-copy {
+  padding-left: 26px !important;
+  border-left-width: 1px !important;
+}
+body.home-support-page .home-support-final .home-support-cta-copy h2 {
+  margin: 0 0 8px !important;
+  font-size: clamp(1.55rem, 2.4vw, 2.15rem) !important;
+  line-height: 1.2 !important;
+}
+body.home-support-page .home-support-final .home-support-cta-copy p {
+  max-width: 650px !important;
+  font-size: clamp(.98rem, 1.15vw, 1.1rem) !important;
+  line-height: 1.55 !important;
+}
+body.home-support-page .home-support-final .home-support-cta > .btn {
+  min-width: 205px !important;
+  min-height: 58px !important;
+  padding: 14px 22px !important;
+  gap: 10px !important;
+  font-size: .98rem !important;
+}
+body.home-support-page .home-support-final .home-support-cta > .btn span {
+  background: transparent !important;
+  color: inherit !important;
+  font-size: 1.3rem !important;
+}
+@media (max-width: 900px) {
+  body.home-support-page .home-support-final .cta.home-support-cta {
+    grid-template-columns: 64px minmax(0, 1fr) !important;
+    padding: 24px !important;
+    gap: 20px !important;
+  }
+  body.home-support-page .home-support-final .home-support-cta-icon {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  body.home-support-page .home-support-final .home-support-cta-copy {
+    padding-left: 20px !important;
+  }
+  body.home-support-page .home-support-final .home-support-cta > .btn {
+    grid-column: 2 !important;
+    justify-self: start !important;
+  }
+}
+@media (max-width: 620px) {
+  body.home-support-page .home-support-final .cta.home-support-cta {
+    grid-template-columns: 1fr !important;
+    padding: 22px !important;
+    gap: 18px !important;
+  }
+  body.home-support-page .home-support-final .home-support-cta-copy {
+    padding: 0 !important;
+    border: 0 !important;
+  }
+  body.home-support-page .home-support-final .home-support-cta > .btn {
+    grid-column: 1 !important;
+    width: 100% !important;
+  }
+}
