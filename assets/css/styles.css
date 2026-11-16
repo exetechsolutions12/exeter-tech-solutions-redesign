@@ -9432,3 +9432,163 @@ body.home-support-page .home-support-final .cta {
     flex-direction: column !important;
   }
 }
+
+
+/* Home IT Support refinements: stronger introductory type, clearer content hierarchy,
+   and a contact banner matching the site's established CTA treatment. */
+body.home-support-page .home-support-intro {
+  padding: clamp(64px, 7vw, 92px) 0 52px !important;
+}
+body.home-support-page .home-support-intro > .container {
+  max-width: 1080px !important;
+}
+body.home-support-page .home-support-intro .feature-heading {
+  font-size: clamp(1rem, 1.25vw, 1.15rem) !important;
+  letter-spacing: .035em !important;
+}
+body.home-support-page .home-support-intro h2 {
+  margin: 16px 0 22px !important;
+  font-size: clamp(2.25rem, 4vw, 3.15rem) !important;
+  line-height: 1.16 !important;
+}
+body.home-support-page .home-support-intro p {
+  max-width: 1000px !important;
+  font-size: clamp(1.12rem, 1.45vw, 1.28rem) !important;
+  line-height: 1.8 !important;
+  margin-bottom: 18px !important;
+}
+body.home-support-page .home-support-details {
+  padding-top: 42px !important;
+}
+body.home-support-page .home-support-common {
+  max-width: 1000px !important;
+  margin: 0 auto 46px !important;
+}
+body.home-support-page .home-support-common h3,
+body.home-support-page .home-support-safe h3 {
+  margin: 0 0 22px !important;
+  font-size: clamp(1.35rem, 2vw, 1.65rem) !important;
+}
+body.home-support-page .home-support-common-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 56px !important;
+  row-gap: 18px !important;
+}
+body.home-support-page .home-support-safe {
+  padding: 34px 0 0 !important;
+  border-top: 1px solid rgba(131,217,238,.32) !important;
+}
+body.home-support-page .home-support-safe-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  column-gap: 38px !important;
+  row-gap: 18px !important;
+}
+body.home-support-page .home-support-safe-grid p {
+  position: relative !important;
+  margin: 0 !important;
+  padding-left: 25px !important;
+  line-height: 1.65 !important;
+}
+body.home-support-page .home-support-safe-grid p::before {
+  content: "✓" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  color: #83d9ee !important;
+  font-weight: 800 !important;
+}
+body.home-support-page .home-support-cta {
+  display: grid !important;
+  grid-template-columns: 112px minmax(0, 1fr) auto !important;
+  align-items: center !important;
+  gap: 34px !important;
+  width: 100% !important;
+  padding: 34px 42px !important;
+  border: 3px solid #58c3df !important;
+  border-radius: 32px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+body.home-support-page .home-support-cta-icon {
+  display: grid !important;
+  place-items: center !important;
+  width: 92px !important;
+  height: 92px !important;
+  border-radius: 22px !important;
+  background: #83d9ee !important;
+  color: #082b49 !important;
+}
+body.home-support-page .home-support-cta-icon svg {
+  width: 52px !important;
+  height: 52px !important;
+}
+body.home-support-page .home-support-cta-copy {
+  padding-left: 34px !important;
+  border-left: 1px solid #58c3df !important;
+}
+body.home-support-page .home-support-cta-copy h2 {
+  margin: 0 0 12px !important;
+  font-size: clamp(1.8rem, 3vw, 2.65rem) !important;
+  line-height: 1.18 !important;
+}
+body.home-support-page .home-support-cta-copy p {
+  margin: 0 !important;
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem) !important;
+  line-height: 1.6 !important;
+}
+body.home-support-page .home-support-cta > .btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  min-height: 76px !important;
+  padding: 18px 30px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: #1684bd !important;
+  color: #fff !important;
+  white-space: nowrap !important;
+  font-size: 1.05rem !important;
+}
+body.home-support-page .home-support-cta > .btn span {
+  font-size: 1.6rem !important;
+  line-height: 1 !important;
+}
+@media (max-width: 900px) {
+  body.home-support-page .home-support-cta {
+    grid-template-columns: 76px minmax(0, 1fr) !important;
+    gap: 24px !important;
+  }
+  body.home-support-page .home-support-cta-icon {
+    width: 72px !important;
+    height: 72px !important;
+  }
+  body.home-support-page .home-support-cta-copy {
+    padding-left: 24px !important;
+  }
+  body.home-support-page .home-support-cta > .btn {
+    grid-column: 2 !important;
+    justify-self: start !important;
+  }
+}
+@media (max-width: 620px) {
+  body.home-support-page .home-support-common-list,
+  body.home-support-page .home-support-safe-grid {
+    grid-template-columns: 1fr !important;
+  }
+  body.home-support-page .home-support-cta {
+    grid-template-columns: 1fr !important;
+    padding: 26px 22px !important;
+    border-radius: 24px !important;
+  }
+  body.home-support-page .home-support-cta-copy {
+    padding: 0 !important;
+    border: 0 !important;
+  }
+  body.home-support-page .home-support-cta > .btn {
+    grid-column: 1 !important;
+    width: 100% !important;
+    white-space: normal !important;
+  }
+}
