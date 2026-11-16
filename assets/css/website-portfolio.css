@@ -1193,3 +1193,22 @@
     grid-template-columns: minmax(0, 1fr) !important;
   }
 }
+
+
+/* Keep the Website Care eyebrow, heading and price in a clear vertical hierarchy. */
+.website-services-page .website-care-stacked-layout .website-care-section-copy > .eyebrow,
+.website-services-page .website-care-stacked-layout .website-care-section-copy > h2,
+.website-services-page .website-care-stacked-layout .website-care-section-copy > .website-care-section-price {
+  display: block !important;
+  width: fit-content !important;
+  vertical-align: initial !important;
+}
+.website-services-page .website-care-stacked-layout .website-care-section-copy > .eyebrow {
+  margin: 0 0 12px !important;
+}
+.website-services-page .website-care-stacked-layout .website-care-section-copy > h2 {
+  margin: 0 0 8px !important;
+}
+.website-services-page .website-care-stacked-layout .website-care-section-copy > .website-care-section-price {
+  margin: 0 0 16px !important;
+}
