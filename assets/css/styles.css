@@ -10310,3 +10310,16 @@ body.home-support-page .home-support-safe h3::before {
   content: "/  YOUR PEACE OF MIND" !important;
   display: block !important;
 }
+
+
+/* Final correction: retain the words, remove only the 01 / 02 prefixes. */
+body.home-support-page .home-support-common h3::before {
+  content: "EVERYDAY SUPPORT" !important;
+  display: block !important;
+  visibility: visible !important;
+}
+body.home-support-page .home-support-safe h3::before {
+  content: "YOUR PEACE OF MIND" !important;
+  display: block !important;
+  visibility: visible !important;
+}
