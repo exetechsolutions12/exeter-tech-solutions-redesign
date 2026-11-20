@@ -10283,3 +10283,15 @@ body.home-support-page .home-support-safe {
     padding-top: 28px !important;
   }
 }
+
+
+/* Remove the numbered eyebrow labels above the two Home Support subheadings. */
+body.home-support-page .home-support-common h3,
+body.home-support-page .home-support-safe h3 {
+  padding-top: 0 !important;
+}
+body.home-support-page .home-support-common h3::before,
+body.home-support-page .home-support-safe h3::before {
+  content: none !important;
+  display: none !important;
+}
