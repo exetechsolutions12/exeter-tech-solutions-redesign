@@ -10108,7 +10108,8 @@ body.home-support-page .home-support-safe-grid p::before {
   background: none !important;
   color: #2298d2 !important;
   font: inherit !important;
-  font-weight: 800 !important;
+  font-weight: 950 !important;
+  -webkit-text-stroke: .35px currentColor !important;
   line-height: inherit !important;
   vertical-align: baseline !important;
   transform: none !important;
