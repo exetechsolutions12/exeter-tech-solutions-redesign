@@ -10149,3 +10149,12 @@ body.home-support-page .home-support-intro p {
   margin-left: 0 !important;
   margin-right: auto !important;
 }
+
+
+/* Match the intro section's container width and left edge to the section below. */
+body.home-support-page .home-support-intro > .container {
+  width: calc(100% - 48px) !important;
+  max-width: 1000px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
