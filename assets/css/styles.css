@@ -10084,3 +10084,32 @@ body.home-support-page .home-support-safe-grid p::before {
   margin: .75em 0 0 !important;
   transform: none !important;
 }
+
+
+/* Home support: use inline dash markers so they share the text baseline.
+   This replaces the previous pseudo-element circle/grid positioning rules. */
+body.home-support-page .home-support-list li,
+body.home-support-page .home-support-safe-grid p {
+  display: block !important;
+  padding: 0 !important;
+}
+body.home-support-page .home-support-list li::before,
+body.home-support-page .home-support-safe-grid p::before {
+  content: "–" !important;
+  position: static !important;
+  display: inline !important;
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  margin: 0 .65em 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: none !important;
+  color: #2298d2 !important;
+  font: inherit !important;
+  font-weight: 800 !important;
+  line-height: inherit !important;
+  vertical-align: baseline !important;
+  transform: none !important;
+}
