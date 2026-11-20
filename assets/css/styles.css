@@ -10066,3 +10066,21 @@ body.home-support-page .home-support-safe-grid p::before {
   background: #2298d2 !important;
   transform: none !important;
 }
+
+
+/* Final alignment correction for the Home Support blue bullet markers. */
+body.home-support-page .home-support-list li,
+body.home-support-page .home-support-safe-grid p {
+  display: grid !important;
+  grid-template-columns: 9px minmax(0, 1fr) !important;
+  column-gap: 14px !important;
+  align-items: start !important;
+}
+body.home-support-page .home-support-list li::before,
+body.home-support-page .home-support-safe-grid p::before {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  align-self: start !important;
+  margin: .75em 0 0 !important;
+  transform: none !important;
+}
