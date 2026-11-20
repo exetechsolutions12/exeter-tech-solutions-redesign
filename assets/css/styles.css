@@ -10132,3 +10132,20 @@ body.home-support-page .home-support-details > .container > .section-title p {
 body.home-support-page .home-support-details > .container > .section-title p {
   max-width: 760px !important;
 }
+
+
+/* Align the “Just explain what is happening” introduction with the
+   same content edge used by “How I can help” and its common-help heading. */
+body.home-support-page .home-support-intro > .container {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body.home-support-page .home-support-intro .feature-heading,
+body.home-support-page .home-support-intro h2,
+body.home-support-page .home-support-intro p {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
