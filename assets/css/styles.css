@@ -10295,3 +10295,18 @@ body.home-support-page .home-support-safe h3::before {
   content: none !important;
   display: none !important;
 }
+
+
+/* Keep the descriptive section labels, removing only their numeric prefixes. */
+body.home-support-page .home-support-common h3,
+body.home-support-page .home-support-safe h3 {
+  padding-top: 17px !important;
+}
+body.home-support-page .home-support-common h3::before {
+  content: "/  EVERYDAY SUPPORT" !important;
+  display: block !important;
+}
+body.home-support-page .home-support-safe h3::before {
+  content: "/  YOUR PEACE OF MIND" !important;
+  display: block !important;
+}
