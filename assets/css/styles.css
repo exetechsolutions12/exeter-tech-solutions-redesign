@@ -10114,3 +10114,21 @@ body.home-support-page .home-support-safe-grid p::before {
   vertical-align: baseline !important;
   transform: none !important;
 }
+
+
+/* Align the Home IT Support section introduction with the left edge of
+   the “Common things I can help with” heading below it. */
+body.home-support-page .home-support-details > .container > .section-title {
+  max-width: 100% !important;
+  margin: 0 0 34px !important;
+  text-align: left !important;
+}
+body.home-support-page .home-support-details > .container > .section-title h2,
+body.home-support-page .home-support-details > .container > .section-title p {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+body.home-support-page .home-support-details > .container > .section-title p {
+  max-width: 760px !important;
+}
