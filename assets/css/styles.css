@@ -11014,3 +11014,20 @@ body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-pric
   }
 }
 
+
+
+/* Final shared enquiry banner correction: editable text must stay transparent. */
+.shared-enquiry-banner .home-support-cta-copy,
+.shared-enquiry-banner .home-support-cta-copy h2,
+.shared-enquiry-banner .home-support-cta-copy p,
+.shared-enquiry-banner .home-support-cta-copy h2.editable,
+.shared-enquiry-banner .home-support-cta-copy p.editable {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.shared-enquiry-banner .home-support-cta-copy h2,
+.shared-enquiry-banner .home-support-cta-copy p {
+  display: block !important;
+}
