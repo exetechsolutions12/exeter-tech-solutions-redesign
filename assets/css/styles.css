@@ -12478,3 +12478,21 @@ body.logo-design-page .logo-offering-tag {
     font-size: 1.15rem !important;
   }
 }
+
+
+/* Keep the editorial service rows stable on hover. */
+body.logo-design-page .logo-offerings-section .logo-offering-card:hover {
+  display: grid !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  translate: none !important;
+  filter: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+body.logo-design-page .logo-offerings-section .logo-offering-card::before,
+body.logo-design-page .logo-offerings-section .logo-offering-card:hover::before {
+  display: none !important;
+  opacity: 0 !important;
+}
