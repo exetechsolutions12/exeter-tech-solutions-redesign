@@ -12496,3 +12496,47 @@ body.logo-design-page .logo-offerings-section .logo-offering-card:hover::before 
   display: none !important;
   opacity: 0 !important;
 }
+
+
+/* Logo process: make all five steps equal-height and align their edges. */
+body.logo-design-page .logo-process-steps {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  gap: 14px !important;
+}
+body.logo-design-page .logo-process-step,
+body.logo-design-page .logo-process-step:nth-child(4),
+body.logo-design-page .logo-process-step:nth-child(5) {
+  display: flex !important;
+  flex-direction: column !important;
+  align-self: stretch !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  box-sizing: border-box !important;
+  padding: 24px 18px !important;
+  border: 1px solid rgba(117,213,232,.42) !important;
+  border-radius: 14px !important;
+  background: #103b5d !important;
+}
+body.logo-design-page .logo-process-step p {
+  flex: 1 1 auto;
+}
+@media (max-width: 1000px) {
+  body.logo-design-page .logo-process-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+  }
+  body.logo-design-page .logo-process-step,
+  body.logo-design-page .logo-process-step:nth-child(4),
+  body.logo-design-page .logo-process-step:nth-child(5) {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}
+@media (max-width: 650px) {
+  body.logo-design-page .logo-process-steps {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
