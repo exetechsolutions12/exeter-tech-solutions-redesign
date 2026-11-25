@@ -332,6 +332,29 @@
       }
     }
 
+
+    /* Definitively remove the inherited dark highlight behind the pricing heading. */
+    body.logo-design-page .logo-process-pricing .logo-pricing-heading,
+    body.logo-design-page .logo-process-pricing .logo-pricing-heading *,
+    body.logo-design-page .logo-process-pricing .logo-pricing-heading .editable,
+    body.logo-design-page .logo-process-pricing .logo-pricing-heading h2,
+    body.logo-design-page .logo-process-pricing .logo-pricing-heading span {
+      background: transparent !important;
+      background-color: transparent !important;
+      background-image: none !important;
+      box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+    }
+    body.logo-design-page .logo-process-pricing .logo-pricing-heading::before,
+    body.logo-design-page .logo-process-pricing .logo-pricing-heading::after,
+    body.logo-design-page .logo-process-pricing .logo-pricing-heading *::before,
+    body.logo-design-page .logo-process-pricing .logo-pricing-heading *::after {
+      content: none !important;
+      display: none !important;
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+
   </style>
   <script type="application/ld+json">
   {
