@@ -11584,3 +11584,47 @@ body.business-support-page main .shared-enquiry-banner > .btn {
     min-width:0 !important;
   }
 }
+
+
+/* Business Support: unify the quotation, service and good-fit panels with
+   the outlined navy panel treatment used in the contact feature reference. */
+body.business-support-page .service-page-intro > .practical-panel,
+body.business-support-page .service-detail-list > .service-detail-item,
+body.business-support-page .service-detail-grid > .practical-panel {
+  background: linear-gradient(135deg, #153f5e 0%, #0d3453 100%) !important;
+  background-color: #123b59 !important;
+  background-image: linear-gradient(135deg, #153f5e 0%, #0d3453 100%) !important;
+  border: 1.5px solid #4f9ab8 !important;
+  border-left: 1.5px solid #4f9ab8 !important;
+  border-radius: 22px !important;
+  box-shadow: none !important;
+}
+body.business-support-page .service-page-intro > .practical-panel h2,
+body.business-support-page .service-detail-list > .service-detail-item h3,
+body.business-support-page .service-detail-grid > .practical-panel h2 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+body.business-support-page .service-page-intro > .practical-panel p,
+body.business-support-page .service-detail-list > .service-detail-item p,
+body.business-support-page .service-detail-grid > .practical-panel .check-list li {
+  color: #d8e8f3 !important;
+  -webkit-text-fill-color: #d8e8f3 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+body.business-support-page .service-detail-grid > .practical-panel .check-list,
+body.business-support-page .service-detail-grid > .practical-panel .check-list li {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+body.business-support-page .service-detail-grid > .practical-panel .check-list li::before {
+  background: #c8f4e8 !important;
+  color: #08765f !important;
+}
+body.business-support-page .service-detail-grid > .practical-panel .btn {
+  color: #ffffff !important;
+}
