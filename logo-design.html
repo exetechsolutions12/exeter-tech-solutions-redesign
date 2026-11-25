@@ -285,6 +285,53 @@
       display: none !important;
     }
 
+
+    /* Portfolio logo artwork should sit on clean white canvases, not blend into navy. */
+    body.logo-design-page main > .section.logo-portfolio-section .logo-portfolio-preview {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      overflow: hidden !important;
+      padding: 26px !important;
+      box-sizing: border-box !important;
+      background: #ffffff !important;
+    }
+    body.logo-design-page main > .section.logo-portfolio-section .logo-portfolio-preview img {
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: contain !important;
+      object-position: center !important;
+      transform: none !important;
+      background: transparent !important;
+    }
+    body.logo-design-page main > .section.logo-portfolio-section .scouts-combined-panel {
+      background: #ffffff !important;
+    }
+    body.logo-design-page main > .section.logo-portfolio-section .scouts-combined-panel .logo-portfolio-preview {
+      width: 100% !important;
+      min-height: 300px !important;
+      height: 300px !important;
+      padding: 24px !important;
+      background: #ffffff !important;
+    }
+    body.logo-design-page main > .section.logo-portfolio-section .scouts-combined-panel .logo-portfolio-preview img {
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: contain !important;
+      transform: none !important;
+    }
+    @media (max-width: 760px) {
+      body.logo-design-page main > .section.logo-portfolio-section .scouts-combined-panel .logo-portfolio-preview {
+        min-height: 240px !important;
+        height: 240px !important;
+      }
+    }
+
   </style>
   <script type="application/ld+json">
   {
