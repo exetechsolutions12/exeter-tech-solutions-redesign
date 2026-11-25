@@ -271,6 +271,20 @@
       }
     }
 
+
+    /* Keep the pricing copy on the panel background, without text highlight blocks. */
+    body.logo-design-page main > .section.logo-process-section .logo-process-pricing .logo-pricing-heading,
+    body.logo-design-page main > .section.logo-process-section .logo-process-pricing .logo-pricing-kicker,
+    body.logo-design-page main > .section.logo-process-section .logo-process-pricing h2,
+    body.logo-design-page main > .section.logo-process-section .logo-process-pricing p {
+      background: transparent !important;
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+    body.logo-design-page main > .section.logo-process-section .logo-process-pricing .btn span {
+      display: none !important;
+    }
+
   </style>
   <script type="application/ld+json">
   {
@@ -391,7 +405,7 @@
               <h2 class="editable">Pricing tailored to your project.</h2>
             </div>
             <p class="editable logo-pricing-description">Every project is different. Tell me what you have in mind and I'll provide a personalised quote based on the design work and materials you need.</p>
-            <a class="btn" href="/contact?service=logo-design">Discuss your logo <span aria-hidden="true">→</span></a>
+            <a class="btn" href="/contact?service=logo-design">Discuss your logo</a>
           </aside>
         </div>
       </div>
