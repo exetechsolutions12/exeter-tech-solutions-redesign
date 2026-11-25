@@ -11442,3 +11442,27 @@ body.business-support-page .service-detail-grid > .practical-panel .check-list l
   background:transparent !important;
   background-image:none !important;
 }
+
+
+/* Business Support: force legible typography inside the white service cards. */
+body.business-support-page main .service-detail-list article.service-detail-item h3.editable {
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  margin:0 0 9px !important;
+  color:#173d5b !important;
+  -webkit-text-fill-color:#173d5b !important;
+  background:none !important;
+}
+body.business-support-page main .service-detail-list article.service-detail-item p.editable {
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  color:#49657d !important;
+  -webkit-text-fill-color:#49657d !important;
+  background:none !important;
+}
+body.business-support-page main .service-detail-list article.service-detail-item {
+  background:#ffffff !important;
+  border:1px solid #d7e5f1 !important;
+}
