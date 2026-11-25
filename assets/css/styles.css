@@ -11466,3 +11466,121 @@ body.business-support-page main .service-detail-list article.service-detail-item
   background:#ffffff !important;
   border:1px solid #d7e5f1 !important;
 }
+
+
+/* Business Support closing CTA: match the compact navy Home IT Support banner. */
+body.business-support-page main .cta.shared-enquiry-banner {
+  display:grid !important;
+  grid-template-columns:68px minmax(0,1fr) auto !important;
+  align-items:center !important;
+  gap:26px !important;
+  width:100% !important;
+  max-width:1180px !important;
+  min-height:0 !important;
+  margin:0 auto !important;
+  padding:26px 30px !important;
+  border:2px solid #58c3df !important;
+  border-radius:24px !important;
+  background:#164b6d !important;
+  background-image:none !important;
+  color:#fff !important;
+  box-shadow:0 12px 32px rgba(0,10,24,.16) !important;
+  box-sizing:border-box !important;
+}
+body.business-support-page main .shared-enquiry-banner .home-support-cta-icon {
+  display:grid !important;
+  place-items:center !important;
+  width:68px !important;
+  height:68px !important;
+  margin:0 !important;
+  border-radius:17px !important;
+  background:#83d9ee !important;
+  color:#082b49 !important;
+}
+body.business-support-page main .shared-enquiry-banner .home-support-cta-icon svg {
+  display:block !important;
+  width:38px !important;
+  height:38px !important;
+  background:transparent !important;
+}
+body.business-support-page main .shared-enquiry-banner .home-support-cta-copy {
+  min-width:0 !important;
+  margin:0 !important;
+  padding:0 0 0 26px !important;
+  border-left:1px solid #58c3df !important;
+  background:transparent !important;
+  color:#fff !important;
+}
+body.business-support-page main .shared-enquiry-banner .home-support-cta-copy h2 {
+  display:block !important;
+  margin:0 0 8px !important;
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+  background:transparent !important;
+  font-size:clamp(1.55rem,2.4vw,2.15rem) !important;
+  line-height:1.2 !important;
+  font-weight:700 !important;
+}
+body.business-support-page main .shared-enquiry-banner .home-support-cta-copy p {
+  display:block !important;
+  max-width:650px !important;
+  margin:0 !important;
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+  background:transparent !important;
+  font-size:clamp(.98rem,1.15vw,1.1rem) !important;
+  line-height:1.55 !important;
+}
+body.business-support-page main .shared-enquiry-banner > .btn {
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:auto !important;
+  min-width:205px !important;
+  min-height:58px !important;
+  margin:0 !important;
+  padding:14px 22px !important;
+  border:0 !important;
+  border-radius:999px !important;
+  background:#1684bd !important;
+  color:#fff !important;
+  font-size:.98rem !important;
+  line-height:1.35 !important;
+  font-weight:700 !important;
+  text-align:center !important;
+  white-space:normal !important;
+  box-shadow:none !important;
+}
+@media (max-width:900px) {
+  body.business-support-page main .cta.shared-enquiry-banner {
+    grid-template-columns:60px minmax(0,1fr) !important;
+    padding:24px !important;
+    gap:20px !important;
+  }
+  body.business-support-page main .shared-enquiry-banner .home-support-cta-icon {
+    width:60px !important;height:60px !important;
+  }
+  body.business-support-page main .shared-enquiry-banner .home-support-cta-copy {
+    padding-left:20px !important;
+  }
+  body.business-support-page main .shared-enquiry-banner > .btn {
+    grid-column:2 !important;
+    justify-self:start !important;
+  }
+}
+@media (max-width:620px) {
+  body.business-support-page main .cta.shared-enquiry-banner {
+    grid-template-columns:1fr !important;
+    padding:22px !important;
+    gap:18px !important;
+  }
+  body.business-support-page main .shared-enquiry-banner .home-support-cta-copy {
+    padding:0 !important;
+    border:0 !important;
+  }
+  body.business-support-page main .shared-enquiry-banner > .btn {
+    grid-column:1 !important;
+    width:100% !important;
+    min-width:0 !important;
+  }
+}
