@@ -12276,3 +12276,68 @@ body.logo-design-page .logo-process-pricing .btn {
     justify-self: start;
   }
 }
+
+
+/* Logo Design page: remove the pale outer section bands and use the navy page theme throughout. */
+body.logo-design-page,
+body.logo-design-page main {
+  background: #05294a !important;
+}
+body.logo-design-page main > .section.logo-intro-section,
+body.logo-design-page main > .section.logo-process-section,
+body.logo-design-page main > .section.logo-portfolio-section,
+body.logo-design-page main > .section.soft {
+  background: #05294a !important;
+  color: #f4f8fc !important;
+}
+body.logo-design-page main > .section.logo-intro-section > .container,
+body.logo-design-page main > .section.logo-portfolio-section > .container,
+body.logo-design-page main > .section.soft > .container {
+  background: transparent !important;
+}
+body.logo-design-page .logo-offerings-heading h2,
+body.logo-design-page .logo-offerings-heading p,
+body.logo-design-page .logo-offerings-heading .eyebrow {
+  color: #f4f8fc !important;
+  background: transparent !important;
+}
+body.logo-design-page .logo-offering-card {
+  background: #103b5d !important;
+  border: 1px solid rgba(117,213,232,.38) !important;
+  box-shadow: none !important;
+}
+body.logo-design-page .logo-offering-card h3,
+body.logo-design-page .logo-offering-card p,
+body.logo-design-page .logo-offering-number,
+body.logo-design-page .logo-offering-tag {
+  color: #f4f8fc !important;
+  background: transparent !important;
+}
+body.logo-design-page .logo-offering-number {
+  color: #83dff0 !important;
+}
+body.logo-design-page .logo-portfolio-section .section-title h2,
+body.logo-design-page .logo-portfolio-section .section-title p,
+body.logo-design-page .logo-portfolio-section .section-title .eyebrow {
+  color: #f4f8fc !important;
+  background: transparent !important;
+}
+body.logo-design-page .logo-portfolio-section .logo-portfolio-card {
+  background: #103b5d !important;
+  border: 1px solid rgba(117,213,232,.38) !important;
+  box-shadow: none !important;
+}
+body.logo-design-page .logo-portfolio-section .logo-portfolio-caption,
+body.logo-design-page .logo-portfolio-section .scouts-combined-panel {
+  background: #103b5d !important;
+  color: #f4f8fc !important;
+}
+body.logo-design-page .logo-portfolio-section .logo-portfolio-caption h3,
+body.logo-design-page .logo-portfolio-section .logo-portfolio-caption p,
+body.logo-design-page .logo-portfolio-section .logo-portfolio-caption strong {
+  color: #f4f8fc !important;
+  background: transparent !important;
+}
+body.logo-design-page .logo-portfolio-section .scouts-combined-panel + .scouts-combined-panel {
+  border-left-color: rgba(117,213,232,.38) !important;
+}
