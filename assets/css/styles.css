@@ -12357,8 +12357,8 @@ body.logo-design-page .logo-offerings-section > .container {
   max-width: 1280px !important;
 }
 body.logo-design-page .logo-offerings-heading {
-  position: sticky;
-  top: 110px;
+  position: static !important;
+  top: auto !important;
   max-width: 440px !important;
   margin: 0 !important;
   text-align: left !important;
