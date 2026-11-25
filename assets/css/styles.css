@@ -11240,3 +11240,15 @@ body.business-support-page .service-detail-grid > .practical-panel .btn {
   }
 }
 
+
+
+/* Business Support service cards: white surfaces with readable navy text. */
+body.business-support-page .service-detail-item {
+  background: #f4f8fc !important;
+  border-color: #d7e5f1 !important;
+}
+body.business-support-page .service-detail-item h3,
+body.business-support-page .service-detail-item p {
+  color: #173d5b !important;
+  background: transparent !important;
+}
