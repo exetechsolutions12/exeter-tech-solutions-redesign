@@ -12565,3 +12565,27 @@ body.logo-design-page main > .section.logo-process-section aside.logo-process-pr
   display: none !important;
   background: none !important;
 }
+
+
+/* LOGO PORTFOLIO — force a white canvas behind every logo image.
+   Kept after the site's navy global background rule so it wins the cascade. */
+body.logo-design-page main#main section.logo-portfolio-section .logo-portfolio-grid article .logo-portfolio-preview,
+body.logo-design-page main#main section.logo-portfolio-section .logo-portfolio-grid article.scouts-combined-card .scouts-combined-panel .logo-portfolio-preview,
+body.logo-design-page main#main section.logo-portfolio-section .logo-portfolio-grid article.scouts-combined-card .scouts-combined-panel .logo-portfolio-preview.scouts-circle-preview,
+body.logo-design-page main#main section.logo-portfolio-section .logo-portfolio-grid article.scouts-combined-card .scouts-combined-panel .logo-portfolio-preview.scouts-horizontal-preview {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+body.logo-design-page main#main section.logo-portfolio-section .logo-portfolio-grid article .logo-portfolio-preview img,
+body.logo-design-page main#main section.logo-portfolio-section .logo-portfolio-grid article.scouts-combined-card .scouts-combined-panel .logo-portfolio-preview img {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+}
+body.logo-design-page main#main section.logo-portfolio-section .logo-portfolio-grid article.scouts-combined-card .scouts-combined-panel {
+  background: #103b5d !important;
+}
