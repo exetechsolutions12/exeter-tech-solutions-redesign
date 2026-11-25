@@ -12341,3 +12341,140 @@ body.logo-design-page .logo-portfolio-section .logo-portfolio-caption strong {
 body.logo-design-page .logo-portfolio-section .scouts-combined-panel + .scouts-combined-panel {
   border-left-color: rgba(117,213,232,.38) !important;
 }
+
+
+/* Logo offerings: editorial split layout, replacing the three boxed cards. */
+body.logo-design-page main > .section.logo-intro-section.logo-offerings-section {
+  padding: clamp(76px, 9vw, 124px) 0 !important;
+  background: #05294a !important;
+}
+body.logo-design-page .logo-offerings-section > .container {
+  display: grid !important;
+  grid-template-columns: minmax(250px, .78fr) minmax(0, 1.5fr) !important;
+  column-gap: clamp(48px, 8vw, 116px) !important;
+  align-items: start !important;
+  width: min(100% - 64px, 1280px) !important;
+  max-width: 1280px !important;
+}
+body.logo-design-page .logo-offerings-heading {
+  position: sticky;
+  top: 110px;
+  max-width: 440px !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+body.logo-design-page .logo-offerings-heading .eyebrow {
+  display: inline-block !important;
+  margin: 0 0 22px !important;
+  padding: 0 0 10px !important;
+  border: 0 !important;
+  border-bottom: 2px solid #55c5dc !important;
+  border-radius: 0 !important;
+  color: #83dff0 !important;
+  background: transparent !important;
+  letter-spacing: .13em !important;
+  text-transform: uppercase;
+}
+body.logo-design-page .logo-offerings-heading h2 {
+  margin: 0 0 20px !important;
+  color: #fff !important;
+  font-size: clamp(2.5rem, 4.2vw, 4rem) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -.045em !important;
+}
+body.logo-design-page .logo-offerings-heading p {
+  margin: 0 !important;
+  color: #c8d9e7 !important;
+  font-size: 1.08rem !important;
+  line-height: 1.8 !important;
+}
+body.logo-design-page .logo-offerings-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+  border-top: 1px solid rgba(131,223,240,.35);
+}
+body.logo-design-page .logo-offering-card,
+body.logo-design-page .logo-offering-card:last-child {
+  display: grid !important;
+  grid-template-columns: 76px minmax(0, 1fr) !important;
+  grid-template-rows: auto auto !important;
+  column-gap: 22px !important;
+  min-height: 0 !important;
+  padding: 30px 0 32px !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(131,223,240,.35) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+body.logo-design-page .logo-offering-card::before,
+body.logo-design-page .logo-offering-card:hover {
+  display: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+body.logo-design-page .logo-offering-number {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #75d5e8 !important;
+  font-size: 1.45rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .02em !important;
+}
+body.logo-design-page .logo-offering-copy {
+  grid-column: 2;
+  grid-row: 1;
+}
+body.logo-design-page .logo-offering-copy h3 {
+  margin: 0 0 10px !important;
+  color: #fff !important;
+  font-size: clamp(1.35rem, 2vw, 1.75rem) !important;
+  line-height: 1.25 !important;
+}
+body.logo-design-page .logo-offering-copy p {
+  max-width: 620px;
+  margin: 0 !important;
+  color: #c8d9e7 !important;
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+}
+body.logo-design-page .logo-offering-tag {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 14px 0 0 !important;
+  padding: 0 !important;
+  color: #83dff0 !important;
+  font-size: .82rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+@media (max-width: 760px) {
+  body.logo-design-page .logo-offerings-section > .container {
+    display: block !important;
+    width: min(100% - 40px, 620px) !important;
+  }
+  body.logo-design-page .logo-offerings-heading {
+    position: static !important;
+    max-width: none !important;
+    margin: 0 0 38px !important;
+  }
+  body.logo-design-page .logo-offering-card,
+  body.logo-design-page .logo-offering-card:last-child {
+    grid-template-columns: 48px minmax(0, 1fr) !important;
+    column-gap: 14px !important;
+    padding: 24px 0 !important;
+  }
+  body.logo-design-page .logo-offering-number {
+    font-size: 1.15rem !important;
+  }
+}
