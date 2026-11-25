@@ -113,6 +113,45 @@
       .section.logo-portfolio-section { padding-top: 0 !important; padding-bottom: 40px !important; }
     }
 
+
+    /* Keep the logo pricing callout compact and balanced on desktop. */
+    body.logo-design-page main > .section.logo-process-section .logo-process-pricing {
+      display: grid !important;
+      grid-template-columns: minmax(190px, .8fr) minmax(0, 1.6fr) auto !important;
+      align-items: center !important;
+      gap: 12px 32px !important;
+      width: min(100%, 1120px) !important;
+      max-width: 1120px !important;
+      min-height: 0 !important;
+      margin: 0 auto !important;
+      padding: 28px 32px !important;
+      box-sizing: border-box !important;
+    }
+    body.logo-design-page main > .section.logo-process-section .logo-process-pricing h2 {
+      margin: 0 !important;
+    }
+    body.logo-design-page main > .section.logo-process-section .logo-process-pricing p {
+      margin: 0 !important;
+      line-height: 1.55 !important;
+    }
+    body.logo-design-page main > .section.logo-process-section .logo-process-pricing .btn {
+      justify-self: end !important;
+      align-self: center !important;
+      margin: 0 !important;
+      white-space: nowrap !important;
+    }
+    @media (max-width: 760px) {
+      body.logo-design-page main > .section.logo-process-section .logo-process-pricing {
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 12px !important;
+        padding: 22px !important;
+      }
+      body.logo-design-page main > .section.logo-process-section .logo-process-pricing .btn {
+        justify-self: start !important;
+        margin-top: 6px !important;
+      }
+    }
+
   </style>
   <script type="application/ld+json">
   {
@@ -229,8 +268,8 @@
           </div>
           <aside class="practical-panel logo-process-pricing">
             <h2 class="editable">Pricing tailored to the project</h2>
-            <p class="editable">The cost depends on the type of design and how much work is involved. A standalone logo will have different requirements from a project that also includes business cards, social media graphics or other materials.</p>
-            <p class="editable">Get in touch to talk through your ideas and receive a personalised quote before deciding.</p>
+            <p class="editable">Every project is different, so pricing is based on the design work and materials you need.</p>
+            <p class="editable">Get in touch for a personalised quote, with no obligation.</p>
             <a class="btn" href="/contact?service=logo-design">Discuss your logo</a>
           </aside>
         </div>
