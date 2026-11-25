@@ -10632,3 +10632,11 @@ body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-pric
   }
 }
 
+/* Digital Confidence: remove the dark fills from the visit panel and its text blocks. */
+body.digital-confidence-page .digital-confidence-visit-panel,
+body.digital-confidence-page .digital-confidence-visit-panel h2,
+body.digital-confidence-page .digital-confidence-visit-panel p,
+body.digital-confidence-page .digital-confidence-visit-panel li {
+  background: transparent !important;
+}
+
