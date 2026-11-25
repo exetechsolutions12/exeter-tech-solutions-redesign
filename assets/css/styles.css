@@ -10843,3 +10843,66 @@ body.digital-confidence-page .digital-confidence-cta .btn {
   }
 }
 
+/* Keep the visit checklist and price together in the outlined box on the right. */
+body.digital-confidence-page .digital-confidence-cards {
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr) !important;
+  grid-template-areas:
+    "pace visitpanel"
+    "trusted visitpanel" !important;
+  align-items: stretch !important;
+}
+body.digital-confidence-page .digital-confidence-visit-panel {
+  grid-area: visitpanel !important;
+  align-self: stretch !important;
+  min-width: 0 !important;
+  padding: 28px 26px !important;
+  border: 1px solid rgba(131,217,238,.28) !important;
+  border-radius: 16px !important;
+  background: rgba(255,255,255,.045) !important;
+  box-shadow: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+}
+body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-features,
+body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-price {
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-features h2,
+body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-price h2,
+body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-price p,
+body.digital-confidence-page .digital-confidence-visit-panel .check-list,
+body.digital-confidence-page .digital-confidence-visit-panel .check-list li {
+  background: transparent !important;
+}
+body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-price {
+  margin-top: auto !important;
+  padding-top: 22px !important;
+  border-top: 1px solid rgba(131,217,238,.28) !important;
+}
+body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-features h2 {
+  margin-bottom: 20px !important;
+}
+body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-price h2 {
+  margin: 0 0 10px !important;
+}
+body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-price p {
+  margin: 0 0 16px !important;
+}
+@media (max-width: 760px) {
+  body.digital-confidence-page .digital-confidence-cards {
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-areas: "pace" "visitpanel" "trusted" !important;
+    gap: 28px !important;
+  }
+  body.digital-confidence-page .digital-confidence-visit-panel {
+    padding: 24px 22px !important;
+  }
+}
+
