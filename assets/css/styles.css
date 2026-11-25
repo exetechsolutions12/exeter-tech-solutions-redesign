@@ -11653,3 +11653,58 @@ body.business-support-page main .service-detail-grid .service-detail-list > arti
   background-color: transparent !important;
   background-image: none !important;
 }
+
+
+/* Logo Design hero: match the Home IT Support background-video canvas and
+   centred content layout exactly. The shared script supplies the video. */
+body.logo-design-page main > .page-hero.site-video-hero {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 580px !important;
+  box-sizing: border-box !important;
+  padding: 76px 0 82px !important;
+}
+body.logo-design-page main > .page-hero.site-video-hero > .container {
+  width: min(100% - 48px, 1280px) !important;
+  max-width: 1280px !important;
+  margin-inline: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+body.logo-design-page main > .page-hero.site-video-hero > .container > .eyebrow,
+body.logo-design-page main > .page-hero.site-video-hero > .container > h1,
+body.logo-design-page main > .page-hero.site-video-hero > .container > p {
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+body.logo-design-page main > .page-hero.site-video-hero > .container > p {
+  max-width: 850px !important;
+}
+body.logo-design-page main > .page-hero.site-video-hero .button-row {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+}
+body.logo-design-page main > .page-hero.site-video-hero > .container > .eyebrow {
+  display: inline-flex !important;
+  width: auto !important;
+  max-width: max-content !important;
+  align-self: center !important;
+  flex: 0 0 auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  white-space: nowrap !important;
+}
+@media (max-width: 760px) {
+  body.logo-design-page main > .page-hero.site-video-hero {
+    min-height: 440px !important;
+    padding: 58px 0 64px !important;
+  }
+}
