@@ -11376,3 +11376,10 @@ body.business-support-page .service-detail-item {
   border: 1px solid #d7e5f1 !important;
 }
 
+
+/* Restore Business Support page to its original navy background; keep text backgrounds clear. */
+body.business-support-page, body.business-support-page main, body.business-support-page main > section:nth-of-type(2), body.business-support-page main > section:nth-of-type(3), body.business-support-page main > section:nth-of-type(4) { background-color:#082b49 !important; background-image:none !important; color:#e7f0f8 !important; }
+body.business-support-page main > section:nth-of-type(2) :is(h1,h2,h3,h4,p,span,li), body.business-support-page main > section:nth-of-type(3) :is(h1,h2,h3,h4,p,span,li), body.business-support-page main > section:nth-of-type(4) :is(h1,h2,h3,h4,p,span,li) { background:transparent !important; background-image:none !important; }
+body.business-support-page .service-detail-item, body.business-support-page .service-page-intro .practical-panel, body.business-support-page .service-detail-grid > .practical-panel, body.business-support-page .shared-enquiry-banner { background:#fff !important; }
+body.business-support-page main > section:nth-of-type(2) h2, body.business-support-page main > section:nth-of-type(3) h2, body.business-support-page main > section:nth-of-type(4) h2, body.business-support-page main > section:nth-of-type(2) h3, body.business-support-page main > section:nth-of-type(3) h3, body.business-support-page main > section:nth-of-type(4) h3 { color:#fff !important; }
+body.business-support-page main > section:nth-of-type(2) p, body.business-support-page main > section:nth-of-type(3) p, body.business-support-page main > section:nth-of-type(4) p { color:#c8d9e8 !important; }
