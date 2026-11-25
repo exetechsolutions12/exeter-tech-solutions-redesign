@@ -10907,11 +10907,11 @@ body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-pric
 }
 
 
-/* Shared enquiry banner styling, limited to the pages using this banner. */
-:where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) {
-  position: relative !important;
+
+/* Shared closing enquiry banner. Uses the same layout and styling as Home IT Support. */
+.shared-enquiry-banner {
   display: grid !important;
-  grid-template-columns: 68px minmax(0, 1fr) auto !important;
+  grid-template-columns: 76px minmax(0, 1fr) auto !important;
   align-items: center !important;
   gap: 26px !important;
   width: 100% !important;
@@ -10921,94 +10921,96 @@ body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-pric
   padding: 26px 34px !important;
   border: 2px solid #58c3df !important;
   border-radius: 24px !important;
-  background: linear-gradient(115deg, #164b6d 0%, #103b5b 58%, #0d3453 100%) !important;
+  background: #164b6d !important;
   color: #fff !important;
   box-shadow: 0 12px 32px rgba(0, 10, 24, .16) !important;
   box-sizing: border-box !important;
 }
-:where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta)::before {
-  content: "" !important;
-  grid-column: 1 !important;
-  grid-row: 1 !important;
+.shared-enquiry-banner .home-support-cta-icon {
+  display: grid !important;
+  place-items: center !important;
   width: 68px !important;
   height: 68px !important;
+  margin: 0 !important;
   border-radius: 17px !important;
   background: #83d9ee !important;
+  color: #082b49 !important;
+}
+.shared-enquiry-banner .home-support-cta-icon svg {
   display: block !important;
+  width: 38px !important;
+  height: 38px !important;
+  background: transparent !important;
 }
-:where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta)::after {
-  content: "" !important;
-  grid-column: 1 !important;
-  grid-row: 1 !important;
-  justify-self: center !important;
-  align-self: center !important;
-  width: 30px !important;
-  height: 23px !important;
-  box-sizing: border-box !important;
-  border: 3px solid #082b49 !important;
-  border-radius: 9px !important;
-  background: radial-gradient(circle, #082b49 1.5px, transparent 1.8px) 4px 7px / 7px 7px repeat-x !important;
-}
-:where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) > div:first-of-type {
-  grid-column: 2 !important;
+.shared-enquiry-banner .home-support-cta-icon svg path { stroke: #082b49 !important; }
+.shared-enquiry-banner .home-support-cta-icon svg circle { fill: #082b49 !important; }
+.shared-enquiry-banner .home-support-cta-copy {
   min-width: 0 !important;
   padding: 0 0 0 26px !important;
   border-left: 1px solid #58c3df !important;
   background: transparent !important;
   color: #fff !important;
 }
-:where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) > div:first-of-type,
-:where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) > div:first-of-type h2,
-:where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) > div:first-of-type p,
-:where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) > div:first-of-type .eyebrow {
-  background-color: transparent !important;
-  background-image: none !important;
-}
-:where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) h2 {
+.shared-enquiry-banner .home-support-cta-copy h2 {
   margin: 0 0 8px !important;
   color: #fff !important;
   font-size: clamp(1.55rem, 2.4vw, 2.15rem) !important;
   line-height: 1.2 !important;
 }
-:where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) p {
+.shared-enquiry-banner .home-support-cta-copy p {
   max-width: 650px !important;
   margin: 0 !important;
   color: #fff !important;
-  font-size: clamp(.98rem, 1.25vw, 1.12rem) !important;
+  font-size: clamp(.98rem, 1.15vw, 1.1rem) !important;
   line-height: 1.55 !important;
 }
-:where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) > .btn {
-  grid-column: 3 !important;
+.shared-enquiry-banner > .btn {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 12px !important;
+  gap: 10px !important;
   width: auto !important;
-  min-width: 250px !important;
-  min-height: 68px !important;
+  min-width: 205px !important;
+  min-height: 58px !important;
   margin: 0 !important;
-  padding: 16px 28px !important;
+  padding: 14px 22px !important;
   border: 0 !important;
   border-radius: 999px !important;
   background: #1684bd !important;
   color: #fff !important;
-  font-size: 1rem !important;
+  font-size: .98rem !important;
   font-weight: 700 !important;
   line-height: 1.35 !important;
   text-align: center !important;
   white-space: normal !important;
   box-shadow: none !important;
 }
-:where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) > .btn:hover { background: #2298d2 !important; }
+.shared-enquiry-banner > .btn:hover { background: #2298d2 !important; }
 @media (max-width: 900px) {
-  :where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) { grid-template-columns: 68px minmax(0, 1fr) !important; padding: 26px !important; }
-  :where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) > .btn { grid-column: 2 !important; justify-self: start !important; }
+  .shared-enquiry-banner {
+    grid-template-columns: 64px minmax(0, 1fr) !important;
+    padding: 24px !important;
+    gap: 20px !important;
+  }
+  .shared-enquiry-banner .home-support-cta-icon { width: 60px !important; height: 60px !important; }
+  .shared-enquiry-banner .home-support-cta-copy { padding-left: 20px !important; }
+  .shared-enquiry-banner > .btn { grid-column: 2 !important; justify-self: start !important; }
 }
 @media (max-width: 620px) {
-  :where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) { grid-template-columns: 1fr !important; gap: 20px !important; padding: 24px 22px !important; border-radius: 24px !important; }
-  :where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta)::before,
-  :where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta)::after { grid-column: 1 !important; grid-row: auto !important; }
-  :where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) > div:first-of-type { grid-column: 1 !important; padding: 0 !important; border: 0 !important; }
-  :where(body.digital-confidence-page, body.business-support-page, body.pricing-page, body.website-services-page, body.community-page) .cta:not(.home-support-cta) > .btn { grid-column: 1 !important; justify-self: stretch !important; width: 100% !important; min-width: 0 !important; }
+  .shared-enquiry-banner {
+    grid-template-columns: 1fr !important;
+    padding: 22px !important;
+    gap: 18px !important;
+  }
+  .shared-enquiry-banner .home-support-cta-copy {
+    grid-column: 1 !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+  .shared-enquiry-banner > .btn {
+    grid-column: 1 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
 }
 
