@@ -10843,3 +10843,265 @@ body.digital-confidence-page .digital-confidence-cta .btn {
   }
 }
 
+/* Digital Confidence — follow the established Home IT Support page styling. */
+body.digital-confidence-page .digital-confidence-intro {
+  padding: 54px 0 58px !important;
+  background: #082b49 !important;
+}
+body.digital-confidence-page .digital-confidence-intro > .container {
+  width: calc(100% - 48px) !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+}
+body.digital-confidence-page .digital-confidence-intro .feature-heading {
+  display: inline-block !important;
+  margin: 0 0 14px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #83d9ee !important;
+  font-size: .9rem !important;
+  font-weight: 750 !important;
+  letter-spacing: .08em !important;
+}
+body.digital-confidence-page .digital-confidence-intro h2 {
+  margin: 0 0 18px !important;
+  color: #fff !important;
+  font-size: clamp(2rem, 3.2vw, 2.8rem) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -.04em !important;
+}
+body.digital-confidence-page .digital-confidence-intro p {
+  max-width: 850px !important;
+  margin: 0 0 14px !important;
+  color: rgba(255,255,255,.82) !important;
+  font-size: 1.05rem !important;
+  line-height: 1.8 !important;
+}
+body.digital-confidence-page .digital-confidence-details {
+  padding: clamp(58px, 6vw, 78px) 0 !important;
+  background: #082b49 !important;
+}
+body.digital-confidence-page .digital-confidence-details > .container {
+  max-width: 1120px !important;
+}
+body.digital-confidence-page .digital-confidence-details > .container > .section-title {
+  max-width: 100% !important;
+  margin: 0 0 44px !important;
+  text-align: left !important;
+}
+body.digital-confidence-page .digital-confidence-details > .container > .section-title h2 {
+  margin: 0 0 12px !important;
+  color: #fff !important;
+  font-size: clamp(2.4rem, 3.8vw, 3.25rem) !important;
+  letter-spacing: -.045em !important;
+  text-align: left !important;
+}
+body.digital-confidence-page .digital-confidence-details > .container > .section-title p {
+  max-width: 760px !important;
+  margin: 0 !important;
+  color: rgba(255,255,255,.78) !important;
+  font-size: clamp(1.08rem, 1.35vw, 1.2rem) !important;
+  line-height: 1.7 !important;
+  text-align: left !important;
+}
+body.digital-confidence-page .digital-confidence-common {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr) !important;
+  gap: clamp(30px, 5vw, 64px) !important;
+  align-items: start !important;
+}
+body.digital-confidence-page .digital-confidence-common h3,
+body.digital-confidence-page .digital-confidence-reassurance h3 {
+  margin: 0 0 20px !important;
+  color: #fff !important;
+  font-size: clamp(1.45rem, 2vw, 1.75rem) !important;
+  line-height: 1.25 !important;
+  letter-spacing: -.025em !important;
+}
+body.digital-confidence-page .digital-confidence-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px 14px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+body.digital-confidence-page .digital-confidence-list li {
+  display: grid !important;
+  grid-template-columns: 9px minmax(0, 1fr) !important;
+  align-items: start !important;
+  column-gap: 12px !important;
+  min-height: 64px !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 15px 16px !important;
+  border: 1px solid rgba(131,217,238,.16) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.045) !important;
+  color: rgba(255,255,255,.94) !important;
+  font-size: 1.02rem !important;
+  line-height: 1.55 !important;
+}
+body.digital-confidence-page .digital-confidence-list li::before {
+  content: "" !important;
+  display: block !important;
+  width: 7px !important;
+  height: 7px !important;
+  min-width: 7px !important;
+  margin: .55em 0 0 !important;
+  border-radius: 50% !important;
+  background: #58c3df !important;
+  box-shadow: 0 0 0 3px rgba(88,195,223,.12) !important;
+}
+body.digital-confidence-page .digital-confidence-reassurance {
+  padding: 26px 28px !important;
+  border: 1px solid rgba(131,217,238,.2) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.045) !important;
+}
+body.digital-confidence-page .digital-confidence-reassurance h3 {
+  margin-bottom: 12px !important;
+}
+body.digital-confidence-page .digital-confidence-reassurance p {
+  margin: 0 !important;
+  color: rgba(255,255,255,.82) !important;
+  font-size: 1.02rem !important;
+  line-height: 1.75 !important;
+}
+body.digital-confidence-page .digital-confidence-price {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 28px !important;
+  margin-top: 46px !important;
+  padding: 26px 0 0 !important;
+  border-top: 1px solid rgba(131,217,238,.24) !important;
+}
+body.digital-confidence-page .digital-confidence-price h3 {
+  margin: 0 0 8px !important;
+  color: #fff !important;
+  font-size: 1.55rem !important;
+}
+body.digital-confidence-page .digital-confidence-price p {
+  max-width: 720px !important;
+  margin: 0 !important;
+  color: rgba(255,255,255,.8) !important;
+  line-height: 1.7 !important;
+}
+body.digital-confidence-page .digital-confidence-topics {
+  padding: clamp(58px, 6vw, 78px) 0 !important;
+  background: #0b3455 !important;
+}
+body.digital-confidence-page .digital-confidence-topics > .container {
+  max-width: 1120px !important;
+}
+body.digital-confidence-page .digital-confidence-topics .section-title {
+  max-width: 100% !important;
+  margin: 0 0 34px !important;
+  text-align: left !important;
+}
+body.digital-confidence-page .digital-confidence-topics .section-title h2 {
+  margin: 0 0 12px !important;
+  color: #fff !important;
+  font-size: clamp(2.2rem, 3.4vw, 2.9rem) !important;
+  letter-spacing: -.04em !important;
+  text-align: left !important;
+}
+body.digital-confidence-page .digital-confidence-topics .section-title p {
+  max-width: 850px !important;
+  margin: 0 !important;
+  color: rgba(255,255,255,.78) !important;
+  line-height: 1.75 !important;
+  text-align: left !important;
+}
+body.digital-confidence-page .digital-confidence-topics .section-title a {
+  color: #83d9ee !important;
+  font-weight: 700 !important;
+}
+body.digital-confidence-page .confidence-topic-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px 14px !important;
+  border: 0 !important;
+}
+body.digital-confidence-page .confidence-topic-grid p {
+  display: grid !important;
+  grid-template-columns: 9px minmax(0, 1fr) !important;
+  align-items: start !important;
+  column-gap: 12px !important;
+  min-height: 62px !important;
+  margin: 0 !important;
+  padding: 15px 16px !important;
+  border: 1px solid rgba(131,217,238,.16) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.045) !important;
+  color: rgba(255,255,255,.94) !important;
+  font-size: 1.02rem !important;
+  line-height: 1.55 !important;
+}
+body.digital-confidence-page .confidence-topic-grid p::before {
+  content: "" !important;
+  position: static !important;
+  display: block !important;
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: 7px !important;
+  height: 7px !important;
+  margin: .55em 0 0 !important;
+  border-radius: 50% !important;
+  background: #58c3df !important;
+  box-shadow: 0 0 0 3px rgba(88,195,223,.12) !important;
+}
+body.digital-confidence-page .digital-confidence-final {
+  padding: 0 0 76px !important;
+  background: #0b3455 !important;
+}
+body.digital-confidence-page .digital-confidence-cta {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 28px !important;
+  padding: 34px 38px !important;
+  border: 1px solid rgba(131,217,238,.2) !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.055) !important;
+  box-shadow: none !important;
+}
+body.digital-confidence-page .digital-confidence-cta h2 {
+  margin: 0 0 10px !important;
+  color: #fff !important;
+}
+body.digital-confidence-page .digital-confidence-cta p {
+  max-width: 700px !important;
+  margin: 0 !important;
+  color: rgba(255,255,255,.82) !important;
+  line-height: 1.7 !important;
+}
+@media (max-width: 900px) {
+  body.digital-confidence-page .digital-confidence-common {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width: 620px) {
+  body.digital-confidence-page .digital-confidence-intro > .container {
+    width: calc(100% - 36px) !important;
+  }
+  body.digital-confidence-page .digital-confidence-list,
+  body.digital-confidence-page .confidence-topic-grid {
+    grid-template-columns: 1fr !important;
+  }
+  body.digital-confidence-page .digital-confidence-list li,
+  body.digital-confidence-page .confidence-topic-grid p {
+    min-height: 0 !important;
+  }
+  body.digital-confidence-page .digital-confidence-price,
+  body.digital-confidence-page .digital-confidence-cta {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+  }
+  body.digital-confidence-page .digital-confidence-reassurance {
+    padding: 22px !important;
+  }
+}
+
