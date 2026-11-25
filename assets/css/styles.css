@@ -11628,3 +11628,28 @@ body.business-support-page .service-detail-grid > .practical-panel .check-list l
 body.business-support-page .service-detail-grid > .practical-panel .btn {
   color: #ffffff !important;
 }
+
+
+/* Final, high-specificity override for the five Business Support service cards. */
+body.business-support-page main .service-detail-grid .service-detail-list > article.service-detail-item {
+  background: linear-gradient(135deg, #153f5e 0%, #0d3453 100%) !important;
+  background-color: #123b59 !important;
+  background-image: linear-gradient(135deg, #153f5e 0%, #0d3453 100%) !important;
+  border: 1.5px solid #4f9ab8 !important;
+  border-radius: 22px !important;
+  box-shadow: none !important;
+}
+body.business-support-page main .service-detail-grid .service-detail-list > article.service-detail-item h3.editable {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+body.business-support-page main .service-detail-grid .service-detail-list > article.service-detail-item p.editable {
+  color: #d8e8f3 !important;
+  -webkit-text-fill-color: #d8e8f3 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
