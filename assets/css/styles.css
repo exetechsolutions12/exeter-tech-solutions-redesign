@@ -11031,3 +11031,26 @@ body.digital-confidence-page .digital-confidence-visit-panel .digital-visit-pric
 .shared-enquiry-banner .home-support-cta-copy p {
   display: block !important;
 }
+
+/* Small Business IT Support hero: use the same 580px video canvas as Home IT Support. */
+body.business-support-page main > .page-hero {
+  display: flex !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  min-height: 580px !important;
+  height: 580px !important;
+  padding: 76px 0 82px !important;
+}
+body.business-support-page main > .page-hero > .container {
+  width: min(100% - 48px, 1280px) !important;
+  max-width: 1280px !important;
+  margin-inline: auto !important;
+}
+@media (max-width: 760px) {
+  body.business-support-page main > .page-hero {
+    min-height: 440px !important;
+    height: auto !important;
+    padding: 58px 0 64px !important;
+  }
+}
+
