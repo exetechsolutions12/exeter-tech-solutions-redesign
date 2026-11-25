@@ -11252,3 +11252,74 @@ body.business-support-page .service-detail-item p {
   color: #173d5b !important;
   background: transparent !important;
 }
+
+/* Business Support page: remove dark section and panel backgrounds throughout. */
+body.business-support-page,
+body.business-support-page main {
+  background: #f3f7fb !important;
+  color: #173d5b !important;
+}
+body.business-support-page main > .page-hero {
+  background: #eaf3fa !important;
+  background-image: none !important;
+  color: #173d5b !important;
+}
+body.business-support-page main > .page-hero h1,
+body.business-support-page main > .page-hero .eyebrow {
+  color: #123b5b !important;
+}
+body.business-support-page main > .page-hero p {
+  color: #49657d !important;
+}
+body.business-support-page main > .page-hero .btn {
+  color: #fff !important;
+}
+body.business-support-page main > section:nth-of-type(2),
+body.business-support-page main > section:nth-of-type(3),
+body.business-support-page main > section:nth-of-type(4) {
+  background: #f3f7fb !important;
+  color: #173d5b !important;
+}
+body.business-support-page .service-page-intro > div > h2,
+body.business-support-page main > section:nth-of-type(3) .section-title h2 {
+  color: #123b5b !important;
+}
+body.business-support-page .service-page-intro > div > p,
+body.business-support-page main > section:nth-of-type(3) .section-title p {
+  color: #49657d !important;
+}
+body.business-support-page .service-page-intro .practical-panel,
+body.business-support-page .service-detail-grid > .practical-panel,
+body.business-support-page .service-detail-item {
+  background: #fff !important;
+  border: 1px solid #d7e5f1 !important;
+  box-shadow: 0 8px 24px rgba(23,61,91,.06) !important;
+}
+body.business-support-page .service-page-intro .practical-panel h2,
+body.business-support-page .service-detail-grid > .practical-panel h2,
+body.business-support-page .service-detail-item h3 {
+  color: #173d5b !important;
+  background: transparent !important;
+}
+body.business-support-page .service-page-intro .practical-panel p,
+body.business-support-page .service-detail-grid > .practical-panel .check-list li,
+body.business-support-page .service-detail-item p {
+  color: #49657d !important;
+  background: transparent !important;
+}
+body.business-support-page .shared-enquiry-banner {
+  background: #fff !important;
+  border: 1px solid #d7e5f1 !important;
+  color: #173d5b !important;
+  box-shadow: 0 8px 24px rgba(23,61,91,.07) !important;
+}
+body.business-support-page .shared-enquiry-banner .home-support-cta-copy,
+body.business-support-page .shared-enquiry-banner .home-support-cta-copy h2,
+body.business-support-page .shared-enquiry-banner .home-support-cta-copy p {
+  color: #173d5b !important;
+  background: transparent !important;
+}
+body.business-support-page .shared-enquiry-banner .home-support-cta-copy {
+  border-left-color: #d7e5f1 !important;
+}
+
