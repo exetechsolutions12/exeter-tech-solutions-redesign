@@ -12068,3 +12068,211 @@ body.logo-design-page main > .section.logo-portfolio-section strong {
   color: #fff !important;
   background: transparent !important;
 }
+
+
+/* Logo Design process — connected timeline, deliberately not card-based */
+body.logo-design-page main > .section.logo-process-section {
+  padding: clamp(72px, 8vw, 112px) 0 !important;
+  background: #05294a !important;
+}
+body.logo-design-page .logo-process-section .website-included-section {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: clamp(38px, 5vw, 64px) !important;
+}
+body.logo-design-page .logo-process-content {
+  width: 100% !important;
+}
+body.logo-design-page .logo-process-content > .section-title {
+  max-width: none !important;
+  margin: 0 0 52px !important;
+  text-align: left !important;
+}
+body.logo-design-page .logo-process-content > .section-title .eyebrow {
+  display: inline-block;
+  margin: 0 0 18px;
+  padding: 0 0 10px;
+  border: 0 !important;
+  border-bottom: 3px solid #75d5e8 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #83dff0 !important;
+  font-size: .9rem !important;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+body.logo-design-page .logo-process-content > .section-title h2 {
+  max-width: 760px;
+  color: #fff !important;
+  font-size: clamp(2.5rem, 5vw, 4.4rem) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -.045em;
+}
+body.logo-design-page .logo-process-steps {
+  position: relative;
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 0 !important;
+  align-items: start !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+body.logo-design-page .logo-process-steps::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 31px;
+  right: 31px;
+  height: 2px;
+  background: linear-gradient(90deg, #75d5e8, rgba(117,213,232,.28));
+}
+body.logo-design-page .logo-process-step,
+body.logo-design-page .logo-process-step:nth-child(4),
+body.logo-design-page .logo-process-step:nth-child(5) {
+  position: relative;
+  display: block !important;
+  grid-column: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 22px 0 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #d6e5f0 !important;
+}
+body.logo-design-page .logo-process-step:not(:first-child) {
+  padding-left: 18px !important;
+}
+body.logo-design-page .logo-process-number {
+  position: relative;
+  z-index: 1;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 64px !important;
+  height: 64px !important;
+  margin: 0 0 26px !important;
+  border: 5px solid #05294a !important;
+  border-radius: 50% !important;
+  background: #75d5e8 !important;
+  color: #05294a !important;
+  font-size: 1.15rem !important;
+  font-weight: 800 !important;
+  box-shadow: 0 0 0 1px rgba(117,213,232,.5);
+}
+body.logo-design-page .logo-process-step h3 {
+  margin: 0 0 12px !important;
+  color: #fff !important;
+  font-size: 1.12rem !important;
+  line-height: 1.35 !important;
+  letter-spacing: -.015em;
+}
+body.logo-design-page .logo-process-step p {
+  margin: 0 !important;
+  color: #c6d8e7 !important;
+  font-size: .94rem !important;
+  line-height: 1.7 !important;
+}
+body.logo-design-page .logo-process-pricing {
+  display: grid !important;
+  grid-template-columns: minmax(220px, .8fr) minmax(0, 1.6fr) auto !important;
+  align-items: center !important;
+  gap: 28px !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 30px 34px !important;
+  border: 1px solid rgba(117,213,232,.38) !important;
+  border-left: 5px solid #75d5e8 !important;
+  border-radius: 4px 18px 18px 4px !important;
+  background: #103b5d !important;
+  box-shadow: none !important;
+}
+body.logo-design-page .logo-process-pricing h2 {
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: 1.45rem !important;
+  line-height: 1.25 !important;
+}
+body.logo-design-page .logo-process-pricing p {
+  margin: 0 !important;
+  color: #d0e0ec !important;
+  font-size: .95rem !important;
+  line-height: 1.65 !important;
+}
+body.logo-design-page .logo-process-pricing .btn {
+  justify-self: end;
+  white-space: nowrap;
+}
+@media (max-width: 1000px) {
+  body.logo-design-page .logo-process-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    row-gap: 38px !important;
+  }
+  body.logo-design-page .logo-process-steps::before { display: none; }
+  body.logo-design-page .logo-process-step,
+  body.logo-design-page .logo-process-step:not(:first-child) {
+    padding: 0 22px 0 0 !important;
+  }
+  body.logo-design-page .logo-process-pricing {
+    grid-template-columns: 1fr 1.5fr !important;
+  }
+  body.logo-design-page .logo-process-pricing .btn {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}
+@media (max-width: 650px) {
+  body.logo-design-page .logo-process-section > .container {
+    width: min(100% - 36px, 1180px) !important;
+  }
+  body.logo-design-page .logo-process-content > .section-title {
+    margin-bottom: 34px !important;
+  }
+  body.logo-design-page .logo-process-steps {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 0 !important;
+    padding-left: 4px !important;
+  }
+  body.logo-design-page .logo-process-steps::before {
+    display: block;
+    top: 30px;
+    bottom: 30px;
+    left: 29px;
+    right: auto;
+    width: 2px;
+    height: auto;
+  }
+  body.logo-design-page .logo-process-step,
+  body.logo-design-page .logo-process-step:not(:first-child) {
+    display: grid !important;
+    grid-template-columns: 62px minmax(0, 1fr) !important;
+    column-gap: 16px !important;
+    padding: 0 0 30px !important;
+  }
+  body.logo-design-page .logo-process-number {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 58px !important;
+    height: 58px !important;
+    margin: 0 !important;
+  }
+  body.logo-design-page .logo-process-step h3 {
+    grid-column: 2;
+    margin: 5px 0 8px !important;
+  }
+  body.logo-design-page .logo-process-step p {
+    grid-column: 2;
+  }
+  body.logo-design-page .logo-process-pricing {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 14px !important;
+    padding: 24px !important;
+  }
+  body.logo-design-page .logo-process-pricing .btn {
+    grid-column: 1;
+    justify-self: start;
+  }
+}
