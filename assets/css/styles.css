@@ -11346,3 +11346,33 @@ body.business-support-page main > .page-hero .button-row {
   width: 100% !important;
 }
 
+/* Business Support: remove leftover dark text strips and dark content panels. */
+body.business-support-page main > section:nth-of-type(2),
+body.business-support-page main > section:nth-of-type(3),
+body.business-support-page main > section:nth-of-type(4) {
+  background: #f3f7fb !important;
+  background-image: none !important;
+  color: #173d5b !important;
+}
+body.business-support-page main > section:nth-of-type(2) > .container,
+body.business-support-page main > section:nth-of-type(3) > .container,
+body.business-support-page main > section:nth-of-type(4) > .container,
+body.business-support-page .service-page-intro,
+body.business-support-page .service-detail-grid,
+body.business-support-page .service-detail-list,
+body.business-support-page .section-title {
+  background: transparent !important;
+  background-image: none !important;
+}
+body.business-support-page main > section:nth-of-type(2) :is(h1,h2,h3,h4,p,span,li),
+body.business-support-page main > section:nth-of-type(3) :is(h1,h2,h3,h4,p,span,li),
+body.business-support-page main > section:nth-of-type(4) :is(h1,h2,h3,h4,p,span,li) {
+  background: transparent !important;
+  background-image: none !important;
+  text-shadow: none !important;
+}
+body.business-support-page .service-detail-item {
+  background: #fff !important;
+  border: 1px solid #d7e5f1 !important;
+}
+
