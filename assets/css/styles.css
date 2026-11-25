@@ -12007,3 +12007,64 @@ body.logo-design-page .logo-process-pricing .btn {
     padding: 24px 22px !important;
   }
 }
+
+
+/* Logo Design page: keep the complete page on the site's navy theme. */
+body.logo-design-page main > .section.logo-intro-section,
+body.logo-design-page main > .section.logo-process-section,
+body.logo-design-page main > .section.logo-portfolio-section {
+  background: #05294A !important;
+  color: #fff !important;
+}
+body.logo-design-page main > .section.logo-intro-section .container,
+body.logo-design-page main > .section.logo-intro-section .website-included-section,
+body.logo-design-page main > .section.logo-intro-section .logo-intro-grid,
+body.logo-design-page main > .section.logo-process-section .container,
+body.logo-design-page main > .section.logo-process-section .website-included-section,
+body.logo-design-page main > .section.logo-portfolio-section .container {
+  background: transparent !important;
+  color: #fff !important;
+}
+body.logo-design-page main > .section.logo-intro-section .logo-intro-box,
+body.logo-design-page main > .section.logo-intro-section .service-choice-card,
+body.logo-design-page main > .section.logo-process-section .logo-process-step,
+body.logo-design-page main > .section.logo-process-section .logo-process-pricing {
+  background: #103b5d !important;
+  border: 1px solid rgba(116, 203, 226, .42) !important;
+  color: #eaf4fb !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .12) !important;
+}
+body.logo-design-page main > .section.logo-intro-section h1,
+body.logo-design-page main > .section.logo-intro-section h2,
+body.logo-design-page main > .section.logo-intro-section h3,
+body.logo-design-page main > .section.logo-intro-section p,
+body.logo-design-page main > .section.logo-intro-section .eyebrow,
+body.logo-design-page main > .section.logo-process-section h2,
+body.logo-design-page main > .section.logo-process-section h3,
+body.logo-design-page main > .section.logo-process-section p,
+body.logo-design-page main > .section.logo-process-section .eyebrow {
+  color: #fff !important;
+  background: transparent !important;
+}
+body.logo-design-page main > .section.logo-intro-section .service-choice-card h3,
+body.logo-design-page main > .section.logo-process-section .logo-process-step h3,
+body.logo-design-page main > .section.logo-process-section .logo-process-pricing h2 {
+  color: #fff !important;
+}
+body.logo-design-page main > .section.logo-process-section .logo-process-number {
+  background: #75d5e8 !important;
+  color: #05294A !important;
+}
+body.logo-design-page main > .section.logo-portfolio-section .logo-portfolio-card,
+body.logo-design-page main > .section.logo-portfolio-section .logo-portfolio-note {
+  background: #103b5d !important;
+  color: #fff !important;
+  border-color: rgba(116, 203, 226, .42) !important;
+}
+body.logo-design-page main > .section.logo-portfolio-section h2,
+body.logo-design-page main > .section.logo-portfolio-section h3,
+body.logo-design-page main > .section.logo-portfolio-section p,
+body.logo-design-page main > .section.logo-portfolio-section strong {
+  color: #fff !important;
+  background: transparent !important;
+}
