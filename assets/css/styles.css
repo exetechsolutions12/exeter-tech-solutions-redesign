@@ -11404,3 +11404,41 @@ body.business-support-page .shared-enquiry-banner .home-support-cta-copy h2,
 body.business-support-page .shared-enquiry-banner .home-support-cta-copy p {
   color:#173d5b !important; background:transparent !important;
 }
+
+
+/* Final contrast correction for the Business Support page. */
+body.business-support-page main > .page-hero,
+body.business-support-page main > .page-hero .container {
+  color:#f4f8fc !important;
+}
+body.business-support-page main > .page-hero h1,
+body.business-support-page main > .page-hero h2,
+body.business-support-page main > .page-hero h3,
+body.business-support-page main > .page-hero .eyebrow {
+  color:#ffffff !important;
+  background:transparent !important;
+}
+body.business-support-page main > .page-hero p {
+  color:#e1ebf5 !important;
+  background:transparent !important;
+}
+body.business-support-page .service-detail-item,
+body.business-support-page .service-page-intro > .practical-panel,
+body.business-support-page .service-detail-grid > .practical-panel {
+  background:#ffffff !important;
+}
+body.business-support-page .service-detail-item h3,
+body.business-support-page .service-detail-item p,
+body.business-support-page .service-page-intro > .practical-panel h2,
+body.business-support-page .service-page-intro > .practical-panel p,
+body.business-support-page .service-detail-grid > .practical-panel h2,
+body.business-support-page .service-detail-grid > .practical-panel li {
+  color:#173d5b !important;
+  background:transparent !important;
+  background-image:none !important;
+}
+body.business-support-page .service-detail-grid > .practical-panel .check-list,
+body.business-support-page .service-detail-grid > .practical-panel .check-list li {
+  background:transparent !important;
+  background-image:none !important;
+}
