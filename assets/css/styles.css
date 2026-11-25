@@ -11054,3 +11054,189 @@ body.business-support-page main > .page-hero > .container {
   }
 }
 
+/* Business Support content refresh: structured panels that sit naturally
+   within the site's navy, pale-blue and teal visual system. */
+body.business-support-page main > section:nth-of-type(2) {
+  padding: clamp(54px, 6vw, 78px) 0 !important;
+  background: #0a2d4b !important;
+}
+body.business-support-page .service-page-intro {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr) !important;
+  align-items: center !important;
+  gap: clamp(32px, 6vw, 84px) !important;
+  width: min(100% - 48px, 1120px) !important;
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+}
+body.business-support-page .service-page-intro > div > .eyebrow {
+  display: inline-flex !important;
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #83d9ee !important;
+  font-size: .82rem !important;
+  font-weight: 800 !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+}
+body.business-support-page .service-page-intro > div > h2 {
+  margin: 0 0 18px !important;
+  color: #fff !important;
+  font-size: clamp(2rem, 3.2vw, 2.8rem) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -.04em !important;
+}
+body.business-support-page .service-page-intro > div > p {
+  max-width: 68ch !important;
+  margin: 0 0 14px !important;
+  color: #d5e4f1 !important;
+  font-size: 1rem !important;
+  line-height: 1.8 !important;
+}
+body.business-support-page .service-page-intro > div > p:last-child {
+  margin-bottom: 0 !important;
+}
+body.business-support-page .service-page-intro .practical-panel {
+  align-self: center !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: clamp(26px, 3vw, 34px) !important;
+  border: 1px solid rgba(131,217,238,.28) !important;
+  border-left: 4px solid #58c3df !important;
+  border-radius: 16px !important;
+  background: #103b5d !important;
+  box-shadow: 0 14px 34px rgba(0,12,28,.16) !important;
+}
+body.business-support-page .service-page-intro .practical-panel h2 {
+  margin: 0 0 12px !important;
+  color: #fff !important;
+  font-size: 1.25rem !important;
+  line-height: 1.3 !important;
+}
+body.business-support-page .service-page-intro .practical-panel p {
+  margin: 0 !important;
+  color: #d5e4f1 !important;
+  font-size: .98rem !important;
+  line-height: 1.75 !important;
+}
+
+body.business-support-page main > section:nth-of-type(3) {
+  padding: clamp(58px, 7vw, 88px) 0 !important;
+  background: #082b49 !important;
+}
+body.business-support-page main > section:nth-of-type(3) > .container {
+  width: min(100% - 48px, 1120px) !important;
+  max-width: 1120px !important;
+}
+body.business-support-page main > section:nth-of-type(3) .section-title {
+  max-width: 760px !important;
+  margin: 0 0 34px !important;
+  text-align: left !important;
+}
+body.business-support-page main > section:nth-of-type(3) .section-title h2 {
+  margin: 0 0 12px !important;
+  color: #fff !important;
+  font-size: clamp(2rem, 3.2vw, 2.75rem) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -.04em !important;
+}
+body.business-support-page main > section:nth-of-type(3) .section-title p {
+  margin: 0 !important;
+  color: #c8d9e8 !important;
+  font-size: 1.02rem !important;
+  line-height: 1.7 !important;
+}
+body.business-support-page .service-detail-grid {
+  grid-template-columns: minmax(0, 1.55fr) minmax(260px, .75fr) !important;
+  align-items: stretch !important;
+  gap: clamp(24px, 3.5vw, 42px) !important;
+}
+body.business-support-page .service-detail-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-content: start !important;
+  gap: 14px !important;
+}
+body.business-support-page .service-detail-item {
+  min-width: 0 !important;
+  padding: 22px !important;
+  border: 1px solid rgba(131,217,238,.2) !important;
+  border-radius: 13px !important;
+  background: #103957 !important;
+  box-shadow: none !important;
+}
+body.business-support-page .service-detail-item:last-child {
+  grid-column: 1 / -1 !important;
+}
+body.business-support-page .service-detail-item h3 {
+  margin: 0 0 9px !important;
+  color: #fff !important;
+  font-size: 1.06rem !important;
+  line-height: 1.4 !important;
+}
+body.business-support-page .service-detail-item p {
+  margin: 0 !important;
+  color: #cbddea !important;
+  font-size: .95rem !important;
+  line-height: 1.7 !important;
+}
+body.business-support-page .service-detail-grid > .practical-panel {
+  position: static !important;
+  align-self: stretch !important;
+  margin: 0 !important;
+  padding: clamp(24px, 3vw, 32px) !important;
+  border: 1px solid rgba(131,217,238,.28) !important;
+  border-radius: 16px !important;
+  background: #103b5d !important;
+  box-shadow: 0 14px 34px rgba(0,12,28,.14) !important;
+}
+body.business-support-page .service-detail-grid > .practical-panel h2 {
+  margin: 0 0 20px !important;
+  color: #fff !important;
+  font-size: 1.25rem !important;
+}
+body.business-support-page .service-detail-grid > .practical-panel .check-list {
+  display: grid !important;
+  gap: 15px !important;
+}
+body.business-support-page .service-detail-grid > .practical-panel .check-list li {
+  color: #e0ebf4 !important;
+  line-height: 1.55 !important;
+}
+body.business-support-page .service-detail-grid > .practical-panel .check-list li::before {
+  background: #c8f4e8 !important;
+  color: #08765f !important;
+}
+body.business-support-page .service-detail-grid > .practical-panel .btn {
+  margin-top: 24px !important;
+  border: 0 !important;
+  background: #1684bd !important;
+  color: #fff !important;
+}
+@media (max-width: 900px) {
+  body.business-support-page .service-page-intro {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 28px !important;
+  }
+  body.business-support-page .service-page-intro .practical-panel {
+    width: 100% !important;
+  }
+  body.business-support-page .service-detail-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
+@media (max-width: 620px) {
+  body.business-support-page .service-page-intro,
+  body.business-support-page main > section:nth-of-type(3) > .container {
+    width: min(100% - 36px, 1120px) !important;
+  }
+  body.business-support-page .service-detail-list {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  body.business-support-page .service-detail-item:last-child {
+    grid-column: auto !important;
+  }
+}
+
