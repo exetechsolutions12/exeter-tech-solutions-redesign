@@ -10843,3 +10843,267 @@ body.digital-confidence-page .digital-confidence-cta .btn {
   }
 }
 
+/* Digital Confidence refresh: retain the topic-card section unchanged;
+   bring the surrounding sections into line with Home IT Support. */
+body.digital-confidence-page main > .page-hero.site-video-hero {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 580px !important;
+  box-sizing: border-box !important;
+  padding: 76px 0 82px !important;
+}
+body.digital-confidence-page main > .page-hero.site-video-hero > .container {
+  width: min(100% - 48px, 1280px) !important;
+  max-width: 1280px !important;
+  margin-inline: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+body.digital-confidence-page main > .page-hero.site-video-hero > .container > .eyebrow,
+body.digital-confidence-page main > .page-hero.site-video-hero > .container > h1,
+body.digital-confidence-page main > .page-hero.site-video-hero > .container > p {
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+body.digital-confidence-page main > .page-hero.site-video-hero > .container > p {
+  max-width: 850px !important;
+}
+body.digital-confidence-page main > .page-hero.site-video-hero .button-row {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+}
+body.digital-confidence-page main > .page-hero.site-video-hero > .container > .eyebrow {
+  display: inline-flex !important;
+  width: auto !important;
+  max-width: max-content !important;
+  align-self: center !important;
+  flex: 0 0 auto !important;
+  white-space: nowrap !important;
+}
+@media (max-width: 760px) {
+  body.digital-confidence-page main > .page-hero.site-video-hero {
+    min-height: 440px !important;
+    padding: 58px 0 64px !important;
+  }
+}
+body.digital-confidence-page .digital-confidence-intro {
+  padding: 56px 0 62px !important;
+  background: #0b3455 !important;
+}
+body.digital-confidence-page .digital-confidence-intro > .container {
+  width: calc(100% - 48px) !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+}
+body.digital-confidence-page .digital-confidence-intro .feature-heading {
+  display: inline-block !important;
+  margin: 0 0 14px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #83d9ee !important;
+  font-size: .9rem !important;
+  font-weight: 750 !important;
+  letter-spacing: .08em !important;
+}
+body.digital-confidence-page .digital-confidence-intro h2 {
+  margin: 0 0 18px !important;
+  color: #fff !important;
+  font-size: clamp(2.2rem, 3.5vw, 3rem) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -.04em !important;
+}
+body.digital-confidence-page .digital-confidence-intro p {
+  max-width: 850px !important;
+  margin: 0 0 14px !important;
+  color: rgba(255,255,255,.82) !important;
+  font-size: 1.06rem !important;
+  line-height: 1.8 !important;
+}
+body.digital-confidence-page .digital-confidence-details {
+  padding: clamp(58px, 6vw, 78px) 0 !important;
+  background: #082b49 !important;
+}
+body.digital-confidence-page .digital-confidence-details > .container {
+  max-width: 1120px !important;
+}
+body.digital-confidence-page .digital-confidence-details > .container > .section-title {
+  max-width: 100% !important;
+  margin: 0 0 42px !important;
+  text-align: left !important;
+}
+body.digital-confidence-page .digital-confidence-details > .container > .section-title h2 {
+  margin: 0 0 12px !important;
+  color: #fff !important;
+  font-size: clamp(2.35rem, 3.7vw, 3.1rem) !important;
+  letter-spacing: -.045em !important;
+  text-align: left !important;
+}
+body.digital-confidence-page .digital-confidence-details > .container > .section-title p {
+  max-width: 760px !important;
+  margin: 0 !important;
+  color: rgba(255,255,255,.78) !important;
+  font-size: clamp(1.05rem, 1.3vw, 1.18rem) !important;
+  line-height: 1.7 !important;
+  text-align: left !important;
+}
+body.digital-confidence-page .digital-confidence-visit-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr) !important;
+  gap: clamp(30px, 5vw, 64px) !important;
+  align-items: start !important;
+}
+body.digital-confidence-page .digital-confidence-expectations h3,
+body.digital-confidence-page .digital-confidence-trusted h3,
+body.digital-confidence-page .digital-confidence-price h3 {
+  margin: 0 0 18px !important;
+  color: #fff !important;
+  font-size: clamp(1.4rem, 2vw, 1.7rem) !important;
+  line-height: 1.25 !important;
+  letter-spacing: -.025em !important;
+}
+body.digital-confidence-page .digital-confidence-checklist {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px 14px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+body.digital-confidence-page .digital-confidence-checklist li {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 14px !important;
+  min-height: 64px !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 15px 16px !important;
+  border: 1px solid rgba(131,217,238,.16) !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.045) !important;
+  color: rgba(255,255,255,.94) !important;
+  font-size: 1rem !important;
+  line-height: 1.55 !important;
+}
+body.digital-confidence-page .digital-confidence-checklist li::before {
+  content: "" !important;
+  display: block !important;
+  flex: 0 0 8px !important;
+  width: 8px !important;
+  height: 8px !important;
+  margin: .55em 0 0 !important;
+  border-radius: 50% !important;
+  background: #58c3df !important;
+  box-shadow: 0 0 0 3px rgba(88,195,223,.12) !important;
+}
+body.digital-confidence-page .digital-confidence-practical {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 28px !important;
+}
+body.digital-confidence-page .digital-confidence-trusted {
+  padding: 0 0 26px !important;
+  border-bottom: 1px solid rgba(131,217,238,.24) !important;
+}
+body.digital-confidence-page .digital-confidence-trusted h3 {
+  color: #83d9ee !important;
+  font-size: 1.35rem !important;
+  margin-bottom: 10px !important;
+}
+body.digital-confidence-page .digital-confidence-trusted p,
+body.digital-confidence-page .digital-confidence-price p {
+  margin: 0 !important;
+  color: rgba(255,255,255,.82) !important;
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+}
+body.digital-confidence-page .digital-confidence-price h3 {
+  margin-bottom: 10px !important;
+}
+body.digital-confidence-page .digital-confidence-price .btn {
+  display: inline-flex !important;
+  margin-top: 18px !important;
+  min-height: 48px !important;
+  padding: 12px 20px !important;
+}
+body.digital-confidence-page .digital-confidence-final {
+  padding: 0 0 76px !important;
+  background: #082b49 !important;
+}
+body.digital-confidence-page .digital-confidence-cta {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  align-items: center !important;
+  gap: 28px !important;
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+  padding: 28px 34px !important;
+  border: 2px solid #58c3df !important;
+  border-radius: 22px !important;
+  background: #164b6d !important;
+  box-shadow: 0 12px 32px rgba(0,10,24,.16) !important;
+}
+body.digital-confidence-page .digital-confidence-cta-copy,
+body.digital-confidence-page .digital-confidence-cta-copy h2,
+body.digital-confidence-page .digital-confidence-cta-copy p {
+  background: transparent !important;
+}
+body.digital-confidence-page .digital-confidence-cta-copy h2 {
+  margin: 0 0 8px !important;
+  color: #fff !important;
+  font-size: clamp(1.55rem, 2.4vw, 2.15rem) !important;
+  line-height: 1.2 !important;
+}
+body.digital-confidence-page .digital-confidence-cta-copy p {
+  max-width: 680px !important;
+  margin: 0 !important;
+  color: rgba(255,255,255,.84) !important;
+  font-size: 1.02rem !important;
+  line-height: 1.6 !important;
+}
+body.digital-confidence-page .digital-confidence-cta > .btn {
+  min-width: 205px !important;
+  min-height: 54px !important;
+  padding: 14px 22px !important;
+}
+@media (max-width: 900px) {
+  body.digital-confidence-page .digital-confidence-visit-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width: 760px) {
+  body.digital-confidence-page .digital-confidence-checklist {
+    grid-template-columns: 1fr !important;
+  }
+  body.digital-confidence-page .digital-confidence-final {
+    padding-bottom: 58px !important;
+  }
+  body.digital-confidence-page .digital-confidence-cta {
+    grid-template-columns: 1fr !important;
+    padding: 24px !important;
+    gap: 18px !important;
+  }
+  body.digital-confidence-page .digital-confidence-cta > .btn {
+    width: 100% !important;
+  }
+}
+@media (max-width: 600px) {
+  body.digital-confidence-page .digital-confidence-intro > .container {
+    width: calc(100% - 36px) !important;
+  }
+  body.digital-confidence-page .digital-confidence-checklist li {
+    min-height: 0 !important;
+  }
+  body.digital-confidence-page .digital-confidence-trusted {
+    padding-bottom: 22px !important;
+  }
+}
+
