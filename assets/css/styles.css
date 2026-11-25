@@ -12540,3 +12540,28 @@ body.logo-design-page .logo-process-step p {
     grid-template-columns: minmax(0, 1fr) !important;
   }
 }
+
+
+/* FINAL FIX — logo pricing panel text must not have individual dark backgrounds.
+   This lives in the global stylesheet because it loads after logo-design.html styles. */
+body.logo-design-page main > .section.logo-process-section aside.logo-process-pricing .logo-pricing-heading,
+body.logo-design-page main > .section.logo-process-section aside.logo-process-pricing .logo-pricing-heading *,
+body.logo-design-page main > .section.logo-process-section aside.logo-process-pricing .logo-pricing-kicker,
+body.logo-design-page main > .section.logo-process-section aside.logo-process-pricing h2,
+body.logo-design-page main > .section.logo-process-section aside.logo-process-pricing p,
+body.logo-design-page main > .section.logo-process-section aside.logo-process-pricing .editable {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -webkit-background-clip: initial !important;
+}
+body.logo-design-page main > .section.logo-process-section aside.logo-process-pricing .logo-pricing-heading::before,
+body.logo-design-page main > .section.logo-process-section aside.logo-process-pricing .logo-pricing-heading::after,
+body.logo-design-page main > .section.logo-process-section aside.logo-process-pricing .logo-pricing-heading *::before,
+body.logo-design-page main > .section.logo-process-section aside.logo-process-pricing .logo-pricing-heading *::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
