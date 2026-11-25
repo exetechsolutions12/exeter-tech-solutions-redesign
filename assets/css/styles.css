@@ -12589,3 +12589,41 @@ body.logo-design-page main#main section.logo-portfolio-section .logo-portfolio-g
 body.logo-design-page main#main section.logo-portfolio-section .logo-portfolio-grid article.scouts-combined-card .scouts-combined-panel {
   background: #103b5d !important;
 }
+
+
+/* Scout's portfolio previews: match the two standard portfolio cards above.
+   Use the same white image canvas height, while enlarging the artwork within it. */
+body.logo-design-page main > section.logo-portfolio-section .scouts-combined-card .scouts-combined-panel .logo-portfolio-preview,
+body.logo-design-page main > section.logo-portfolio-section .scouts-combined-card .scouts-combined-panel .logo-portfolio-preview.scouts-circle-preview,
+body.logo-design-page main > section.logo-portfolio-section .scouts-combined-card .scouts-combined-panel .logo-portfolio-preview.scouts-horizontal-preview {
+  height: 214px !important;
+  min-height: 214px !important;
+  width: 100% !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+body.logo-design-page main > section.logo-portfolio-section .scouts-combined-card .scouts-circle-preview img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: scale(1.85) !important;
+  transform-origin: center !important;
+}
+body.logo-design-page main > section.logo-portfolio-section .scouts-combined-card .scouts-horizontal-preview img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: scale(2.45) !important;
+  transform-origin: center !important;
+}
